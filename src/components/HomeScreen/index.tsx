@@ -47,6 +47,8 @@ const ContractSSR = dynamic(() => import('./GroupContract'), {
 export const MotionFlex: NextPage<MotionFlexProps> = motion(Flex)
 
 import { MotionButton } from '../../shared/styles/animation'
+import BoxDocumentWide from './FloatBoxItems/BoxDocumentWide'
+import BoxTimeWide from './FloatBoxItems/BoxTimeWide'
 
 export default function HomeScreen(): JSX.Element {
   const isWideVersion = useBreakpointValue({
@@ -191,9 +193,9 @@ export default function HomeScreen(): JSX.Element {
             >
               <Reveal>
                 <BoxPersonOutline />
-                <BoxDocument />
+                {isWideVersion ? <BoxDocumentWide /> : <BoxDocument />}
                 <BoxPerson />
-                <BoxTime />
+                {isWideVersion ? <BoxTimeWide /> : <BoxTime />}
               </Reveal>
             </Flex>
           </Flex>

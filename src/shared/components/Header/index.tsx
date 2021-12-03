@@ -142,7 +142,7 @@ export default function Header() {
                         <Flex>
                           <HamburgerIcon
                             ml={['0rem', '2rem']}
-                            color="white"
+                            color="pink.900"
                             onClick={onOpen}
                             boxSize="30px"
                           />
@@ -253,7 +253,7 @@ export default function Header() {
                       <MotionFlex whileTap={{ scale: 0.8 }}>
                         <HamburgerIcon
                           ml={['0rem', '2rem']}
-                          color="white"
+                          color="pink.900"
                           onClick={onOpen}
                           boxSize="34px"
                         />

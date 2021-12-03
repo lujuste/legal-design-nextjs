@@ -8,7 +8,14 @@ type MotionFlexProps = Merge<HTMLChakraProps<'div'>, HTMLMotionProps<'div'>>
 
 export const MotionFlex: NextPage<MotionFlexProps> = motion(Flex)
 
-export default function BoxDocument() {
+export default function BoxDocumentWide() {
+  const isWideVersion = useBreakpointValue({
+    base: false,
+    sm: false,
+    md: false,
+    xl: true,
+  })
+
   return (
     <MotionFlex
       as="div"
@@ -31,7 +38,7 @@ export default function BoxDocument() {
       ]}
       animate={{
         y: [0, 30, 0, 10, 0],
-        x: [0, 10, 20],
+        x: [220, 180, 120, 190, 200, 50],
 
         scale: [1, 1, 1, 1, 1],
         rotate: [0, 0, 0, 0, 0],
