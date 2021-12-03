@@ -15,7 +15,7 @@ import { MotionButton, MotionFlex } from '../../styles/animation'
 
 import Link from 'next/link'
 
-import logoBits from '../../../../public/images/logo-bits-branco.svg'
+import logoBits from '../../../../public/images/logo-bits.svg'
 
 import { useState, useEffect } from 'react'
 import NavigationItem from './NavigationItem'
@@ -67,14 +67,14 @@ export default function Header() {
             zIndex="1000000000"
             as="header"
             w="100%"
-            boxShadow="0 25px 50px rgba(0, 0, 0, 0.2)"
             blur="500px"
-            bgColor={color ? '#801337' : 'transparent'}
+            boxShadow={color ? '2xl' : ''}
+            bgColor={color ? '#fff' : 'transparent'}
             backdrop-filter="blur(10px)"
             opacity={'1'}
             position={isOpen ? 'unset' : 'fixed'}
             h="10vh"
-            transition={'1s ease-in'}
+            transition={'0.3s ease-in'}
           >
             <Flex
               w="100%"
@@ -112,10 +112,10 @@ export default function Header() {
                     <MotionButton
                       ml="2rem"
                       mr="1rem"
-                      color="pink.700"
+                      color="white"
                       w="180px"
                       h="50"
-                      bgColor="white"
+                      bgColor="pink.900"
                       whileTap={{ scale: 1.04 }}
                       whileHover={{ scale: 1.04 }}
                       _focus={{ border: 'none' }}
@@ -125,7 +125,7 @@ export default function Header() {
                         border: '1px solid #CC3366',
                       }}
                     >
-                      Contrato automático
+                      Fale com especialista
                     </MotionButton>
                   </Flex>
                 </>
@@ -227,11 +227,11 @@ export default function Header() {
                   <MotionButton
                     ml="2rem"
                     mr="1rem"
-                    color="pink.700"
+                    color="white"
                     w="180px"
                     boxShadow="2xl"
                     h="50"
-                    bgColor="white"
+                    bgColor="pink.900"
                     whileTap={{ scale: 1.04 }}
                     whileHover={{ scale: 1.04 }}
                     _focus={{ border: 'none' }}
@@ -241,7 +241,7 @@ export default function Header() {
                       border: '1px solid #CC3366',
                     }}
                   >
-                    Contrato automático
+                    Fale com especialista
                   </MotionButton>
                 </Flex>
               </>

@@ -123,7 +123,7 @@ export default function Footer() {
         as="footer"
         w="100%"
         h={['100%', '100%', '100%', '396px']}
-        bgGradient="linear(to-t, #52011C, #cc3366)"
+        bgColor="pink.900"
         mt={['-2rem', '-2rem', '-3rem']}
         mx="auto"
         justify="center"
