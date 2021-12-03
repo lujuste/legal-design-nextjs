@@ -4,16 +4,16 @@ import Image from 'next/image'
 export default function PeopleFriendly() {
   return (
     <Flex
-      bgGradient="linear(to-t, #52011C, #cc3366)"
+      bgColor="pink.900"
       w="100%"
-      h="80vh"
+      h={['100%', '100%', '100%', '80vh', '80vh']}
       justify="center"
       mx="auto"
       py="2rem"
       mt="-5rem"
     >
       <Flex
-        flexWrap={['nowrap', 'wrap', 'wrap', 'nowrap']}
+        flexWrap={['wrap', 'wrap', 'wrap', 'nowrap']}
         mx="auto"
         maxW="1400px"
         h="100%"
@@ -21,12 +21,12 @@ export default function PeopleFriendly() {
       >
         <Flex
           justify="center"
-          w="622px"
+          w={['100%', '100%', '100%']}
           h="350px"
           className={'dashboard-container'}
           px="2.5rem"
           mt="6rem"
-          mr="6rem"
+          flex="1"
         >
           <Image
             layout="fill"

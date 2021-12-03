@@ -69,9 +69,9 @@ export default function CheckSession() {
       h={['100%']}
       py="6rem"
       bgColor="#F8F9FA"
-      mt={['0', '0', '0']}
+      mt={['-3rem', '-3rem', '-3ren', '0']}
       px={['0', '0', '0', '6rem']}
-      mb={['0', '0', '0', '4rem']}
+      mb={['4.5rem', '4.5rem', '4.5rem', '4rem']}
     >
       <Flex
         flexDir="column"

@@ -180,11 +180,12 @@ export default function KnowCompaniesCommom() {
     >
       <Heading
         fontFamily="Raleway"
-        maxW="1200px"
-        mt="4rem"
+        maxW={['300px', '300px', '700px', '600px', '1200px']}
+        mt={['4rem', '4rem', '4rem', '-2rem']}
         mx="auto"
         textAlign="center"
-        fontSize="3rem"
+        fontSize={['1.875rem', '1.875rem', '1.875rem', '3rem', '3rem']}
+        px={['0', '0', '2rem', '2rem']}
       >
         Sabe o que essas{' '}
         <Text as="span" color="pink.900">
@@ -227,24 +228,33 @@ export default function KnowCompaniesCommom() {
           </GridItem>
         ))}
       </Grid>
-
-      <Text fontWeight="400" color="#666666" mt="3rem">
-        Elas aplicaram o Legal Design com a Bits e melhoraram seus resultados.
-      </Text>
-      <Button
-        mt="2rem"
-        px="1rem"
-        w="292px"
-        fontSize="0.875rem"
-        fontWeight="700"
-        color="white"
-        bgColor="pink.900"
-        h="48px"
-        textShadow="2xl"
-        boxShadow="2xl"
-      >
-        Quero que a Bits faça meu Legal Design
-      </Button>
+      <Flex mx="auto" flexDir="column">
+        {' '}
+        <Text
+          mx="auto"
+          textAlign="center"
+          fontWeight="400"
+          color="#666666"
+          mt="3rem"
+        >
+          Elas aplicaram o Legal Design com a Bits e melhoraram seus resultados.
+        </Text>
+        <Button
+          mt="2rem"
+          px="1rem"
+          w="292px"
+          fontSize="0.875rem"
+          fontWeight="700"
+          color="white"
+          bgColor="pink.900"
+          h="48px"
+          textShadow="2xl"
+          boxShadow="2xl"
+          mx="auto"
+        >
+          Quero que a Bits faça meu Legal Design
+        </Button>
+      </Flex>
     </Flex>
   )
 }

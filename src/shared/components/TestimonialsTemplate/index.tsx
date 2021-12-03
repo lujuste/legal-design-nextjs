@@ -28,6 +28,8 @@ export default function TestimonialsTemplate() {
         mx="auto"
         justify="center"
         flexDir="column"
+        mt={['0', '0', '0', '3rem']}
+        mb={['0', '0', '0', '2rem']}
       >
         <VStack>
           <Heading
@@ -36,11 +38,12 @@ export default function TestimonialsTemplate() {
             fontSize={['30px', '32px', '38px', '42px', '48px']}
             maxW={['320px', '320px', '500px', '500px', '750px']}
             textAlign="center"
-            mt={['0rem', '0rem', '-2rem', '2rem', '0rem']}
+            mt={['1rem', '0rem', '-2rem', '2rem', '0rem']}
             w="100%"
             mb={['3rem', '3rem', '5rem']}
+            pb={['-3rem', '-3rem', '0', '0', '0']}
           >
-            <Text mt="2rem" textAlign="center" as="span" color="black">
+            <Text mt={['2rem']} textAlign="center" as="span" color="black">
               Depoimentos
             </Text>{' '}
           </Heading>
