@@ -74,6 +74,7 @@ export default function Footer() {
   const headers = {
     'Content-Type': 'application/json',
     Accept: 'application/json',
+    'Access-Control-Allow-Origin': 'https://legal-design-nextjs2.vercel.app/',
     Authorization: `Api-Token: ${process.env.ACTIVE_CAMPAIGN_TOKEN}`,
   }
 
