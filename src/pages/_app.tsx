@@ -12,6 +12,8 @@ import { theme } from '../shared/styles/theme'
 import { SidebarDrawerProvider } from '../contexts/SidebarDrawer'
 import { Layout } from '../shared/layout'
 
+import { useState } from 'react'
+
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -21,40 +23,47 @@ import '../shared/styles/slider.scss'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
+import CookieBot from 'react-cookiebot/lib/CookieBot'
 
 import { CookieConsentProvider } from '../contexts/CookieConsent'
 import { ViewportProvider } from '../contexts/ViewContext'
 
 const queryClient = new QueryClient()
+const domainGroupId = 'b32b89d9-168d-4c29-92c9-8c141b3b29f4'
 
 const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
+  const [hasCookieBot, setHasCookieBot] = useState(undefined)
+
   return (
     <>
-      <QueryClientProvider client={queryClient}>
-        <>
-          <ViewportProvider>
-            <CacheProvider value={emotionCache}>
-              <CookieConsentProvider>
-                <ToastContainer />
-                <NextProgress
-                  color="#CD3266"
-                  startPosition={0.3}
-                  stopDelayMs={200}
-                  height={2}
-                />
-                <SidebarDrawerProvider>
-                  <ColorModeScript initialColorMode="light" />
-                  <ChakraProvider resetCSS theme={theme}>
-                    <Layout>
-                      <Component {...pageProps} />
-                    </Layout>
-                  </ChakraProvider>
-                </SidebarDrawerProvider>
-              </CookieConsentProvider>
-            </CacheProvider>
-          </ViewportProvider>
-        </>
-      </QueryClientProvider>
+      <>
+        <QueryClientProvider client={queryClient}>
+          <>
+            <ViewportProvider>
+              <CacheProvider value={emotionCache}>
+                <CookieConsentProvider>
+                  <ToastContainer />
+                  <NextProgress
+                    color="#CD3266"
+                    startPosition={0.3}
+                    stopDelayMs={200}
+                    height={2}
+                  />
+                  <CookieBot domainGroupId={domainGroupId} language="ES" />
+                  <SidebarDrawerProvider>
+                    <ColorModeScript initialColorMode="light" />
+                    <ChakraProvider resetCSS theme={theme}>
+                      <Layout>
+                        <Component {...pageProps} />
+                      </Layout>
+                    </ChakraProvider>
+                  </SidebarDrawerProvider>
+                </CookieConsentProvider>
+              </CacheProvider>
+            </ViewportProvider>
+          </>
+        </QueryClientProvider>
+      </>
     </>
   )
 }

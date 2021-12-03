@@ -17,7 +17,7 @@ export default function PeopleFriendly() {
         mx="auto"
         maxW="1400px"
         h="100%"
-        justify="space-around"
+        justify="space-between"
       >
         <Flex
           justify="center"
@@ -26,7 +26,7 @@ export default function PeopleFriendly() {
           className={'dashboard-container'}
           px="2.5rem"
           mt="6rem"
-          mr="5rem"
+          mr="6rem"
         >
           <Image
             layout="fill"

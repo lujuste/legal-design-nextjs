@@ -8,42 +8,42 @@ import {
   Button,
   useBreakpointValue,
   SlideFade,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react'
 
-import Fade from "react-reveal/Fade";
+import Fade from 'react-reveal/Fade'
 
-import { useState, useEffect } from "react";
-import Reveal from "react-reveal/Reveal";
-import CardEffect from "./CardEffect";
-import CardTrainning from "./CardTrainning";
-import CardCourses from "./CardCourses";
-import CardContract from "./CardContract";
-import ButtonCards from "./ButtonCards";
-import CardMobile from "./CardMobile";
-import ConsultancyIcon from "./CardEffect/ConsultancyIcon";
-import IconTrainning from "./CardTrainning/IconTrainning";
-import IconCourses from "./CardCourses/IconCourses";
-import IconContract from "./CardContract/IconContract";
+import { useState, useEffect } from 'react'
+import Reveal from 'react-reveal/Reveal'
+import CardEffect from './CardEffect'
+import CardTrainning from './CardTrainning'
+import CardCourses from './CardCourses'
+import CardContract from './CardContract'
+import ButtonCards from './ButtonCards'
+import CardMobile from './CardMobile'
+import ConsultancyIcon from './CardEffect/ConsultancyIcon'
+import IconTrainning from './CardTrainning/IconTrainning'
+import IconCourses from './CardCourses/IconCourses'
+import IconContract from './CardContract/IconContract'
 
 export default function Cards() {
-  const [shouldShowActions, setShouldShowActions] = useState(false);
+  const [shouldShowActions, setShouldShowActions] = useState(false)
 
-  const [lastYPos, setLastYPos] = useState(0);
+  const [lastYPos, setLastYPos] = useState(0)
 
   useEffect(() => {
     function handleScroll() {
-      const yPos = window.scrollY;
-      const isScrollingUp = yPos > 40;
+      const yPos = window.scrollY
+      const isScrollingUp = yPos > 40
 
-      setShouldShowActions(isScrollingUp);
+      setShouldShowActions(isScrollingUp)
     }
 
-    window.addEventListener("scroll", handleScroll, false);
+    window.addEventListener('scroll', handleScroll, false)
 
     return () => {
-      window.removeEventListener("scroll", handleScroll, false);
-    };
-  }, [lastYPos]);
+      window.removeEventListener('scroll', handleScroll, false)
+    }
+  }, [lastYPos])
 
   const isWideVersion = useBreakpointValue({
     base: false,
@@ -51,12 +51,12 @@ export default function Cards() {
     md: true,
     lg: true,
     xl: true,
-  });
+  })
 
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false)
 
   function handleClick() {
-    setIsFlipped(!isFlipped);
+    setIsFlipped(!isFlipped)
   }
 
   return (
@@ -64,9 +64,9 @@ export default function Cards() {
       as="main"
       flexDir="column"
       mx="auto"
-      py={["0", "0", "5rem"]}
+      py={['0', '0', '5rem']}
       maxW={1400}
-      mt={["-5rem", "1rem", "0"]}
+      mt={['-5rem', '1rem', '0']}
       justify="center"
       alignItems="center"
       alignSelf="center"
@@ -81,11 +81,11 @@ export default function Cards() {
             w="100%"
             justify="center"
             flexDir="column"
-            mt={["-0.5rem", "0"]}
+            mt={['-0.5rem', '0']}
           >
             <Fade bottom>
               <Heading mb="3rem" fontFamily="Raleway">
-                Como tornamos seus documentos jurídicos{" "}
+                Como tornamos seus documentos jurídicos{' '}
                 <Text color="pink.900" as="span">
                   mais amigáveis
                 </Text>
@@ -104,7 +104,7 @@ export default function Cards() {
               <Reveal>
                 <ButtonCards callToAction="Quero meu contrato" />
               </Reveal>
-            </Flex>{" "}
+            </Flex>{' '}
             <Flex mt="3rem" flexDir="column">
               <Reveal>
                 <CardMobile
@@ -137,7 +137,7 @@ export default function Cards() {
               <Reveal>
                 <CardMobile
                   image="contratoautomatico-mobile"
-                  title="Contrato automático"
+                  title="UX Doc"
                   description="Automatizamos a criação do seu documento em Legal Design através da nossa plataforma."
                 >
                   <IconContract />
@@ -156,13 +156,13 @@ export default function Cards() {
               <Fade bottom>
                 <Heading
                   mb="3rem"
-                  mt={["-2rem", "-2rem", "0rem", "2rem"]}
+                  mt={['-2rem', '-2rem', '0rem', '2rem']}
                   textAlign="center"
                   fontFamily="Raleway"
-                  fontSize={["30px", "30px", "38px", "42px", "48px"]}
-                  maxW={["700px", "700px", "700px", "800px"]}
+                  fontSize={['30px', '30px', '38px', '42px', '48px']}
+                  maxW={['700px', '700px', '700px', '800px']}
                 >
-                  Como tornamos seus documentos jurídicos{" "}
+                  Como tornamos seus documentos jurídicos{' '}
                   <Text as="span" color="pink.900">
                     mais amigáveis
                   </Text>
@@ -182,11 +182,11 @@ export default function Cards() {
               <Grid
                 mt="2rem"
                 templateColumns={[
-                  "repeat(1, 1fr)",
-                  "repeat(1, 1fr)",
-                  "repeat(2, 1fr)",
-                  "repeat(3, 1fr)",
-                  "repeat(4, 1fr)",
+                  'repeat(1, 1fr)',
+                  'repeat(1, 1fr)',
+                  'repeat(2, 1fr)',
+                  'repeat(3, 1fr)',
+                  'repeat(4, 1fr)',
                 ]}
                 w="100%"
                 mx="auto"
@@ -236,7 +236,7 @@ export default function Cards() {
                 <Reveal>
                   <GridItem mb="2rem">
                     <CardContract
-                      title="Contrato automático"
+                      title="DOC Ux"
                       description="Automatizamos a criação do seu documento em Legal Design através da nossa plataforma."
                     />
                     <Flex>
@@ -250,5 +250,5 @@ export default function Cards() {
         </>
       )}
     </Flex>
-  );
+  )
 }

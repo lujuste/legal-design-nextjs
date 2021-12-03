@@ -271,7 +271,7 @@ export default function Footer() {
                   mx="auto"
                 >
                   <Reveal>
-                    <Text color="#ffffff">
+                    <Text fontSize="14px" color="#ffffff">
                       Copyright © 2021 Bits Academy. All rights reserved. CNPJ
                       nº 35.070.508/0001-40.
                     </Text>
@@ -412,7 +412,7 @@ export default function Footer() {
             <Flex mt={['2rem']} maxW="300px" w="100%" color="white" mx="auto">
               <Text
                 mb={['2rem', '2rem', '0']}
-                fontSize="16px"
+                fontSize="14px"
                 textAlign="center"
               >
                 Copyright © 2021 Bits Academy. All rights reserved. CNPJ nº

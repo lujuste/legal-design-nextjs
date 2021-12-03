@@ -39,7 +39,7 @@ export default function HomeDefault({
   return (
     <Flex
       w="100%"
-      bgGradient="linear(to-t, #52011C, #cc3366 )"
+      bgImage="url('/images/bgPink.webp')"
       h={['100vh', '100vh', '100vh', '100vh', '110vh']}
       bgSize={['250%', 'cover', 'cover', '100%', '100%']}
       bgRepeat="no-repeat"
@@ -67,7 +67,7 @@ export default function HomeDefault({
           </Reveal>
           <MotionHeading
             as="h1"
-            color="pink.300"
+            color="pink.900"
             textShadow="0px 4px 4px #1f1f1f46"
             fontFamily="Raleway"
             fontWeight="600"
@@ -89,7 +89,7 @@ export default function HomeDefault({
           lineHeight="3.125rem"
           mt={['0.3rem', '0.3rem', '0.7rem', '-1rem']}
           mx="auto"
-          color="white"
+          color="black"
           mb={['0', '0', '0', '1.5rem']}
           initial={{ y: '10vh', opacity: 0 }}
           animate={{ y: 10, opacity: 1 }}
@@ -105,7 +105,7 @@ export default function HomeDefault({
           lineHeight="1.5"
           textAlign="center"
           maxW={['331px', '331px', '331px', '503px']}
-          color="#ffffff"
+          color="#666666"
           fontWeight="400"
           initial={{ y: '10vh', opacity: 0 }}
           animate={{ y: 10, opacity: 1 }}
@@ -117,9 +117,9 @@ export default function HomeDefault({
         <MotionButton
           w="290px"
           h="50px"
-          bgColor="white"
+          bgColor="pink.900"
           boxShadow="2xl"
-          color="#801337"
+          color="white"
           px="1rem"
           mx="auto"
           mt={['2rem', '2rem', '2rem', '2rem']}

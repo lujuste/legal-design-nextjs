@@ -14,7 +14,7 @@ const Consultancy: NextPage = () => {
       <HomeDefault
         buttonText="Quero que a bits faça meu Legal Design"
         title="Consultoria"
-        icon="icon-consultancy-pink"
+        icon="consultancy-feature"
         description="Tenha um Jurídico estratégico.
    Aplique o Legal Design e traga mais resultados para a empresa."
       />

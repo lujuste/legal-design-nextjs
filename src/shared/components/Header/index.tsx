@@ -125,7 +125,7 @@ export default function Header() {
                         border: '1px solid #CC3366',
                       }}
                     >
-                      Fale com especialista
+                      Fale com especialista!
                     </MotionButton>
                   </Flex>
                 </>
@@ -241,7 +241,7 @@ export default function Header() {
                       border: '1px solid #CC3366',
                     }}
                   >
-                    Fale com especialista
+                    Fale com especialista!
                   </MotionButton>
                 </Flex>
               </>

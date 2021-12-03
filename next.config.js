@@ -13,6 +13,9 @@ module.exports = {
     config.module.rules.push({
       test: /\.my-file$/i,
       loader: 'raw-loader',
+      resolve: {
+        extensions: ['.web.js', '.js'],
+      },
     })
 
     // Important: return the modified config

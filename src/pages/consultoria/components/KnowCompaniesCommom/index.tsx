@@ -10,8 +10,6 @@ import {
 } from '@chakra-ui/react'
 import Image from 'next/image'
 
-import energiaCompany from '../../../../../public/images/2wenergia.svg'
-
 const dataCustomers = [
   {
     description: 'Consultoria em Legal Design',
@@ -189,7 +187,7 @@ export default function KnowCompaniesCommom() {
         fontSize="3rem"
       >
         Sabe o que essas{' '}
-        <Text as="span" color="pink.300">
+        <Text as="span" color="pink.900">
           empresas
         </Text>{' '}
         têm em comum?
@@ -240,7 +238,7 @@ export default function KnowCompaniesCommom() {
         fontSize="0.875rem"
         fontWeight="700"
         color="white"
-        bgGradient="linear(to-t, #52011C, #cc3366)"
+        bgColor="pink.900"
         h="48px"
         textShadow="2xl"
         boxShadow="2xl"
