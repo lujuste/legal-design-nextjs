@@ -8,7 +8,6 @@ import Statistics from '../components/Statistics'
 import Testimonials from '../components/Testimonials'
 import Head from 'next/head'
 
-import ShouldMessageCookies from '../shared/components/ShouldMessageCookies'
 import dynamic from 'next/dynamic'
 
 // const OtherComponent = dynamic(() => import('../components/HomeScreen'), {
@@ -82,7 +81,6 @@ const Home: NextPage = () => {
       <CarrouselDocument />
       <Statistics />
       <Testimonials />
-      <ShouldMessageCookies />
     </>
   )
 }

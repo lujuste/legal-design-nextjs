@@ -137,7 +137,7 @@ export default function Cards() {
               <Reveal>
                 <CardMobile
                   image="contratoautomatico-mobile"
-                  title="UX Doc"
+                  title="UXDOC"
                   description="Automatizamos a criação do seu documento em Legal Design através da nossa plataforma."
                 >
                   <IconContract />
@@ -236,7 +236,7 @@ export default function Cards() {
                 <Reveal>
                   <GridItem mb="2rem">
                     <CardContract
-                      title="DOC Ux"
+                      title="UXDOC"
                       description="Automatizamos a criação do seu documento em Legal Design através da nossa plataforma."
                     />
                     <Flex>
