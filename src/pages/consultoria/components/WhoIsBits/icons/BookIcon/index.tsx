@@ -8,7 +8,7 @@ export default function BookIcon() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g filter="url(#filter0_d_10714_481)">
-        <rect x="6" y="5" width="91" height="91" rx="10" fill="#801337" />
+        <rect x="6" y="5" width="91" height="91" rx="10" fill="#CC3366" />
       </g>
       <path
         d="M52 36.9375V69.75M52 36.9375C52 36.9375 41.0625 27.5625 30.125 35.375V69.75C41.0625 61.9375 52 69.75 52 69.75C52 69.75 62.9375 61.9375 73.875 69.75V35.375C62.9375 27.5625 52 36.9375 52 36.9375Z"

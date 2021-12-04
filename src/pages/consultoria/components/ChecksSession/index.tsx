@@ -71,7 +71,7 @@ export default function CheckSession() {
       bgColor="#F8F9FA"
       mt={['-3rem', '-3rem', '-3ren', '0']}
       px={['0', '0', '0', '6rem']}
-      mb={['4.5rem', '4.5rem', '4.5rem', '4rem']}
+      mb={['5.5rem', '5.5rem', '4.5rem', '4rem']}
     >
       <Flex
         flexDir="column"
@@ -378,7 +378,7 @@ export default function CheckSession() {
         <Fade bottom>
           <Button
             w="100%"
-            mt="1.5rem"
+            mt="2.5rem"
             maxW="229px"
             h="50px"
             mx="auto"

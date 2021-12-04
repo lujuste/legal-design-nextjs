@@ -1,4 +1,4 @@
-import { Flex, Heading, Text, Box } from '@chakra-ui/react'
+import { Flex, Heading, Text, Box, Grid, GridItem } from '@chakra-ui/react'
 import Image from 'next/image'
 
 export default function PeopleFriendly() {
@@ -6,65 +6,80 @@ export default function PeopleFriendly() {
     <Flex
       bgColor="pink.900"
       w="100%"
-      h={['100%', '100%', '100%', '80vh', '80vh']}
+      h="100%"
       justify="center"
+      align="center"
       mx="auto"
-      py="2rem"
+      p="2rem"
       mt="-5rem"
     >
-      <Flex
-        flexWrap={['wrap', 'wrap', 'wrap', 'nowrap']}
+      <Grid
+        templateColumns={[
+          'repeat(1, 1fr)',
+          'repeat(1, 1fr)',
+          'repeat(1, 1fr)',
+          'repeat(1, 1fr)',
+          'repeat(2, 1fr)',
+          'repeat(2, 1fr)',
+        ]}
         mx="auto"
         maxW="1400px"
         h="100%"
-        justify="space-between"
+        gridAutoFlow="dense"
+        p={['1rem', '1rem', '3rem']}
       >
-        <Flex
-          justify="center"
-          w={['100%', '100%', '100%']}
-          h="350px"
-          className={'dashboard-container'}
-          px="2.5rem"
-          mt="6rem"
-          flex="1"
+        <GridItem
+          pt={['3rem', '3rem', '2rem', '1rem', '0']}
+          pb="3rem"
+          alignItems="center"
+          my="auto"
         >
           <Image
-            layout="fill"
+            width={600}
+            height={322}
             src="/images/dashboard.webp"
-            className={'dashboard'}
             quality={100}
           />
-        </Flex>
-        <Flex
-          mt="-2rem"
-          flexDir="column"
-          maxW="514px"
-          mx="auto"
-          justify="center"
-        >
-          <Heading
-            color="white"
-            fontSize="3rem"
-            textAlign="center"
-            fontWeight="600 "
-            fontFamily="Raleway"
-            lineHeight="3.438rem"
+        </GridItem>
+        <GridItem>
+          <Flex
+            flexDir="column"
+            maxW={['400px', '400px', '480px', '514px']}
+            mx="auto"
+            h="100%"
+            align="center"
+            justify="center"
           >
-            Além de documentos <Text color="pink.300">people friendly,</Text>{' '}
-            você terá
-          </Heading>
-          <Text
-            mt="1rem"
-            color="white"
-            maxW="402px"
-            fontSize="1rem"
-            textAlign="center"
-          >
-            Dashboard para você acompanhar os resultados após a aplicação do
-            Legal Design.{' '}
-          </Text>
-        </Flex>
-      </Flex>
+            <Heading
+              alignItems="center"
+              justifyContent="center"
+              color="white"
+              mb="1rem"
+              fontSize={['1.875rem', '1.875rem', '1.875rem', '3rem', '3rem']}
+              textAlign="center"
+              fontWeight="600"
+              fontFamily="Raleway"
+              lineHeight={['1.875rem', '1.875rem', '1.875rem', '3.438rem']}
+              mt={['2rem']}
+              maxW="490px"
+            >
+              Além de documentos <Text color="pink.300">people friendly,</Text>{' '}
+              você terá
+            </Heading>
+            <Text
+              mt="1rem"
+              color="white"
+              maxW="402px"
+              fontSize="1rem"
+              textAlign="center"
+              mb="7rem"
+            >
+              Dashboard para você acompanhar os resultados após a aplicação do
+              Legal Design.{' '}
+            </Text>
+          </Flex>
+        </GridItem>
+      </Grid>
     </Flex>
   )
 }
