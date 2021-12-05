@@ -68,7 +68,6 @@ export default function HomeDefault({
           <MotionHeading
             as="h1"
             color="pink.900"
-            textShadow="0px 4px 4px #1f1f1f46"
             fontFamily="Raleway"
             fontWeight="600"
             fontSize={['1.85rem', '1.85rem', '1.85rem', '5.563rem']}

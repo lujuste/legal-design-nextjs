@@ -139,14 +139,12 @@ export default function Header() {
                   >
                     {!isOpen ? (
                       <>
-                        <Flex>
-                          <HamburgerIcon
-                            ml={['0rem', '2rem']}
-                            color="pink.900"
-                            onClick={onOpen}
-                            boxSize="30px"
-                          />
-                        </Flex>
+                        <HamburgerIcon
+                          ml={['0rem', '2rem']}
+                          color="pink.900"
+                          onClick={onOpen}
+                          boxSize="30px"
+                        />
                       </>
                     ) : null}
                   </Flex>
@@ -164,7 +162,7 @@ export default function Header() {
                           fontSize="1.25rem"
                           mt="6"
                           zIndex="500000"
-                          active={{}}
+                          _active={{ border: 'none' }}
                         />
                         <DrawerHeader mt="7"></DrawerHeader>
                         <DrawerBody>
@@ -250,14 +248,12 @@ export default function Header() {
                 <Flex zIndex="200000" ml="auto" justify="center" align="center">
                   {!isOpen ? (
                     <>
-                      <MotionFlex whileTap={{ scale: 0.8 }}>
-                        <HamburgerIcon
-                          ml={['0rem', '2rem']}
-                          color="pink.900"
-                          onClick={onOpen}
-                          boxSize="34px"
-                        />
-                      </MotionFlex>
+                      <HamburgerIcon
+                        ml={['0rem', '2rem']}
+                        color="pink.900"
+                        onClick={onOpen}
+                        boxSize="34px"
+                      />
                     </>
                   ) : null}
                 </Flex>
@@ -276,6 +272,9 @@ export default function Header() {
                         mt="6"
                         zIndex="500000"
                         _focus={{
+                          border: 'none',
+                        }}
+                        _active={{
                           border: 'none',
                         }}
                       />

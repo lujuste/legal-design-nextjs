@@ -1,0 +1,150 @@
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  EffectCreative,
+  Autoplay,
+  Parallax,
+} from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Flex, Heading, Text } from '@chakra-ui/react'
+
+export default function ContractSlider() {
+  return (
+    <Flex mx="auto" flexDir="column" w="100%" h="100%">
+      <Flex
+        maxW="100%"
+        h="100%"
+        fontSize="48px"
+        fontFamily="Raleway"
+        fontWeight="600"
+        mx="auto"
+        flexDir="column"
+        pt="2rem"
+        mt="2.5rem"
+      >
+        <Heading mx="auto" maxW="700px" textAlign="center">
+          Veja o que aconteceu com os documentos{' '}
+          <Text as="span" color="pink.900">
+            após a aplicação do Legal Design
+          </Text>
+        </Heading>
+
+        <Flex
+          align="center"
+          justifyContent="center"
+          w="100%"
+          h="100%"
+          mx="auto"
+          mt="4rem"
+        >
+          <Swiper
+            speed={1000}
+            slidesPerView={4}
+            spaceBetween={0}
+            loop={true}
+            modules={[Navigation, Pagination]}
+            navigation={true}
+            pagination={{ clickable: true }}
+            style={{ width: '100%', flex: '1' }}
+            className="mySwiperNewContract"
+            breakpoints={{
+              '380': {
+                slidesPerView: 1,
+              },
+
+              '400': {
+                slidesPerView: 2,
+              },
+
+              '812': {
+                slidesPerView: 3,
+              },
+
+              '1024': {
+                slidesPerView: 3,
+                spaceBetween: 0,
+              },
+
+              '1100': {
+                slidesPerView: 4,
+                spaceBetween: 0,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <Flex
+                as="div"
+                bgImage="url('/images/01.svg')"
+                bgSize="contain"
+                bgRepeat="no-repeat"
+                maxW="427px"
+                h="458px"
+                align="center"
+                justify="center"
+                direction="column"
+                bgColor="transparent"
+                mx="auto"
+                transition="linear"
+                className="slider111"
+              ></Flex>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Flex
+                as="div"
+                bgImage="url('/images/02.svg')"
+                bgSize="contain"
+                bgRepeat="no-repeat"
+                maxW="427px"
+                h="458px"
+                align="center"
+                justify="center"
+                direction="column"
+                bgColor="transparent"
+                mx="auto"
+                transition="linear"
+                className="slider111"
+              ></Flex>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Flex
+                as="div"
+                bgImage="url('/images/03.svg')"
+                bgSize="contain"
+                bgRepeat="no-repeat"
+                maxW="427px"
+                h="458px"
+                align="center"
+                justify="center"
+                direction="column"
+                bgColor="transparent"
+                mx="auto"
+                transition="linear"
+                className="slider111"
+              ></Flex>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Flex
+                as="div"
+                bgImage="url('/images/04.svg')"
+                bgSize="contain"
+                bgRepeat="no-repeat"
+                maxW="427px"
+                h="458px"
+                align="center"
+                justify="center"
+                direction="column"
+                bgColor="transparent"
+                mx="auto"
+                transition="linear"
+                className="slider111"
+              ></Flex>
+            </SwiperSlide>
+          </Swiper>
+        </Flex>
+      </Flex>
+    </Flex>
+  )
+}

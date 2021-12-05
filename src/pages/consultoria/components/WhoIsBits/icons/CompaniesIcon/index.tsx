@@ -8,7 +8,7 @@ export default function CompaniesIcon() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g filter="url(#filter0_d_10714_482)">
-        <rect x="6" y="5" width="91" height="91" rx="10" fill="#801337" />
+        <rect x="6" y="5" width="91" height="91" rx="10" fill="#CC3366" />
       </g>
       <path
         fill-rule="evenodd"

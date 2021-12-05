@@ -4,6 +4,7 @@ import HomeDefault from '../../shared/components/HomeDefault'
 import TestimonialsTemplate from '../../shared/components/TestimonialsTemplate'
 import CheckSession from './components/ChecksSession'
 import CommomQuestion from './components/CommomQuestion'
+import ContractSlider from './components/ContractsSlider'
 import KnowCompaniesCommom from './components/KnowCompaniesCommom'
 import PeopleFriendly from './components/PeopleFriendly'
 import WhoIsBits from './components/WhoIsBits'
@@ -16,7 +17,7 @@ const Consultancy: NextPage = () => {
         title="Consultoria"
         icon="consultancy-feature"
         description="Tenha um Jurídico estratégico.
-   Aplique o Legal Design e traga mais resultados para a empresa."
+        Aplique o Legal Design e traga mais resultados para a empresa."
       />
 
       <KnowCompaniesCommom />
@@ -24,6 +25,7 @@ const Consultancy: NextPage = () => {
       <CheckSession />
       <PeopleFriendly />
       <WhoIsBits />
+      <ContractSlider />
       <CommomQuestion />
     </>
   )

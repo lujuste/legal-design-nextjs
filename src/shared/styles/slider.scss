@@ -10,6 +10,18 @@ div.swiper-button-next {
   right: 65px;
 }
 
+div.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.mySwiperNewContract {
+  .swiper-button-next:after,
+  .swiper-rtl .swiper-button-prev:after {
+    color: black;
+  }
+
+  .swiper-button-prev:after,
+  .swiper-rtl .swiper-button-next:after {
+    color: black;
+  }
+}
+
 div.swiper-button-prev {
   left: 65px;
 }

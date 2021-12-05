@@ -8,7 +8,7 @@ export default function PeoplesIcon() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g filter="url(#filter0_d_10714_484)">
-        <rect x="6" y="5" width="91" height="91" rx="10" fill="#801337" />
+        <rect x="6" y="5" width="91" height="91" rx="10" fill="#CC3366" />
       </g>
       <g clip-path="url(#clip0_10714_484)">
         <path

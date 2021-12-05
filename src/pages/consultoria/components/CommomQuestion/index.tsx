@@ -18,7 +18,7 @@ import {
 
 import Fade from 'react-reveal/Fade'
 
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 import { BsTriangleFill } from 'react-icons/bs'
 import { useViewportContext } from '../../../../contexts/ViewContext'
@@ -112,7 +112,7 @@ export default function CommomQuestion() {
               fontSize="0.875rem"
               fontWeight="700"
               color="white"
-              bgGradient="linear(to-t, #52011C, #cc3366)"
+              bgColor="pink.900"
               h="48px"
               textShadow="2xl"
               boxShadow="2xl"
