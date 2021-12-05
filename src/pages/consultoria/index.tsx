@@ -1,5 +1,5 @@
 import { NextPage } from 'next'
-
+import { useBreakpointValue } from '@chakra-ui/react'
 import HomeDefault from '../../shared/components/HomeDefault'
 import TestimonialsTemplate from '../../shared/components/TestimonialsTemplate'
 import CheckSession from './components/ChecksSession'
@@ -8,8 +8,16 @@ import ContractSlider from './components/ContractsSlider'
 import KnowCompaniesCommom from './components/KnowCompaniesCommom'
 import PeopleFriendly from './components/PeopleFriendly'
 import WhoIsBits from './components/WhoIsBits'
+import ContractSliderMobile from './components/CommomQuestion/ContractSliderMobile'
 
 const Consultancy: NextPage = () => {
+  const isMobile = useBreakpointValue({
+    base: true,
+    sm: false,
+    md: false,
+    xl: false,
+  })
+
   return (
     <>
       <HomeDefault
@@ -25,7 +33,7 @@ const Consultancy: NextPage = () => {
       <CheckSession />
       <PeopleFriendly />
       <WhoIsBits />
-      <ContractSlider />
+      {isMobile ? <ContractSliderMobile /> : <ContractSlider />}
       <CommomQuestion />
     </>
   )

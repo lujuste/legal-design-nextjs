@@ -10,7 +10,7 @@ export default function PeopleFriendly() {
       justify="center"
       align="center"
       mx="auto"
-      p="2rem"
+      p={['0.5rem', '0.5rem', '2rem']}
       mt="-5rem"
     >
       <Grid
@@ -30,7 +30,7 @@ export default function PeopleFriendly() {
       >
         <GridItem
           pt={['3rem', '3rem', '2rem', '1rem', '0']}
-          pb="3rem"
+          pb={['1rem', '1rem', '4.5rem']}
           alignItems="center"
           my="auto"
         >
@@ -44,7 +44,7 @@ export default function PeopleFriendly() {
         <GridItem>
           <Flex
             flexDir="column"
-            maxW={['400px', '400px', '480px', '514px']}
+            maxW={['420px', '420px', '480px', '514px']}
             mx="auto"
             h="100%"
             align="center"
@@ -63,7 +63,7 @@ export default function PeopleFriendly() {
               mt={['2rem']}
               maxW="490px"
             >
-              Além de documentos <Text color="pink.300">people friendly,</Text>{' '}
+              Além de documentos <Text color="pink.100">people friendly,</Text>{' '}
               você terá
             </Heading>
             <Text

@@ -8,23 +8,34 @@ import {
   Parallax,
 } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Flex, Heading, Text } from '@chakra-ui/react'
+import { Flex, Heading, Text, useBreakpointValue } from '@chakra-ui/react'
 
 export default function ContractSlider() {
+  const isMobile = useBreakpointValue({
+    base: true,
+    sm: false,
+    md: false,
+    xl: false,
+  })
+
   return (
     <Flex mx="auto" flexDir="column" w="100%" h="100%">
       <Flex
         maxW="100%"
-        h="100%"
-        fontSize="48px"
-        fontFamily="Raleway"
-        fontWeight="600"
+        h={['110vh', '110vh', '100%']}
         mx="auto"
         flexDir="column"
         pt="2rem"
         mt="2.5rem"
       >
-        <Heading mx="auto" maxW="700px" textAlign="center">
+        <Heading
+          fontSize={['30px', '30px', '36px', '48px']}
+          fontFamily="Raleway"
+          fontWeight="600"
+          mx="auto"
+          maxW={['360px', '360px', '500px', '1000px']}
+          textAlign="center"
+        >
           Veja o que aconteceu com os documentos{' '}
           <Text as="span" color="pink.900">
             após a aplicação do Legal Design
@@ -37,24 +48,26 @@ export default function ContractSlider() {
           w="100%"
           h="100%"
           mx="auto"
-          mt="4rem"
+          mt={['-1rem', '-1rem', '4rem']}
         >
           <Swiper
-            speed={1000}
+            speed={300}
             slidesPerView={4}
             spaceBetween={0}
             loop={true}
             modules={[Navigation, Pagination]}
             navigation={true}
-            pagination={{ clickable: true }}
             style={{ width: '100%', flex: '1' }}
             className="mySwiperNewContract"
             breakpoints={{
-              '380': {
+              '300': {
+                slidesPerView: 1,
+              },
+              '580': {
                 slidesPerView: 1,
               },
 
-              '400': {
+              '600': {
                 slidesPerView: 2,
               },
 

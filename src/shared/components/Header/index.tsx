@@ -113,7 +113,7 @@ export default function Header() {
                       ml="2rem"
                       mr="1rem"
                       color="white"
-                      w="180px"
+                      w="100%"
                       h="50"
                       bgColor="pink.900"
                       whileTap={{ scale: 1.04 }}
@@ -125,7 +125,7 @@ export default function Header() {
                         border: '1px solid #CC3366',
                       }}
                     >
-                      Fale com especialista!
+                      Fale com um especialista!
                     </MotionButton>
                   </Flex>
                 </>
@@ -226,7 +226,7 @@ export default function Header() {
                     ml="2rem"
                     mr="1rem"
                     color="white"
-                    w="180px"
+                    w="100%"
                     boxShadow="2xl"
                     h="50"
                     bgColor="pink.900"
@@ -239,7 +239,7 @@ export default function Header() {
                       border: '1px solid #CC3366',
                     }}
                   >
-                    Fale com especialista!
+                    Fale com um especialista!
                   </MotionButton>
                 </Flex>
               </>

@@ -262,13 +262,13 @@ export default function CommomQuestion() {
       {!isWideVersion && (
         <Fade bottom>
           <Button
-            mt="2rem"
+            mt="3rem"
             px="1rem"
             w="292px"
             fontSize="0.875rem"
             fontWeight="700"
             color="white"
-            bgGradient="linear(to-t, #52011C, #cc3366)"
+            bgColor="pink.900"
             h="48px"
             textShadow="2xl"
             boxShadow="2xl"
