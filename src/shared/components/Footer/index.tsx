@@ -72,10 +72,9 @@ export default function Footer() {
   })
 
   const headers = {
-    'Access-Control-Allow-Origin': '*',
     'Content-Type': 'application/json',
-    Accept: 'application/json',
-
+    'Access-Control-Allow-Origin': '*',
+    mode: 'no-cors',
     Authorization: `Api-Token: ${process.env.ACTIVE_CAMPAIGN_TOKEN}`,
   }
 

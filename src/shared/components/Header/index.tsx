@@ -104,8 +104,10 @@ export default function Header() {
                     <NavigationItem label="Legal Design" href="/legaldesign" />
                     <NavigationItem label="Consultoria" href="/consultoria" />
                     <NavigationItem label="Treinamentos" href="/treinamentos" />
-                    <NavigationItem label="Cursos" href="/cursos" />
-                    <NavigationItem label="Blog" href="/blog" />
+                    <NavigationItem
+                      label="Cursos"
+                      href="https://legaldesign.bitstechs.com/iniciante/"
+                    />
                   </Flex>
 
                   <Flex align="center" ml="auto" maxW="400px">
@@ -217,8 +219,10 @@ export default function Header() {
                   <NavigationItem label="Legal Design" href="/legaldesign" />
                   <NavigationItem label="Consultoria" href="/consultoria" />
                   <NavigationItem label="Treinamentos" href="/treinamentos" />
-                  <NavigationItem label="Cursos" href="/cursos" />
-                  <NavigationItem label="Blog" href="/blog" />
+                  <NavigationItem
+                    label="Cursos"
+                    href="https://legaldesign.bitstechs.com/iniciante/"
+                  />
                 </Flex>
 
                 <Flex align="center" ml="auto" maxW="400px">
