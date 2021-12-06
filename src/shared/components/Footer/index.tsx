@@ -30,7 +30,6 @@ import * as yup from 'yup'
 import { FieldError } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useState } from 'react'
-import api from '../../../services/api'
 
 interface InputProps {
   email?: string
@@ -54,7 +53,7 @@ export default function Footer() {
   }
 
   function tostFailure() {
-    toast.error('Erro', {
+    toast.error('Este email já está cadastrado!', {
       position: toast.POSITION.BOTTOM_CENTER,
     })
   }
@@ -72,10 +71,8 @@ export default function Footer() {
   })
 
   const headers = {
+    method: 'POST',
     'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': '*',
-    mode: 'no-cors',
-    Authorization: `Api-Token: ${process.env.ACTIVE_CAMPAIGN_TOKEN}`,
   }
 
   const onSubmit: SubmitHandler<InputProps> = async data => {
@@ -89,14 +86,13 @@ export default function Footer() {
       setLoading(true)
       console.log(dataFormatted)
 
-      await api
-        .post('/contacts', dataFormatted, {
-          headers,
-        })
-        .then(response => {
-          console.log(response)
-          toastSucess()
-        })
+      await fetch('/api/getUsers', {
+        method: 'POST',
+        headers,
+        body: dataFormatted,
+      })
+        .then(response => response.json())
+        .then(toastSucess)
         .catch(error => {
           console.log(error)
           tostFailure()
