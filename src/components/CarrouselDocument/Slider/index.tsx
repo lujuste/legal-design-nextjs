@@ -24,47 +24,58 @@ const data = [
     image: 'contrato-prestacao-servico',
   },
   {
+    title: 'Contrato de cartão de crédito',
+    image: 'contrato-de-prestacao-de-servicos-de-gestao-de-energia',
+  },
+  {
+    title: 'Contrato de locação',
+    image: 'contrato-de-locacao',
+  },
+  {
     title: 'Contrato de procuração',
-    image: 'contrato-procuracao',
+    image: 'procuracao',
   },
   {
     title: 'Códigos',
-    image: 'contrato-etica',
+    image: 'codigo-etica',
   },
   {
-    title: 'Políticas',
-    image: 'politica-cookies',
+    title: 'Política de cookies',
+    image: 'politica-de-cookies',
   },
   {
     title: 'Política de privacidade',
     image: 'politica-privacidade',
   },
   {
-    title: 'Contrato de prestação de serviços',
-    image: 'contrato-prestacao-servico',
+    title: 'Contrato de trabalho',
+    image: 'contrato-de-trabalho',
   },
   {
-    title: 'Contrato de procuração',
-    image: 'contrato-procuracao',
+    title: 'Cédula de crédito bancário',
+    image: 'cedula-de-credito-brancario',
   },
+
   {
-    title: 'Códigos',
-    image: 'contrato-etica',
+    title: 'Ata de assembléia',
+    image: 'ata-de-assembleia',
   },
+
   {
-    title: 'Políticas',
-    image: 'politica-cookies',
+    title: 'Contrato de cartão de crédito',
+    image: 'contrato-de-cartao-de-credito',
   },
+
   {
-    title: 'Política de privacidade',
-    image: 'politica-privacidade',
+    title: 'Norma de transparência',
+    image: 'norma-de-transparencia',
   },
 ]
 
 export default function Slider() {
   return (
     <Swiper
-      speed={1500}
+      speed={1900}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
@@ -116,7 +127,7 @@ export default function Slider() {
                 as="div"
                 ml="auto"
                 w="100%"
-                bgImage={`url('/images/${docs.image}.webp')`}
+                bgImage={`url('/images/${docs.image}.svg')`}
                 bgSize="contain"
                 bgRepeat="no-repeat"
                 maxW={['200px', '220x', '270px']}
@@ -144,7 +155,7 @@ export default function Slider() {
               <Flex
                 w="100%"
                 maxW={['200px', '220x', '240px']}
-                bgImage={`url('/images/${docs.image}.webp')`}
+                bgImage={`url('/images/${docs.image}.svg')`}
                 bgSize="cover"
                 bgRepeat="no-repeat"
                 h={['400px', '400px', '450px', '360px']}

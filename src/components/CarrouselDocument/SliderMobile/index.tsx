@@ -9,40 +9,51 @@ export default function SliderMobile() {
       image: 'contrato-prestacao-servico',
     },
     {
+      title: 'Contrato de cartão de crédito',
+      image: 'contrato-de-prestacao-de-servicos-de-gestao-de-energia',
+    },
+    {
+      title: 'Contrato de locação',
+      image: 'contrato-de-locacao',
+    },
+    {
       title: 'Contrato de procuração',
-      image: 'contrato-procuracao',
+      image: 'procuracao',
     },
     {
       title: 'Códigos',
-      image: 'contrato-etica',
+      image: 'codigo-etica',
     },
     {
-      title: 'Políticas',
-      image: 'politica-cookies',
+      title: 'Política de cookies',
+      image: 'politica-de-cookies',
     },
     {
       title: 'Política de privacidade',
       image: 'politica-privacidade',
     },
     {
-      title: 'Contrato de prestação de serviços',
-      image: 'contrato-prestacao-servico',
+      title: 'Contrato de trabalho',
+      image: 'contrato-de-trabalho',
     },
     {
-      title: 'Contrato de procuração',
-      image: 'contrato-procuracao',
+      title: 'Cédula de crédito bancário',
+      image: 'cedula-de-credito-brancario',
     },
+
     {
-      title: 'Códigos',
-      image: 'contrato-etica',
+      title: 'Ata de assembléia',
+      image: 'ata-de-assembleia',
     },
+
     {
-      title: 'Políticas',
-      image: 'politica-cookies',
+      title: 'Contrato de cartão de crédito',
+      image: 'contrato-de-cartao-de-credito',
     },
+
     {
-      title: 'Política de privacidade',
-      image: 'politica-privacidade',
+      title: 'Norma de transparência',
+      image: 'norma-de-transparencia',
     },
   ]
 
@@ -67,7 +78,7 @@ export default function SliderMobile() {
             maxW={['340px', '349px']}
             h={['500px', '500px', '450px', '450px']}
             align="center"
-            bgImage={`url('/images/${docs.image}.webp')`}
+            bgImage={`url('/images/${docs.image}.svg')`}
             bgSize="contain"
             bgRepeat="no-repeat"
             justify="center"
