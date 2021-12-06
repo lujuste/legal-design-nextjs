@@ -63,7 +63,7 @@ const Home: NextPage = () => {
         />
         <meta
           property="og:url"
-          content={'http://localhost:3000/'}
+          content={'https://legal-design-nextjs2.vercel.app/'}
           key="ogurl"
         />
         <meta
@@ -71,7 +71,13 @@ const Home: NextPage = () => {
           content="Legal Design - Bits Academy"
           key="ogsitename"
         />
-        <meta property="og:image" content="" key="ogimage" />
+        <meta
+          property="og:image"
+          content="https://legal-design-nextjs2.vercel.app/public/images/treinamento.png"
+          key="ogimage"
+        />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
         <meta name="twitter:card" content="Legal Design" key="twcard" />
         <meta name="twitter:creator" content="Bits Academy" key="twhandle" />
       </Head>
