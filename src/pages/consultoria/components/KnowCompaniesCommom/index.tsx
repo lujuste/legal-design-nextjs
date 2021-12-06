@@ -251,6 +251,11 @@ export default function KnowCompaniesCommom() {
           textShadow="2xl"
           boxShadow="2xl"
           mx="auto"
+          _hover={{
+            bgColor: '#fff',
+            color: 'pink.900',
+            border: '1px solid #CC3366',
+          }}
         >
           Quero que a Bits faça meu Legal Design
         </Button>

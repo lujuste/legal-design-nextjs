@@ -117,6 +117,11 @@ export default function WhyTrainningMyTeam() {
               color="white"
               px="1rem"
               fontSize="0.875rem"
+              _hover={{
+                bgColor: '#fff',
+                color: 'pink.900',
+                border: '1px solid #CC3366',
+              }}
             >
               Quero contratar o treinamento
             </Button>
@@ -303,6 +308,11 @@ export default function WhyTrainningMyTeam() {
             color="white"
             px="1rem"
             fontSize="0.875rem"
+            _hover={{
+              bgColor: '#fff',
+              color: 'pink.900',
+              border: '1px solid #CC3366',
+            }}
           >
             Quero contratar o treinamento
           </Button>

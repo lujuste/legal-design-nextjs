@@ -62,7 +62,7 @@ export default function CommomQuestion() {
   return (
     <Flex
       flexDir={['column', 'column', 'column', 'row']}
-      maxW="1400"
+      maxW="100%"
       mx="auto"
       justify="center"
       align="center"
@@ -75,7 +75,7 @@ export default function CommomQuestion() {
     >
       <Flex
         flexDir="column"
-        maxW={['264px', '264px', '264px', '400px', '518px']}
+        maxW={['264px', '264px', '264px', '400px', '518px', '1400px']}
         h="auto"
         justify="center"
         mx="auto"
@@ -116,6 +116,11 @@ export default function CommomQuestion() {
               h="48px"
               textShadow="2xl"
               boxShadow="2xl"
+              _hover={{
+                bgColor: '#fff',
+                color: 'pink.900',
+                border: '1px solid #CC3366',
+              }}
             >
               Quero contratar o treinamento
             </Button>
@@ -272,6 +277,11 @@ export default function CommomQuestion() {
             h="48px"
             textShadow="2xl"
             boxShadow="2xl"
+            _hover={{
+              bgColor: '#fff',
+              color: 'pink.900',
+              border: '1px solid #CC3366',
+            }}
           >
             Quero contratar o treinamento
           </Button>

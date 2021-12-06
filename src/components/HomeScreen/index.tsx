@@ -15,6 +15,8 @@ import { HTMLChakraProps } from '@chakra-ui/react'
 import { motion, HTMLMotionProps } from 'framer-motion'
 import { NextPage } from 'next'
 
+import Link from 'next/link'
+
 import BoxDocument from './FloatBoxItems/BoxDocument'
 import BoxPerson from './FloatBoxItems/BoxPerson'
 import BoxTime from './FloatBoxItems/BoxTime'
@@ -201,17 +203,23 @@ export default function HomeScreen(): JSX.Element {
           </Flex>
         </Flex>
         {isWideVersion && (
-          <MotionFlex
-            initial={{ scale: 1, opacity: 1 }}
-            animate={{ scale: 0.9, opacity: 1 }}
-            transition={{ repeat: Infinity, duration: 1, ease: 'easeIn' }}
-            position="fixed"
-            right="0"
-            top={['90vh']}
-            zIndex="100000"
+          <Link
+            href="https://api.whatsapp.com/send?phone=5511910534971&text=Quero%20falar%20com%20um%20especialista%20sobre%20Legal%20Design"
+            passHref
           >
-            <FloatWhatsapp />
-          </MotionFlex>
+            <MotionFlex
+              initial={{ scale: 1, opacity: 1 }}
+              animate={{ scale: 0.9, opacity: 1 }}
+              transition={{ repeat: Infinity, duration: 1, ease: 'easeIn' }}
+              position="fixed"
+              cursor="pointer"
+              right="0"
+              top={['90vh']}
+              zIndex="100000"
+            >
+              <FloatWhatsapp />
+            </MotionFlex>
+          </Link>
         )}
       </Flex>
     </>

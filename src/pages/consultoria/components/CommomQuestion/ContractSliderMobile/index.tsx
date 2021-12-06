@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from '@chakra-ui/react'
+import { Flex, Heading, Text, Button } from '@chakra-ui/react'
 import Image from 'next/image'
 import { Navigation, Pagination, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -81,6 +81,16 @@ export default function ContractSliderMobile() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <Button
+        bgColor="pink.900"
+        fontSize="13px"
+        color="white"
+        px="1rem"
+        maxW="300px"
+        h="45px"
+      >
+        Quero que a Bits faça meu Legal Design
+      </Button>
     </Flex>
   )
 }

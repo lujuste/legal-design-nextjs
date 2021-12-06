@@ -8,7 +8,13 @@ import {
   Parallax,
 } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Flex, Heading, Text, useBreakpointValue } from '@chakra-ui/react'
+import {
+  Flex,
+  Heading,
+  Text,
+  useBreakpointValue,
+  Button,
+} from '@chakra-ui/react'
 
 export default function ContractSlider() {
   const isMobile = useBreakpointValue({
@@ -158,6 +164,25 @@ export default function ContractSlider() {
           </Swiper>
         </Flex>
       </Flex>
+      <Button
+        bgColor="pink.900"
+        fontSize="14px"
+        color="white"
+        px="1rem"
+        w="100%"
+        maxW="300px"
+        mx="auto"
+        mt="-2rem"
+        h="50px"
+        mb="4rem"
+        _hover={{
+          bgColor: '#fff',
+          color: 'pink.900',
+          border: '1px solid #CC3366',
+        }}
+      >
+        Quero que a Bits faça meu Legal Design
+      </Button>
     </Flex>
   )
 }

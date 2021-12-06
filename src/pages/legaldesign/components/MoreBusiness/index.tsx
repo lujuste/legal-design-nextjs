@@ -66,6 +66,11 @@ export default function MoreBusiness() {
             h="50px"
             bgColor="pink.900"
             color="white"
+            _hover={{
+              bgColor: '#fff',
+              color: 'pink.900',
+              border: '1px solid #CC3366',
+            }}
           >
             Falar com um Legal Designer
           </Button>

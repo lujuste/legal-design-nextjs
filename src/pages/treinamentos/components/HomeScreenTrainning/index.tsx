@@ -117,6 +117,11 @@ export default function HomeScreenTrainning() {
           initial={{ y: '10vh', opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: 'spring', duration: 1, bounce: 0.3 }}
+          _hover={{
+            bgColor: '#fff',
+            color: 'pink.900',
+            border: '1px solid #CC3366',
+          }}
         >
           Quero treinar meu time
         </MotionButton>

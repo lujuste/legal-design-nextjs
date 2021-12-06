@@ -112,6 +112,11 @@ export default function WhyLegalDesign() {
           bgColor="pink.900"
           type="button"
           fontSize="14px"
+          _hover={{
+            bgColor: '#fff',
+            color: 'pink.900',
+            border: '1px solid #CC3366',
+          }}
         >
           Quero ver mais exemplos
         </Button>

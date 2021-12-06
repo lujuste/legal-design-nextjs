@@ -94,6 +94,11 @@ export default function ItWorkTrainning() {
           h="50px"
           color="white"
           mt={['4rem', '4rem', '3rem', '1rem']}
+          _hover={{
+            bgColor: '#fff',
+            color: 'pink.900',
+            border: '1px solid #CC3366',
+          }}
         >
           Quero contratar o treinamento
         </Button>
