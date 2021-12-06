@@ -355,6 +355,7 @@ export default function Customers() {
                   width={docs.width}
                   height={docs.size}
                   quality={100}
+                  priority={true}
                   src={`/images/${docs.image}.svg`}
                 />
               </Box>
