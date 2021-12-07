@@ -55,54 +55,67 @@ export default function WhoIsBits() {
                 <CountryIcon />
               </Fade>
               <Fade bottom>
-                <Text>
-                  Departamentos Jurídicos que querem melhorar a experiência do
-                  cliente interno e externo.
-                </Text>
+                <Text maxW="120px">Referência em Legal Design no Brasil.</Text>
               </Fade>
             </Flex>
-            <Flex align="center" maxW="322px" flexDir="column">
+            <Flex
+              mt={['2rem', '2rem', '2rem', 0]}
+              align="center"
+              maxW="322px"
+              flexDir="column"
+            >
               <Fade bottom>
                 <CompaniesIcon />
               </Fade>
               <Fade bottom>
-                <Text maxW="322px">
-                  Escritórios de advocacia que querem trazer mais resultados
-                  para os seus clientes e transformá-los em fãs.
+                <Text maxW="262px">
+                  Fez a primeira pesquisa para entender o comportamento do
+                  usuário em documentos jurídicos.
                 </Text>
               </Fade>
             </Flex>
-            <Flex align="center" maxW="322px" flexDir="column">
+            <Flex
+              mt={['2rem', '2rem', '2rem', 0]}
+              align="center"
+              maxW="322px"
+              flexDir="column"
+            >
               <Fade bottom>
                 <PeoplesIcon />
               </Fade>
               <Fade bottom>
-                <Text>
-                  Equipes de órgãos públicos que querem trazer uma melhor
-                  acessibilidade aos direitos.
+                <Text maxW="180px">
+                  Fez o primeiro livro em Legal Design na América Latina.
                 </Text>
               </Fade>
             </Flex>
-            <Flex align="center" maxW="322px" flexDir="column">
+            <Flex
+              mt={['2rem', '2rem', '2rem', 0]}
+              align="center"
+              maxW="322px"
+              flexDir="column"
+            >
               <Fade bottom>
                 <SearchIcon />
               </Fade>
               <Fade bottom>
-                <Text>
-                  Equipes de órgãos públicos que querem trazer uma melhor
-                  acessibilidade aos direitos.
+                <Text maxW="180px">
+                  Já transformou os documentos jurídicos das maiores empresas do
+                  Brasil.
                 </Text>
               </Fade>
             </Flex>
-            <Flex align="center" maxW="322px" flexDir="column">
+            <Flex
+              mt={['2rem', '2rem', '2rem', 0]}
+              align="center"
+              maxW="322px"
+              flexDir="column"
+            >
               <Fade bottom>
                 <BookIcon />
               </Fade>
               <Fade bottom>
-                <Text>
-                  Equipes de órgãos públicos que querem trazer uma melhor
-                  acessibilidade aos direitos.
-                </Text>
+                <Text maxW="180px">Temos um time composto.</Text>
               </Fade>
             </Flex>
           </Grid>

@@ -12,7 +12,9 @@ const dataContracts = [
   { image: '01', alternative: 'Contrato transformado com o legal design' },
   { image: '02', alternative: 'Contrato transformado com o legal design' },
   { image: '03', alternative: 'Contrato transformado com o legal design' },
+
   { image: '04', alternative: 'Contrato transformado com o legal design' },
+
   { image: '05', alternative: 'Contrato transformado com o legal design' },
   { image: '06', alternative: 'Contrato transformado com o legal design' },
   { image: '07', alternative: 'Contrato transformado com o legal design' },
