@@ -50,7 +50,8 @@ export default function SliderTestimonialsMobile() {
                 color="white"
                 maxW="400px"
                 w="100%"
-                fontSize={['15px', '15px', '16px']}
+                mt="-1.5rem"
+                fontSize={['14px', '14px', '15px']}
                 textAlign="center"
                 px={['20px', '20px', '0']}
               >
