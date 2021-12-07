@@ -3,13 +3,9 @@ import Image from 'next/image'
 
 interface ContractImageProps {
   imagePath: string
-  placeholder: string
 }
 
-export default function ContractImage({
-  imagePath,
-  placeholder,
-}: ContractImageProps) {
+export default function ContractImage({ imagePath }: ContractImageProps) {
   return (
     <Flex ml="1rem">
       <Image
@@ -17,9 +13,7 @@ export default function ContractImage({
         height="700px"
         src={`/images/${imagePath}.svg`}
         alt={imagePath}
-        blurDataURL={placeholder}
         priority
-        placeholder="blur"
         quality={100}
       />
     </Flex>
