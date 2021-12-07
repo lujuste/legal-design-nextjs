@@ -2,22 +2,7 @@ import { Flex, Heading, Text, Button } from '@chakra-ui/react'
 import Image from 'next/image'
 import { Navigation, Pagination, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-
-const data = [
-  {
-    image: '01',
-  },
-  {
-    image: '02',
-  },
-  {
-    image: '03',
-  },
-  {
-    image: '04',
-  },
-]
-
+import { dataContracts } from '../../ContractsSlider'
 export default function ContractSliderMobile() {
   return (
     <Flex
@@ -57,7 +42,7 @@ export default function ContractSliderMobile() {
         centeredSlides={true}
         watchSlidesProgress
       >
-        {data.map(docs => (
+        {dataContracts.map(docs => (
           <SwiperSlide>
             <Flex
               key={docs.image}

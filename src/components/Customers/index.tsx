@@ -27,59 +27,59 @@ const dataCustomers = [
   {
     description: 'Consultoria em Legal Design',
     image: '2wenergia',
-    size: '15.61px',
-    width: '82px',
+    size: 15.61,
+    width: 82,
   },
   {
     description: 'Consultoria em Legal Design',
     image: 'alliance',
-    size: '19.28px',
-    width: '80px',
+    size: 19.28,
+    width: 80,
   },
 
   {
     description: 'Curso de Legal Design para uma pessoa do time.',
     image: 'arcelor-mittal',
-    size: '29.28px',
-    width: '102.77px',
+    size: 29.28,
+    width: 102.77,
   },
   {
     description: 'Consultoria de documentos em Legal Design.',
     image: 'background-brasil',
-    size: '28px',
-    width: '80px',
+    size: 28,
+    width: 80,
   },
 
   {
     description: 'Consultoria em Legal Design',
     image: 'banco-sofisa',
-    size: '19.28px',
-    width: '80px',
+    size: 19.28,
+    width: 80,
   },
 
   {
     description: 'Curso de Legal Design para 3 pessoas do time.',
     image: 'bndes',
-    size: '17.56px',
-    width: '85px',
+    size: 17.56,
+    width: 85,
   },
   {
     description: 'Consultoria em Legal Design.',
     image: 'brasil-prev',
-    size: '24.39px',
-    width: '80px',
+    size: 24.39,
+    width: 80,
   },
   {
     description: 'Consultoria em Legal Design.',
     image: 'carrefour-banco',
-    size: '18.31px',
-    width: '80px',
+    size: 18.31,
+    width: 80,
   },
   {
     description: 'Consultoria em Legal Design.',
     image: 'carrefour',
-    size: '64.58px',
-    width: '80px',
+    size: 63.58,
+    width: 80,
   },
   {
     description: 'Curso de Legal Design para 3 pessoas do time.',
@@ -206,14 +206,14 @@ const dataCustomers = [
   {
     description: 'Consultoria em Legal Design',
     image: 'transformacao-digital',
-    size: '11.57px',
-    width: '80px',
+    size: 11.57,
+    width: 80,
   },
   {
     description: 'Treinamento em Legal Design',
     image: 'veirano',
-    size: '26.34px',
-    width: '80px',
+    size: 26.34,
+    width: 80,
   },
 ]
 
@@ -346,15 +346,18 @@ export default function Customers() {
                 cursor="pointer"
                 display="flex"
                 justifyContent="center"
-                w={['100%', '100%']}
-                h="100px"
+                w={'100%'}
+                h="90px"
                 onClick={() => changeDescription(docs.description)}
               >
-                <img
+                <Image
                   alt={docs.description}
                   width={docs.width}
                   height={docs.size}
+                  quality={100}
+                  priority={true}
                   src={`/images/${docs.image}.svg`}
+                  objectFit="contain"
                 />
               </Box>
             </MotionGridItem>
