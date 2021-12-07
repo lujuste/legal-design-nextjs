@@ -3,6 +3,7 @@ import { ReactElement } from 'react'
 import SpinButton from '../SpinButton'
 import { useState } from 'react'
 import ReactCardFlip from 'react-card-flip'
+import SpinButtonWhite from '../CardTrainning/SpinButtonWhite'
 
 interface CardMobileProps {
   title: string
@@ -103,7 +104,7 @@ export default function CardMobile({
               border: 'none',
             }}
           >
-            <SpinButton />
+            <SpinButtonWhite />
           </Button>
           <Text
             color="white"
