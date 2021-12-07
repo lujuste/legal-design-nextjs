@@ -9,6 +9,10 @@ export default function MobileNav() {
 
   const menu = [
     {
+      page: 'Início',
+      url: '/',
+    },
+    {
       page: 'Legal Design',
       url: '/legaldesign',
     },
@@ -23,14 +27,6 @@ export default function MobileNav() {
     {
       page: 'Cursos',
       url: '/cursos',
-    },
-    {
-      page: 'Blog',
-      url: '/blog',
-    },
-    {
-      page: 'Contrato automático',
-      url: '/',
     },
   ]
 

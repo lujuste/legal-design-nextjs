@@ -8,6 +8,21 @@ export default function SliderMobile() {
       title: 'Contrato de prestação de serviços',
       image: 'contrato-prestacao-servico',
     },
+
+    {
+      title: 'Ata de assembléia',
+      image: 'ata-de-assembleia',
+    },
+
+    {
+      title: 'Contrato de cartão de crédito',
+      image: 'contrato-de-cartao-de-credito',
+    },
+
+    {
+      title: 'Norma de transparência',
+      image: 'norma-de-transparencia',
+    },
     {
       title: 'Contrato de cartão de crédito',
       image: 'contrato-de-prestacao-de-servicos-de-gestao-de-energia',
@@ -29,10 +44,6 @@ export default function SliderMobile() {
       image: 'politica-de-cookies',
     },
     {
-      title: 'Política de privacidade',
-      image: 'politica-privacidade',
-    },
-    {
       title: 'Contrato de trabalho',
       image: 'contrato-de-trabalho',
     },
@@ -40,20 +51,9 @@ export default function SliderMobile() {
       title: 'Cédula de crédito bancário',
       image: 'cedula-de-credito-brancario',
     },
-
     {
-      title: 'Ata de assembléia',
-      image: 'ata-de-assembleia',
-    },
-
-    {
-      title: 'Contrato de cartão de crédito',
-      image: 'contrato-de-cartao-de-credito',
-    },
-
-    {
-      title: 'Norma de transparência',
-      image: 'norma-de-transparencia',
+      title: 'Política de privacidade',
+      image: 'politica-privacidade',
     },
   ]
 
@@ -63,7 +63,7 @@ export default function SliderMobile() {
       navigation
       pagination={{ clickable: true }}
       style={{ width: '100%', flex: '1' }}
-      initialSlide={2}
+      initialSlide={0}
       modules={[Navigation, Pagination, A11y]}
       spaceBetween={5}
       centeredSlides={true}
@@ -80,6 +80,7 @@ export default function SliderMobile() {
             align="center"
             bgImage={`url('/images/${docs.image}.svg')`}
             bgSize="contain"
+            objectPosition="center"
             bgRepeat="no-repeat"
             justify="center"
             direction="column"
