@@ -5,7 +5,15 @@ import { Flex, Heading, Text, Box, Avatar, VStack } from '@chakra-ui/react'
 export const dataTestimonials = [
   {
     name: 'Alissom',
-    image: 'alisson',
+    image: 'Alisson',
+    description: 'foto do Alisson aluno de legal design',
+    testimonial:
+      'O curso de Legal Design da Bits Academy foi uma excelente oportunidade de conhecer excelentes profissionais e compreender técnicas de inovação aplicadas ao Direito, assim como proporcionou diversos insights para o dia a dia do escritório que estão gerando excelentes resultados e aumento da satisfação dos clientes.',
+    employment: 'Aluno de Legal Design Básico',
+  },
+  {
+    name: 'Andressa Barros',
+    image: 'cogna',
     description: 'foto do Alisson aluno de legal design',
     testimonial:
       'O curso de Legal Design da Bits Academy foi uma excelente oportunidade de conhecer excelentes profissionais e compreender técnicas de inovação aplicadas ao Direito, assim como proporcionou diversos insights para o dia a dia do escritório que estão gerando excelentes resultados e aumento da satisfação dos clientes.',
@@ -14,10 +22,10 @@ export const dataTestimonials = [
   {
     name: 'Juliana Coelho',
     image: 'Juliana',
-    description: 'foto da juliana aluno de legal design',
+    description: 'foto da Juliana Coelho aluna de legal design',
     testimonial:
       'Tivemos oportunidades de desvendar na prática o design, ainda muito desconhecido no direito. Assim, passamos a proporcionar uma prestação de serviços inovadora, voltada para as reais necessidades dos nossos clientes, desmistificando o estereótipo de que o jurídico tem que ser algo inacessível e incompreensível.',
-    employment: 'Aluna de Legal Design Básico',
+    employment: 'Fragata e Antunes Advogados/Cogna',
   },
   {
     name: 'Gabriela Galvão',

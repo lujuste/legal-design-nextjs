@@ -18,7 +18,15 @@ const ContractImageNoSSRComponent = dynamic(() => import('../ContractImage'), {
 
 export default function LegalDesignComparation() {
   return (
-    <Flex px="2rem" w="100%" maxW="1400" justify="center" mx="auto" mt="2rem">
+    <Flex
+      px="2rem"
+      mr="2rem"
+      w="100%"
+      maxW="1400"
+      justify="center"
+      mx="auto"
+      mt="2rem"
+    >
       <Flex mt="-4.5rem" flexDir="column">
         <Text
           fontSize="25px"
@@ -27,11 +35,14 @@ export default function LegalDesignComparation() {
           color="pink.900"
           transform="translateY(100px)"
           mx="auto"
-          pl="14rem"
+          pl="13rem"
         >
           antes
         </Text>
-        <ContractImageNoSSRComponent imagePath="contract-before" />
+        <Flex maxW="488px" h="700px">
+          {' '}
+          <ContractImageNoSSRComponent imagePath="contract-before" />
+        </Flex>
       </Flex>
 
       <Flex mt="-4.5rem" flexDir="column">
@@ -46,6 +57,7 @@ export default function LegalDesignComparation() {
         >
           depois
         </Text>
+
         <ContractImageNoSSRComponent imagePath="desktop-background-red" />
       </Flex>
     </Flex>

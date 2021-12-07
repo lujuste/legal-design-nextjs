@@ -12,8 +12,9 @@ export default function ContractImage({ imagePath }: ContractImageProps) {
         width="500px"
         height="700px"
         src={`/images/${imagePath}.svg`}
-        alt=""
-        loading="lazy"
+        alt={imagePath}
+        priority
+        quality={100}
       />
     </Flex>
   )

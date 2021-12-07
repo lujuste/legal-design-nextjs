@@ -19,10 +19,6 @@ interface CustomerProps {
   image: string
 }
 
-interface CustomerData {
-  customers: CustomerProps[]
-}
-
 const dataCustomers = [
   {
     description: 'Consultoria em Legal Design',

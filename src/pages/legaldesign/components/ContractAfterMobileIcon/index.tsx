@@ -5914,5 +5914,5 @@ export default function ContractAfterMobileIcon() {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }

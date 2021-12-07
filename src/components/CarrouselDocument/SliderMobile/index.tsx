@@ -83,6 +83,7 @@ export default function SliderMobile() {
             bgRepeat="no-repeat"
             justify="center"
             direction="column"
+            bgPosition="center"
             mt="1rem"
             mx="auto"
           >

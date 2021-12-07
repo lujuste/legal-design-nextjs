@@ -312,12 +312,12 @@ export default function CheckSession() {
               color="pink.900"
             />
             <Text>
-              Uma maior{' '}
+              Oferecer uma{' '}
               <Text as="span" sx={{ color: 'pink.900' }}>
                 {' '}
-                taxa de sucesso{' '}
+                melhor experiência{' '}
               </Text>{' '}
-              em ações no judiciário
+              para o usuário
             </Text>
           </MotionListItem>
           <MotionListItem
@@ -340,12 +340,11 @@ export default function CheckSession() {
               color="pink.900"
             />
             <Text>
-              Uma maior{' '}
+              Que o jurídico seja um{' '}
               <Text as="span" sx={{ color: 'pink.900' }}>
                 {' '}
-                taxa de sucesso{' '}
+                departamento estratégico{' '}
               </Text>{' '}
-              em ações no judiciário
             </Text>
           </MotionListItem>
           <MotionListItem
@@ -368,12 +367,11 @@ export default function CheckSession() {
               color="pink.900"
             />
             <Text>
-              Uma maior{' '}
+              Metrificar{' '}
               <Text as="span" sx={{ color: 'pink.900' }}>
                 {' '}
-                taxa de sucesso{' '}
+                resultados{' '}
               </Text>{' '}
-              em ações no judiciário
             </Text>
           </MotionListItem>
         </List>

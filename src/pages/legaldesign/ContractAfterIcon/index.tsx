@@ -5917,5 +5917,5 @@ export default function ContractBeforeIcon() {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }
