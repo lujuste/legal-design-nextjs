@@ -28,7 +28,7 @@ const dataCustomers = [
     description: 'Consultoria em Legal Design',
     image: '2wenergia',
     size: 15.61,
-    width: 82,
+    width: 80,
   },
   {
     description: 'Consultoria em Legal Design',
@@ -47,7 +47,7 @@ const dataCustomers = [
     description: 'Consultoria de documentos em Legal Design.',
     image: 'background-brasil',
     size: 28,
-    width: 80,
+    width: 90,
   },
 
   {
@@ -67,153 +67,153 @@ const dataCustomers = [
     description: 'Consultoria em Legal Design.',
     image: 'brasil-prev',
     size: 24.39,
-    width: 80,
+    width: 90,
   },
   {
     description: 'Consultoria em Legal Design.',
-    image: 'carrefour-banco',
-    size: 18.31,
-    width: 80,
+    image: 'carrefour-branco',
+    size: 38.31,
+    width: 99,
   },
   {
     description: 'Consultoria em Legal Design.',
     image: 'carrefour',
-    size: 63.58,
-    width: 80,
+    size: 82.58,
+    width: 92,
   },
   {
     description: 'Curso de Legal Design para 3 pessoas do time.',
     image: 'chesf',
-    size: '34.7px',
-    width: '80px',
+    size: 34.7,
+    width: 100,
   },
   {
     description: 'Consultoria e treinamento de Legal Design.',
     image: 'cogna',
-    size: '29.27px',
-    width: '80px',
+    size: 29.27,
+    width: 96,
   },
   {
     description: 'Consultoria em Legal Design.',
     image: 'cyrela',
-    size: '21.46px',
-    width: '80px',
+    size: 21.46,
+    width: 96,
   },
   {
     description: 'Consultoria em Legal Design.',
     image: 'dasa',
-    size: '26.02px',
-    width: '80px',
+    size: 26.02,
+    width: 90,
   },
 
   {
     description: 'Consultoria em Legal Design.',
     image: 'energisa',
-    size: '26.02px',
-    width: '80px',
+    size: 26.02,
+    width: 90,
   },
   {
     description:
       'Curso customizado de Legal Design para o departamento jurídico.',
     image: 'equatorial',
-    size: '23.13px',
-    width: '80px',
+    size: 23.13,
+    width: 100,
   },
 
   {
     description:
       'Curso customizado de Legal Design para o time da América Latina.',
     image: 'kraft-heinz',
-    size: '13.66px',
-    width: '80px',
+    size: 13.66,
+    width: 100,
   },
   {
     description: 'Consultoria de documento em Legal Design.',
     image: 'lobby',
-    size: '23.41px',
-    width: '80px',
+    size: 23.41,
+    width: 90,
   },
 
   {
     description: 'Curso de Legal Design para grupo de colaboradores.',
     image: 'max-milhas',
-    size: '22.17px',
-    width: '80px',
+    size: 42.17,
+    width: 100,
   },
 
   {
     description: 'Treinamento em Legal Design.',
     image: 'mrv',
-    size: '22.17px',
-    width: '80px',
+    size: 22.17,
+    width: 80,
   },
   {
     description:
       'Treinamento de Legal Design para treinar o departamento jurídico.',
     image: 'saint-gobain',
-    size: '80px',
-    width: '72.77px',
+    size: 90,
+    width: 100.77,
   },
   {
     description: 'Consultoria de uma série de documentos.',
     image: 'santander',
-    size: '13.49px',
-    width: '80px',
+    size: 40.49,
+    width: 120,
   },
   {
     description: 'Consultoria em Legal Design.',
     image: 'santos-brasil',
-    size: '58.54px',
-    width: '80px',
+    size: 78.54,
+    width: 100,
   },
   {
     description: 'Consultoria em Legal Design.',
     image: 'sercesp',
-    size: '12.53px',
-    width: '80px',
+    size: 20.53,
+    width: 100,
   },
   {
     description: 'Consultoria de uma série de documentos.',
     image: 'seusdados',
-    size: '14.46px',
-    width: '80px',
+    size: 14.46,
+    width: 80,
   },
   {
     description: 'Consultoria em Legal Design.',
     image: 'sicredi',
-    size: '18.31px',
-    width: '80px',
+    size: 18.31,
+    width: 80,
   },
   {
     description: 'Consultoria e treinamento de Legal Design.',
     image: 'smu',
-    size: '69.4px',
-    width: '80px',
+    size: 69.4,
+    width: 80,
   },
 
   {
     description: 'Consultoria de uma série de documentos.',
     image: 'spic',
-    size: '28.03px',
-    width: '80px',
+    size: 28.03,
+    width: 80,
   },
   {
     description: 'Consultoria em Legal Design',
     image: 'tecban',
-    size: '26.99px',
-    width: '80px',
+    size: 36.99,
+    width: 100,
   },
   {
     description: 'Consultoria em Legal Design',
     image: 'transformacao-digital',
-    size: 11.57,
-    width: 80,
+    size: 21.57,
+    width: 90,
   },
   {
     description: 'Treinamento em Legal Design',
     image: 'veirano',
-    size: 26.34,
-    width: 80,
+    size: 50,
+    width: 124,
   },
 ]
 
@@ -240,7 +240,7 @@ export default function Customers() {
     <Flex
       h="100%"
       w="100%"
-      maxW={1400}
+      maxW={1500}
       mx="auto"
       px={['1rem', '5rem']}
       justify="space-around"
@@ -330,7 +330,7 @@ export default function Customers() {
             'repeat(6, 1fr)',
             'repeat(10, 1fr)',
           ]}
-          gap={['0.2rem', '0.2rem', '0rem']}
+          gap={['0.2rem', '0.5rem', '0.9rem']}
           initial="hidden"
           animate="visible"
           variants={animationFlex}
@@ -346,8 +346,8 @@ export default function Customers() {
                 cursor="pointer"
                 display="flex"
                 justifyContent="center"
-                w={'100%'}
-                h="90px"
+                w={['100%']}
+                h={['90px', '100px', '100px', '100%']}
                 onClick={() => changeDescription(docs.description)}
               >
                 <Image
