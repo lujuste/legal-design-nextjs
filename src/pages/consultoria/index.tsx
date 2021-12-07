@@ -1,4 +1,5 @@
 import { NextPage } from 'next'
+import Head from 'next/head'
 import { useBreakpointValue } from '@chakra-ui/react'
 import HomeDefault from '../../shared/components/HomeDefault'
 import TestimonialsTemplate from '../../shared/components/TestimonialsTemplate'
@@ -20,6 +21,44 @@ const Consultancy: NextPage = () => {
 
   return (
     <>
+      <Head>
+        <title>Legal Design - Consultoria </title>
+        <meta
+          name="description"
+          content="Tornamos documentos jurídicos mais amigáveis. Legal Design e Bits Academy "
+        />
+        <meta charSet="utf-8" />
+        <meta
+          property="og:title"
+          content="Legal Design - Consultoria - Bits Academy"
+          key="ogtitle"
+        />
+        +{' '}
+        <meta
+          property="og:description"
+          content="Entender um documento jurídico pode ser uma tarefa muito complexa. Com o Legal Design, além de tornar a comunicação mais fácil, você gera mais vendas, aumenta a satisfação dos clientes, elimina a burocracia, evita inadimplemento e torna melhor a experiência do usuário."
+          key="ogdesc"
+        />
+        <meta
+          property="og:url"
+          content={'https://legal-design-nextjs2.vercel.app/'}
+          key="ogurl"
+        />
+        <meta
+          property="og:site_name"
+          content="Legal Design - Bits Academy"
+          key="ogsitename"
+        />
+        <meta
+          property="og:image"
+          content="https://legal-design-nextjs2.vercel.app/public/images/treinamento.png"
+          key="ogimage"
+        />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
+        <meta name="twitter:card" content="Legal Design" key="twcard" />
+        <meta name="twitter:creator" content="Bits Academy" key="twhandle" />
+      </Head>
       <HomeDefault
         buttonText="Quero que a bits faça meu Legal Design"
         title="Consultoria"

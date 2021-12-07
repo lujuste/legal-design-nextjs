@@ -44,7 +44,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Legal Design - Bits Academy </title>
+        <title>Legal Design - Home </title>
         <meta
           name="description"
           content="Tornamos documentos jurídicos mais amigáveis. Legal Design e Bits Academy "
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
         <meta charSet="utf-8" />
         <meta
           property="og:title"
-          content="Legal Design - Bits Academy"
+          content="Legal Design - Home - Bits Academy"
           key="ogtitle"
         />
         +{' '}
