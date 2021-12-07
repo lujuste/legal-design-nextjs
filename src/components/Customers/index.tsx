@@ -350,12 +350,10 @@ export default function Customers() {
                 h="100px"
                 onClick={() => changeDescription(docs.description)}
               >
-                <Image
+                <img
                   alt={docs.description}
                   width={docs.width}
                   height={docs.size}
-                  quality={100}
-                  priority={true}
                   src={`/images/${docs.image}.svg`}
                 />
               </Box>
