@@ -1,12 +1,4 @@
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  EffectCreative,
-  Autoplay,
-  Parallax,
-} from 'swiper'
+import { Navigation, Pagination } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import {
   Flex,
@@ -16,14 +8,17 @@ import {
   Button,
 } from '@chakra-ui/react'
 
-export default function ContractSlider() {
-  const isMobile = useBreakpointValue({
-    base: true,
-    sm: false,
-    md: false,
-    xl: false,
-  })
+const dataContracts = [
+  { image: '01', alternative: 'Contrato transformado com o legal design' },
+  { image: '02', alternative: 'Contrato transformado com o legal design' },
+  { image: '03', alternative: 'Contrato transformado com o legal design' },
+  { image: '04', alternative: 'Contrato transformado com o legal design' },
+  { image: '05', alternative: 'Contrato transformado com o legal design' },
+  { image: '06', alternative: 'Contrato transformado com o legal design' },
+  { image: '07', alternative: 'Contrato transformado com o legal design' },
+]
 
+export default function ContractSlider() {
   return (
     <Flex mx="auto" flexDir="column" w="100%" h="100%">
       <Flex
@@ -92,75 +87,25 @@ export default function ContractSlider() {
               },
             }}
           >
-            <SwiperSlide>
-              <Flex
-                as="div"
-                bgImage="url('/images/01.svg')"
-                bgSize="contain"
-                bgRepeat="no-repeat"
-                maxW="427px"
-                h="458px"
-                align="center"
-                justify="center"
-                direction="column"
-                bgColor="transparent"
-                mx="auto"
-                transition="linear"
-                className="slider111"
-              ></Flex>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Flex
-                as="div"
-                bgImage="url('/images/02.svg')"
-                bgSize="contain"
-                bgRepeat="no-repeat"
-                maxW="427px"
-                h="458px"
-                align="center"
-                justify="center"
-                direction="column"
-                bgColor="transparent"
-                mx="auto"
-                transition="linear"
-                className="slider111"
-              ></Flex>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <Flex
-                as="div"
-                bgImage="url('/images/03.svg')"
-                bgSize="contain"
-                bgRepeat="no-repeat"
-                maxW="427px"
-                h="458px"
-                align="center"
-                justify="center"
-                direction="column"
-                bgColor="transparent"
-                mx="auto"
-                transition="linear"
-                className="slider111"
-              ></Flex>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Flex
-                as="div"
-                bgImage="url('/images/04.svg')"
-                bgSize="contain"
-                bgRepeat="no-repeat"
-                maxW="427px"
-                h="458px"
-                align="center"
-                justify="center"
-                direction="column"
-                bgColor="transparent"
-                mx="auto"
-                transition="linear"
-                className="slider111"
-              ></Flex>
-            </SwiperSlide>
+            {dataContracts.map(item => (
+              <SwiperSlide>
+                <Flex
+                  as="div"
+                  bgImage={`url('/images/${item.image}.svg')`}
+                  bgSize="contain"
+                  bgRepeat="no-repeat"
+                  maxW="427px"
+                  h="458px"
+                  align="center"
+                  justify="center"
+                  direction="column"
+                  bgColor="transparent"
+                  mx="auto"
+                  transition="linear"
+                  className="slider111"
+                ></Flex>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </Flex>
       </Flex>
