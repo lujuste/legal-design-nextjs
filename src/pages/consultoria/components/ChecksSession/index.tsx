@@ -273,7 +273,7 @@ export default function CheckSession() {
             animate={animation}
           >
             <ListIcon
-              mt="0.4rem"
+              mt={['1rem', '1rem', '0.4rem']}
               textAlign="justify"
               justifyItems="initial"
               transform="rotate(90deg)"

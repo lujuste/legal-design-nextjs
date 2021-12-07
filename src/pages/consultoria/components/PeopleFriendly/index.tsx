@@ -4,21 +4,21 @@ import Image from 'next/image'
 export default function PeopleFriendly() {
   return (
     <Flex
-      bgColor="pink.900"
+      bgColor="white"
       w="100%"
       h="100%"
       justify="center"
       align="center"
       mx="auto"
-      p={['0.5rem', '0.5rem', '2rem']}
+      p={['0.5rem', '0.5rem', '1rem']}
       mt="-5rem"
     >
       <Grid
         templateColumns={[
           'repeat(1, 1fr)',
           'repeat(1, 1fr)',
-          'repeat(1, 1fr)',
-          'repeat(1, 1fr)',
+          'repeat(2, 1fr)',
+          'repeat(2, 1fr)',
           'repeat(2, 1fr)',
           'repeat(2, 1fr)',
         ]}
@@ -29,15 +29,15 @@ export default function PeopleFriendly() {
         p={['1rem', '1rem', '3rem']}
       >
         <GridItem
-          pt={['3rem', '3rem', '2rem', '1rem', '0']}
+          pt={['1rem', '1rem', '2rem', '1rem', '0']}
           pb={['1rem', '1rem', '4.5rem']}
           alignItems="center"
           my="auto"
         >
           <Image
-            width={600}
-            height={322}
-            src="/images/dashboard.webp"
+            width={800}
+            height={622}
+            src="/images/dashboard2.webp"
             quality={100}
           />
         </GridItem>
@@ -53,7 +53,7 @@ export default function PeopleFriendly() {
             <Heading
               alignItems="center"
               justifyContent="center"
-              color="white"
+              color="black"
               mb="1rem"
               fontSize={['1.875rem', '1.875rem', '1.875rem', '3rem', '3rem']}
               textAlign="center"
@@ -63,12 +63,12 @@ export default function PeopleFriendly() {
               mt={['2rem']}
               maxW="490px"
             >
-              Além de documentos <Text color="pink.100">people friendly,</Text>{' '}
+              Além de documentos <Text color="pink.900">people friendly,</Text>{' '}
               você terá
             </Heading>
             <Text
               mt="1rem"
-              color="white"
+              color="black"
               maxW="402px"
               fontSize="1rem"
               textAlign="center"
