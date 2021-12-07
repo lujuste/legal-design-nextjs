@@ -223,6 +223,8 @@ export default function KnowCompaniesCommom() {
                 height={docs.size}
                 quality={100}
                 src={`/images/${docs.image}.svg`}
+                objectFit="contain"
+                priority
               />
             </Box>
           </GridItem>
