@@ -117,7 +117,7 @@ export default function ContractSlider() {
         w="100%"
         maxW="300px"
         mx="auto"
-        mt="-2rem"
+        mt={['-2rem', '-2rem', '-2rem', '-2rem', '-2rem', '4rem']}
         h="50px"
         mb="4rem"
         _hover={{
