@@ -85,7 +85,15 @@ export default function SliderTestimonialsDesk() {
                   w="100%"
                   h="424px"
                 >
-                  <Text color="white" maxW="500px" w="100%" fontSize="14px">
+                  <Text
+                    mt="-1rem"
+                    color="white"
+                    maxW="450px"
+                    w="100%"
+                    fontSize="14px"
+                    px="0.5rem"
+                    textAlign="center"
+                  >
                     {' '}
                     {`"${item.testimonial}"`}{' '}
                   </Text>
@@ -131,7 +139,13 @@ export default function SliderTestimonialsDesk() {
                   w="100%"
                   h="424px"
                 >
-                  <Text color="black" maxW="400px" w="100%" fontSize="16px">
+                  <Text
+                    color="black"
+                    maxW="400px"
+                    w="100%"
+                    textAlign="center"
+                    fontSize="14px"
+                  >
                     {item.testimonial}
                   </Text>
                 </Box>
