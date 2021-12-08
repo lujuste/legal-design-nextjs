@@ -8,6 +8,8 @@ import {
 
 import SliderTestimonialsMobile from '../../../components/Testimonials/SliderTestimonialMobile'
 import SliderTestimonialsDesk from '../../../components/Testimonials/SliderTestimonialsDesk'
+import SliderTemplateDesk from './SliderTemplateDesk'
+import SliderTemplateMobile from './SliderTemplateMobile'
 
 export default function TestimonialsTemplate() {
   const isWideVersion = useBreakpointValue({
@@ -47,11 +49,7 @@ export default function TestimonialsTemplate() {
               Depoimentos
             </Text>{' '}
           </Heading>
-          {isWideVersion ? (
-            <SliderTestimonialsDesk />
-          ) : (
-            <SliderTestimonialsMobile />
-          )}
+          {isWideVersion ? <SliderTemplateDesk /> : <SliderTemplateMobile />}
         </VStack>
       </Flex>
     </>
