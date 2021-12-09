@@ -61,6 +61,7 @@ export default function SliderTemplateMobile() {
             </Box>
             <VStack transform="translateY(-40px)">
               <Avatar
+                boxShadow="2xl"
                 size="xl"
                 name={item.name}
                 src={`/images/${item.image}.webp`}

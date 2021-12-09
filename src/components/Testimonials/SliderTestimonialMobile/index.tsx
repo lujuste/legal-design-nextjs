@@ -63,6 +63,7 @@ export default function SliderTestimonialsMobile() {
                 size="xl"
                 name={item.name}
                 src={`/images/${item.image}.webp`}
+                boxShadow="2xl"
               />
               <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
                 {item.name}

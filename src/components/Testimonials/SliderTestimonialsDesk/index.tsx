@@ -110,6 +110,7 @@ export default function SliderTestimonialsDesk() {
                   <Avatar
                     className="bits-avatar"
                     size="xl"
+                    boxShadow="2xl"
                     name={item.name}
                     src={`/images/${item.image}.webp`}
                     sx={{
@@ -159,6 +160,7 @@ export default function SliderTestimonialsDesk() {
                 </Box>
                 <VStack transform="translateY(-40px)">
                   <Avatar
+                    boxShadow="2xl"
                     sx={{
                       color: 'white !important',
                     }}

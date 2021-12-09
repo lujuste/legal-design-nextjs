@@ -76,6 +76,7 @@ export default function SliderTemplateDesk() {
                 </Box>
                 <VStack transform="translateY(-40px)">
                   <Avatar
+                    boxShadow="2xl"
                     className="bits-avatar"
                     size="xl"
                     name={item.name}
@@ -127,6 +128,7 @@ export default function SliderTemplateDesk() {
                 </Box>
                 <VStack transform="translateY(-40px)">
                   <Avatar
+                    boxShadow="2xl"
                     sx={{
                       color: 'white !important',
                     }}

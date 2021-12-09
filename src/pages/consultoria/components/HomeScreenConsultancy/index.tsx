@@ -48,7 +48,7 @@ export default function HomeScreenConsultancy() {
           ]}
           gap="0rem"
         >
-          <GridItem mb={['5rem']} mr={['0', '0', '0', '6rem', '10rem']}>
+          <GridItem mb={['5rem']} mr={['0', '0', '0', '4rem', '10rem']}>
             <Heading
               as="h1"
               fontFamily="Raleway"
