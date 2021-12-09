@@ -1,10 +1,24 @@
-import { MotionButton } from '../../../shared/styles/animation'
+import { ButtonProps, Button, HTMLChakraProps } from '@chakra-ui/react'
 
-interface callToActionProps {
+import { motion, HTMLMotionProps } from 'framer-motion'
+import { NextPage } from 'next'
+type Merge<P, T> = Omit<P, keyof T> & T
+
+type MotionButtonProps = Merge<
+  HTMLChakraProps<'button'>,
+  HTMLMotionProps<'button'>
+>
+export const MotionButton: NextPage<MotionButtonProps> = motion(Button)
+
+interface callToActionProps extends MotionButtonProps {
   callToAction: string
+  rest?: any
 }
 
-export default function ButtonCards({ callToAction }: callToActionProps) {
+export default function ButtonCards({
+  callToAction,
+  ...rest
+}: callToActionProps) {
   return (
     <>
       <MotionButton
@@ -17,6 +31,7 @@ export default function ButtonCards({ callToAction }: callToActionProps) {
         bgColor="pink.900"
         color="white"
         mx="auto"
+        {...rest}
         _focus={{ border: 'none' }}
         _hover={{
           bgColor: '#fff',

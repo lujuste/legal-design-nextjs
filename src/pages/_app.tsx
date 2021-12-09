@@ -4,6 +4,7 @@ import emotionCache from '../lib/emotion-cache'
 import { CacheProvider } from '@emotion/react'
 import NextProgress from 'nextjs-progressbar'
 import { ColorModeScript } from '@chakra-ui/react'
+import 'focus-visible/dist/focus-visible'
 
 import { useQuery, QueryClient, QueryClientProvider } from 'react-query'
 
@@ -22,6 +23,23 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
 import CookieBot from 'react-cookiebot/lib/CookieBot'
+import { Global, css } from '@emotion/react'
+
+const GlobalStyle = ({ children }: any) => {
+  return (
+    <>
+      <Global
+        styles={css`
+          .js-focus-visible :focus:not(.focus-visible) {
+            outline: none;
+            box-shadow: none;
+          }
+        `}
+      />
+      {children}
+    </>
+  )
+}
 
 import { ViewportProvider } from '../contexts/ViewContext'
 
@@ -48,7 +66,9 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
                   <ColorModeScript initialColorMode="light" />
                   <ChakraProvider resetCSS theme={theme}>
                     <Layout>
-                      <Component {...pageProps} />
+                      <GlobalStyle>
+                        <Component {...pageProps} />
+                      </GlobalStyle>
                     </Layout>
                   </ChakraProvider>
                 </SidebarDrawerProvider>

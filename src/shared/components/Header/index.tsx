@@ -39,8 +39,8 @@ export default function Header() {
   useEffect(() => {
     function handleScroll() {
       const yPos = window.scrollY
-      const isScrollingUp = yPos > 30
-      const isScrollingEffetive = yPos > 120
+      const isScrollingUp = yPos > 10
+      const isScrollingEffetive = yPos > 50
 
       setShouldShowActions(isScrollingUp)
       setColor(isScrollingEffetive)
@@ -49,7 +49,7 @@ export default function Header() {
 
     return () => {
       const yPos = window.scrollY
-      const isScrollingBack = yPos < 30
+      const isScrollingBack = yPos < 10
       window.removeEventListener('scroll', handleScroll, false)
 
       if (isScrollingBack) {
@@ -74,7 +74,7 @@ export default function Header() {
             opacity={'1'}
             position={isOpen ? 'unset' : 'fixed'}
             h="10vh"
-            transition={'0.3s ease-in'}
+            transition={'0.3s linear'}
           >
             <Flex
               w="100%"
