@@ -139,12 +139,44 @@ export default function CommomQuestion() {
         mx="auto"
         justify="center"
       >
-        <List ml={['0', '0', '0', '1rem']} mt="3rem" spacing={2}>
+        <List ml={['0', '0', '0', '1rem']} mt="3rem" spacing={6}>
           <MotionListItem
             as="h2"
             display="flex"
             fontSize="1rem"
             color="#666666"
+            fontWeight="normal"
+            lineHeight="1.5rem"
+          >
+            <ListIcon
+              mt="0.5rem"
+              textAlign="justify"
+              justifyItems="initial"
+              transform="rotate(90deg)"
+              mr="1rem"
+              w={4}
+              h={4}
+              as={BsTriangleFill}
+              color="pink.900"
+            />
+            <Text>
+              <Text
+                as="span"
+                fontFamily="Raleway"
+                fontWeight="700"
+                color="#343A40"
+              >
+                O Legal Design é só deixar o documento bonito? <br />
+              </Text>{' '}
+              Não. O Legal design é focado em funcionalidade. O objetivo retirar
+              a complexidade do documento jurídico para que o usuário final
+              consiga entender facilmente.
+            </Text>
+          </MotionListItem>
+          <MotionListItem
+            color="#666666"
+            display="flex"
+            fontSize="1rem"
             fontWeight="normal"
             lineHeight="1.5rem"
           >
@@ -160,10 +192,17 @@ export default function CommomQuestion() {
               color="pink.900"
             />
             <Text>
-              <Text as="span" color="pink.900">
-                Menos vai e volta{' '}
+              <Text
+                as="span"
+                fontFamily="Raleway"
+                fontWeight="700"
+                color="#343A40"
+              >
+                Existe alteração do texto? <br />
               </Text>{' '}
-              na negociação de contratos
+              Não alteramos o conteúdo, mas sempre que necessário, alteramos o
+              texto para uma linguagem simples e clara, sempre pensando em quem
+              será a pessoa que irá ler aquele documento.
             </Text>
           </MotionListItem>
           <MotionListItem
@@ -174,7 +213,7 @@ export default function CommomQuestion() {
             lineHeight="1.5rem"
           >
             <ListIcon
-              mt="0.4rem"
+              mt="0.2rem"
               textAlign="justify"
               justifyItems="initial"
               transform="rotate(90deg)"
@@ -184,83 +223,19 @@ export default function CommomQuestion() {
               as={BsTriangleFill}
               color="pink.900"
             />
-            <Text>
-              Uma{' '}
-              <Text as="span" color="pink.900">
-                diminuição de dúvidas
-              </Text>{' '}
-              em relação ao conteúdo de um documento
-            </Text>
-          </MotionListItem>
-          <MotionListItem
-            color="#666666"
-            display="flex"
-            fontSize="1rem"
-            fontWeight="normal"
-            lineHeight="1.5rem"
-          >
-            <ListIcon
-              mt="0.4rem"
-              textAlign="justify"
-              justifyItems="initial"
-              transform="rotate(90deg)"
-              mr="1rem"
-              w={4}
-              h={4}
-              as={BsTriangleFill}
-              color="pink.900"
-            />
-            <Text>
+            <Text color="#666666">
               {' '}
               <Text
                 as="span"
-                sx={{
-                  color: 'pink.900',
-                }}
+                color="#343A40"
+                fontFamily="Raleway"
+                fontWeight="700"
               >
-                {' '}
-                Menos{' '}
+                Vocês fazem a parte jurídica? <br />
               </Text>{' '}
-              pedidos de{' '}
-              <Text
-                sx={{
-                  color: 'pink.900',
-                }}
-                as="span"
-              >
-                edições
-              </Text>{' '}
-              nos documentos
-            </Text>
-          </MotionListItem>
-          <MotionListItem
-            display="flex"
-            fontSize="1rem"
-            fontWeight="normal"
-            lineHeight="1.5rem"
-            color="#666666"
-          >
-            <ListIcon
-              mt="0.4rem"
-              textAlign="justify"
-              justifyItems="initial"
-              transform="rotate(90deg)"
-              mr="1rem"
-              w={4}
-              h={4}
-              as={BsTriangleFill}
-              color="pink.900"
-            />
-            <Text>
-              Um{' '}
-              <Text as="span" sx={{ color: 'pink.900' }}>
-                {' '}
-                menor ciclo{' '}
-              </Text>{' '}
-              de{' '}
-              <Text as="span" sx={{ color: 'pink.900' }}>
-                vendas
-              </Text>
+              Não. Você deverá enviar documento e nós aplicamos o legal design,
+              que se aplica tanto a parte de design quando à escrita mais
+              acessível.
             </Text>
           </MotionListItem>
         </List>

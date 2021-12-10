@@ -7,7 +7,7 @@ export default async function GetUser(
 ) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST')
-    res.status(405).end('MEthod not allowed')
+    res.status(405).end('Method not allowed')
   }
 
   const data = req.body
