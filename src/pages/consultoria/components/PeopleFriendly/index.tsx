@@ -93,9 +93,9 @@ export default function PeopleFriendly() {
                 '2.475rem',
                 '3.3rem',
               ]}
-              mt={['-1rem', '-1rem', '-1.5rem', '-3.5rem']}
+              mt={['0rem', '0rem', '-1.5rem', '-3.5rem']}
               ml={['0', '0', '1rem']}
-              maxW="490px"
+              maxW={['300px', '300px', '490px']}
             >
               Além de documentos people friendly, você terá um{' '}
               <Text as="span" fontWeight="700" color="pink.900">
