@@ -25,9 +25,9 @@ export default function ContractSliderMobile() {
         maxW="320px"
         mb="-2rem"
       >
-        Veja o que aconteceu com os documentos{' '}
+        Documentos{' '}
         <Text as="span" color="pink.900">
-          após a aplicação do Legal Design
+          após o Legal Design
         </Text>
       </Heading>
       <Swiper

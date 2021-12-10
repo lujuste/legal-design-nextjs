@@ -83,6 +83,7 @@ export default function CommomQuestion() {
       >
         <Fade bottom>
           <Heading
+            mt={['-1rem', '-1rem', '0']}
             fontFamily="Raleway"
             lineHeight={['2.5rem', '2.5rem', '2.5rem', '3.438rem']}
             fontSize={['1.875rem', '1.875rem', '1.875rem', '3rem']}
@@ -132,7 +133,7 @@ export default function CommomQuestion() {
         flex="1"
         flexDir={['column', 'column', 'column', 'row']}
         align="center"
-        mt={['1.5rem', '1.5rem', '1.5rem', '-4rem']}
+        mt={['0rem', '0rem', '1.5rem', '-4rem']}
         maxW={['300px', '300px', '300px', '567px']}
         h="auto"
         mx="auto"

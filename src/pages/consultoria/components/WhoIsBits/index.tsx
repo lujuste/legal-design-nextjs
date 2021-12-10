@@ -51,7 +51,7 @@ export default function WhoIsBits() {
             px="1rem"
             gap={['2', '2', '2', '5', '5']}
             mb="3rem"
-            mt="2rem"
+            mt={['1rem', '1rem', '2rem']}
           >
             <Flex align="center" maxW="322px" flexDir="column">
               <Fade bottom>
@@ -110,7 +110,7 @@ export default function WhoIsBits() {
             </Flex>
           </Grid>
           <ButtonCards
-            mt={['-1rem', '-1rem', '0']}
+            mt={['1rem', '1rem', '0']}
             fontSize="13px"
             mb="1.5rem"
             callToAction="Quero que a Bits faça meu Legal Design"

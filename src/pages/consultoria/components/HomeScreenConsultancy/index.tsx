@@ -26,6 +26,7 @@ export default function HomeScreenConsultancy() {
       justify="center"
       mx="auto"
       align="center"
+      px="2rem"
       overflowX="hidden"
       mb={['2rem', '2rem', '0', '0', '0rem']}
     >
@@ -53,7 +54,7 @@ export default function HomeScreenConsultancy() {
         >
           <GridItem
             mb={['5rem']}
-            mr={['-1rem', '-1.5rem', '0', '4rem', '10rem']}
+            mr={['0rem', '-0.5rem', '0', '4rem', '10rem']}
           >
             <Heading
               as="h1"

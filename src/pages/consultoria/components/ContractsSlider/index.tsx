@@ -35,13 +35,13 @@ export default function ContractSlider() {
           fontFamily="Raleway"
           fontWeight="600"
           mx="auto"
-          maxW={['360px', '360px', '500px', '1000px']}
+          maxW={['360px', '360px', '500px', '1200px']}
           textAlign="center"
-          mt="2rem"
+          mt={['1rem', '1rem', '2rem', '2rem']}
         >
-          Veja o que aconteceu com os documentos{' '}
+          Documentos{' '}
           <Text as="span" color="pink.900">
-            após a aplicação do Legal Design
+            após o Legal Design
           </Text>
         </Heading>
 

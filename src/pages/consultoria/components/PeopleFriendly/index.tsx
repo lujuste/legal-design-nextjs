@@ -73,7 +73,7 @@ export default function PeopleFriendly() {
                 '2.475rem',
                 '3rem',
               ]}
-              mt={['-2rem']}
+              mt={['-1rem', '-1rem', '-1.5rem', '-3.5rem']}
               ml={['0', '0', '1rem']}
               maxW="490px"
             >
