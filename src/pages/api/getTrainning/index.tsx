@@ -1,11 +1,11 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import api from '../../services/api'
+import api from '../../../services/api'
 
-export default async function GetUser(
+export default async function getTrainning(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  if (req.method !== 'POST') {
+  if (req.method != 'POST') {
     res.setHeader('Allow', 'POST')
     res.status(405).send('Method not allowed')
   }

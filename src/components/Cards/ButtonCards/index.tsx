@@ -1,4 +1,4 @@
-import { ButtonProps, Button, HTMLChakraProps } from '@chakra-ui/react'
+import { ButtonProps, Button, HTMLChakraProps, Spinner } from '@chakra-ui/react'
 
 import { motion, HTMLMotionProps } from 'framer-motion'
 import { NextPage } from 'next'
@@ -13,12 +13,14 @@ export const MotionButton: NextPage<MotionButtonProps> = motion(Button)
 interface callToActionProps extends MotionButtonProps {
   callToAction: string
   rest?: any
+  loading: boolean
 }
 
 export default function ButtonCards({
   callToAction,
+  loading,
   ...rest
-}: callToActionProps) {
+}: callToActionProps): JSX.Element {
   return (
     <>
       <MotionButton
@@ -41,7 +43,7 @@ export default function ButtonCards({
         whileTap={{ scale: 1.04 }}
         whileHover={{ scale: 1.04 }}
       >
-        {callToAction}
+        {loading ? <Spinner /> : callToAction}
       </MotionButton>
     </>
   )

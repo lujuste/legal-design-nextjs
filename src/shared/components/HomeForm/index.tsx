@@ -1,5 +1,20 @@
 import ButtonCards from '../../../components/Cards/ButtonCards'
 import { InputConsultancy } from '../ActiveLink/FormConsultancy/InputConsultancy'
+import { FieldError } from 'react-hook-form'
+import { yupResolver } from '@hookform/resolvers/yup/dist/yup'
+import { useState } from 'react'
+import { toast } from 'react-toastify'
+import { useForm, SubmitHandler } from 'react-hook-form'
+import * as yup from 'yup'
+
+interface InputConsultancyProps {
+  name: string
+  email?: string
+  lgpd: boolean
+  company: string
+  phone: string
+  errors?: FieldError
+}
 
 import {
   Flex,
@@ -12,8 +27,92 @@ import {
   CheckboxGroup,
   Stack,
 } from '@chakra-ui/react'
+import api from '../../../services/api'
 
 export default function HomeForm() {
+  const [isChecked, setIsChecked] = useState(false)
+
+  const formSchema = yup.object().shape({
+    name: yup.string().required('campo obrigatorio'),
+    phone: yup.number(),
+    email: yup.string(),
+    company: yup.string(),
+    lgpd: yup.boolean(),
+  })
+
+  function toastSucess() {
+    toast.success('Obrigado! Logo entraremos em contato.', {
+      position: toast.POSITION.TOP_RIGHT,
+    })
+  }
+
+  function toastWarning() {
+    toast.warning('Você antes precisa autorizar o LGPD.', {
+      position: toast.POSITION.TOP_RIGHT,
+    })
+  }
+
+  function tostFailure() {
+    toast.error('Este email já está cadastrado!', {
+      position: toast.POSITION.TOP_RIGHT,
+    })
+  }
+
+  const [loading, setLoading] = useState(false)
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ resolver: yupResolver(formSchema) })
+
+  const headers = {
+    method: 'POST',
+    'Content-Type': 'application/json',
+  }
+
+  const onSubmit: SubmitHandler<InputConsultancyProps> = async data => {
+    if (data.lgpd !== true) {
+      toastWarning()
+      return
+    } else {
+      console.log(data)
+      const dataFormatted = JSON.stringify({
+        contact: {
+          email: data.email,
+          firstName: data.name,
+          phone: data.phone,
+          fildValues: [
+            {
+              field: 'company',
+              value: data.company,
+            },
+          ],
+        },
+      })
+
+      try {
+        console.log(dataFormatted)
+        setLoading(true)
+        await fetch('api/getTrainning', {
+          method: 'POST',
+          headers,
+          body: dataFormatted,
+        })
+          .then(response => response.json())
+          .then(toastSucess)
+          .then(() => setLoading(false))
+          .catch(error => {
+            console.log(error)
+            tostFailure()
+            setLoading(false)
+          })
+      } catch (err) {
+        console.log(err)
+      }
+    }
+  }
+
   return (
     <Flex
       w="100%"
@@ -92,27 +191,45 @@ export default function HomeForm() {
               mt={['-3rem', '-3rem', '-3rem', '0rem', '0rem']}
               flex="1"
               flexDir="column"
+              as="form"
+              onSubmit={handleSubmit(onSubmit)}
             >
-              <InputConsultancy name="name" label="NOME" />
+              <InputConsultancy
+                name="name"
+                label="NOME"
+                type="text"
+                {...register('name')}
+                error={errors.name}
+              />
               <InputConsultancy
                 mt={['0.5rem', '0.5rem', '2rem']}
                 name="phone"
                 label="TELEFONE"
+                {...register('phone')}
+                error={errors.phone}
               />
               <InputConsultancy
                 mt={['0.5rem', '0.5rem', '2rem']}
                 name="email"
                 label="E-MAIL"
+                {...register('email')}
+                error={errors.email}
               />
               <InputConsultancy
                 mt={['0.5rem', '0.5rem', '2rem']}
                 name="company"
                 label="EMPRESA"
+                {...register('company')}
+                error={errors.company}
               />
 
               <Stack justify="center">
                 <Checkbox
-                  value="lgpd"
+                  value="true"
+                  id="lgpd"
+                  type="checkbox"
+                  {...register('lgpd')}
+                  error={errors.lgpd}
                   colorScheme="transparent"
                   borderColor="#7d7d7d"
                   borderWidth="0.2"
@@ -140,6 +257,8 @@ export default function HomeForm() {
                 mb={['0', '0', '6rem', '0', '0', '0']}
                 px="1rem"
                 callToAction="Quero que a Bits faça meu Legal Design"
+                type="submit"
+                loading={loading}
               />
             </Flex>
           </GridItem>
