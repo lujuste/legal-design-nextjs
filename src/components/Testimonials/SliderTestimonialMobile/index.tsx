@@ -42,6 +42,7 @@ export default function SliderTestimonialsMobile() {
               alignItems="center"
               justifyContent="center"
               borderRadius="10px"
+              mt={['1.5rem', '1.5rem', '0']}
               bgColor="pink.900"
               w="100%"
               h="255px"
@@ -63,7 +64,8 @@ export default function SliderTestimonialsMobile() {
                 size="xl"
                 name={item.name}
                 src={`/images/${item.image}.webp`}
-                boxShadow="2xl"
+                boxShadow="xl"
+                mb={['0.5rem', 'o.5rem', '0']}
               />
               <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
                 {item.name}

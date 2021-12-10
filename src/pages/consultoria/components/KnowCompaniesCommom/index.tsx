@@ -12,34 +12,6 @@ import Image from 'next/image'
 
 const dataCustomers = [
   {
-    description: 'Consultoria em Legal Design',
-    image: 'alliance',
-    size: '19.28px',
-    width: '80px',
-  },
-
-  {
-    description: 'Consultoria em Legal Design',
-    image: '2wenergia',
-    size: '15.61px',
-    width: '82px',
-  },
-
-  {
-    description: 'Consultoria de documentos em Legal Design.',
-    image: 'background-brasil',
-    size: '28px',
-    width: '80px',
-  },
-
-  {
-    description: 'Consultoria em Legal Design',
-    image: 'banco-sofisa',
-    size: '19.28px',
-    width: '80px',
-  },
-
-  {
     description: 'Consultoria em Legal Design.',
     image: 'brasil-prev',
     size: '24.39px',
@@ -57,30 +29,18 @@ const dataCustomers = [
     size: '64.58px',
     width: '80px',
   },
+
   {
-    description: 'Curso de Legal Design para 3 pessoas do time.',
-    image: 'chesf',
-    size: '34.7px',
-    width: '80px',
+    description: 'Consultoria em Legal Design.',
+    image: 'cogna',
+    size: '29.27px',
+    width: '96px',
   },
 
   {
     description: 'Consultoria em Legal Design.',
     image: 'cyrela',
     size: '21.46px',
-    width: '80px',
-  },
-  {
-    description: 'Consultoria em Legal Design.',
-    image: 'dasa',
-    size: '26.02px',
-    width: '80px',
-  },
-
-  {
-    description: 'Consultoria em Legal Design.',
-    image: 'energisa',
-    size: '26.02px',
     width: '80px',
   },
 
@@ -99,36 +59,13 @@ const dataCustomers = [
   },
 
   {
-    description: 'Treinamento em Legal Design.',
-    image: 'mrv',
-    size: '22.17px',
-    width: '80px',
-  },
-  {
     description:
       'Treinamento de Legal Design para treinar o departamento jurídico.',
     image: 'saint-gobain',
     size: '80px',
     width: '72.77px',
   },
-  {
-    description: 'Consultoria de uma série de documentos.',
-    image: 'santander',
-    size: '13.49px',
-    width: '80px',
-  },
-  {
-    description: 'Consultoria em Legal Design.',
-    image: 'santos-brasil',
-    size: '58.54px',
-    width: '80px',
-  },
-  {
-    description: 'Consultoria em Legal Design.',
-    image: 'sercesp',
-    size: '12.53px',
-    width: '80px',
-  },
+
   {
     description: 'Consultoria de uma série de documentos.',
     image: 'seusdados',
@@ -170,97 +107,93 @@ const dataCustomers = [
 
 export default function KnowCompaniesCommom() {
   return (
-    <Flex
-      h="100%"
-      w="100%"
-      maxW="1400px"
-      align="center"
-      mx="auto"
-      flexDir="column"
-    >
-      <Heading
-        fontFamily="Raleway"
-        maxW={['300px', '300px', '700px', '600px', '1200px']}
-        mt={['4rem', '4rem', '4rem', '-2rem']}
+    <Flex px="1.5rem" w="100%" h="100%" bgColor="#F8F9FA">
+      <Flex
+        h="100%"
+        pt="1rem"
+        pb={['6rem', '6rem', '3.5rem', '3.5rem']}
+        w="100%"
+        maxW="1400px"
+        align="center"
         mx="auto"
-        textAlign="center"
-        fontSize={['1.875rem', '1.875rem', '1.875rem', '3rem', '3rem']}
-        px={['0', '0', '2rem', '2rem']}
+        justify="space-between"
+        flexDir={['column', 'column', 'column', 'row']}
       >
-        Sabe o que essas{' '}
-        <Text as="span" color="pink.900">
-          empresas
-        </Text>{' '}
-        têm em comum?
-      </Heading>
+        <Flex
+          align="center"
+          mt={['1rem', '1rem', '4rem']}
+          mr={['0', '0', '0', '0', '3rem']}
+          mx={['auto', 'auto', 'auto', 'auto', '0']}
+          justify="space-between"
+          flexDir="column"
+        >
+          <Heading
+            fontFamily="Raleway"
+            maxW={['300px', '300px', '700px', '600px', '500px']}
+            mt={['4rem', '4rem', '4rem', '0rem']}
+            textAlign={['center', 'center', 'center', 'left', 'left']}
+            mr={[0, 0, 0, 0, '3rem', '3rem']}
+            mx={['auto', 'auto']}
+            fontSize={['1.875rem', '1.875rem', '1.875rem', '3rem', '3rem']}
+            px={['0', '0', '2rem', '2rem']}
+          >
+            Sabe o que essas{' '}
+            <Text as="span" color="pink.900">
+              empresas
+            </Text>{' '}
+            têm em comum?
+          </Heading>
 
-      <Grid
-        mx="auto"
-        maxW="1013px"
-        mt="3.5rem"
-        gap={10}
-        templateColumns={[
-          'repeat(3, 1fr)',
-          'repeat(3, 1fr)',
-          'repeat(4, 1fr)',
-          'repeat(6, 1fr)',
-          'repeat(8, 1fr)',
-        ]}
-      >
-        {dataCustomers.map(docs => (
-          <GridItem>
-            <Box
-              key={docs.image}
-              cursor="pointer"
-              display="flex"
-              justifyContent="center"
-              w={['100%', '100%']}
-              h="76px"
-            >
-              <Image
-                alt={docs.description}
-                width={docs.width}
-                height={docs.size}
-                quality={100}
-                src={`/images/${docs.image}.svg`}
-                objectFit="contain"
-                priority
-              />
-            </Box>
-          </GridItem>
-        ))}
-      </Grid>
-      <Flex mx="auto" flexDir="column">
-        {' '}
-        <Text
-          mx="auto"
-          textAlign="center"
-          fontWeight="400"
-          color="#666666"
-          mt="3rem"
+          <Text
+            mt="1.5rem"
+            ml={['0', '0', '0', '0', '2rem']}
+            color="#343A40"
+            fontSize={['1rem']}
+            textAlign={['center', 'center', 'center', 'left']}
+            mx={['auto', 'auto', '0', '0']}
+            maxW={['300px', '300px', '400px', '500px', '700px']}
+          >
+            Elas <strong> aplicaram o Legal Design com a Bits</strong> e
+            melhoraram seus resultados.
+          </Text>
+        </Flex>
+
+        <Grid
+          maxW="1013px"
+          mt="3.5rem"
+          gap={[4]}
+          mx="2rem"
+          templateColumns={[
+            'repeat(3, 1fr)',
+            'repeat(3, 1fr)',
+            'repeat(3, 1fr)',
+            'repeat(4, 1fr)',
+            'repeat(5, 1fr)',
+          ]}
         >
-          Elas aplicaram o Legal Design com a Bits e melhoraram seus resultados.
-        </Text>
-        <Button
-          mt="2rem"
-          px="1rem"
-          w="292px"
-          fontSize="0.875rem"
-          fontWeight="700"
-          color="white"
-          bgColor="pink.900"
-          h="48px"
-          textShadow="2xl"
-          boxShadow="2xl"
-          mx="auto"
-          _hover={{
-            bgColor: '#fff',
-            color: 'pink.900',
-            border: '1px solid #CC3366',
-          }}
-        >
-          Quero que a Bits faça meu Legal Design
-        </Button>
+          {dataCustomers.map(docs => (
+            <GridItem>
+              <Box
+                key={docs.image}
+                cursor="pointer"
+                display="flex"
+                justifyContent="center"
+                w={['100%', '100%']}
+                h="76px"
+              >
+                <Image
+                  alt={docs.description}
+                  width={docs.width}
+                  height={docs.size}
+                  quality={100}
+                  src={`/images/${docs.image}.svg`}
+                  objectFit="contain"
+                  priority
+                />
+              </Box>
+            </GridItem>
+          ))}
+        </Grid>
       </Flex>
     </Flex>
   )

@@ -16,8 +16,10 @@ export default function HomeScreenConsultancy() {
   return (
     <Flex
       w="100%"
+      py="2rem"
+      pb={['3.5rem', '3rem', '1rem', '0', '0']}
       bgImage="url('/images/bgPink.webp')"
-      h={['100%', '100vh', '100vh', '100vh', '110vh']}
+      h={['100%', '100%', '100%', '100vh', '100vh']}
       bgSize={['250%', 'cover', 'cover', '100%', '100%']}
       bgRepeat="no-repeat"
       zIndex="999"
@@ -30,13 +32,14 @@ export default function HomeScreenConsultancy() {
       <Flex
         justify="center"
         maxW="1400px"
+        pt={['0', '0', '0', '0', '4rem']}
         w="100%"
         h="100%"
-        px="3rem"
+        px="1.5rem"
         align="center"
         flexDir="column"
         mx="auto"
-        mt={['5rem', '5rem', '0rem']}
+        mt={['5rem', '5rem', '5rem', '0rem', '0rem']}
       >
         <Grid
           templateColumns={[
@@ -48,7 +51,10 @@ export default function HomeScreenConsultancy() {
           ]}
           gap="0rem"
         >
-          <GridItem mb={['5rem']} mr={['0', '0', '0', '4rem', '10rem']}>
+          <GridItem
+            mb={['5rem']}
+            mr={['-1rem', '-1.5rem', '0', '4rem', '10rem']}
+          >
             <Heading
               as="h1"
               fontFamily="Raleway"
@@ -56,9 +62,9 @@ export default function HomeScreenConsultancy() {
               fontSize={['30px', '32px', '38px', '42px', '48px']}
               textAlign={['center', 'center', 'center', 'left', 'left']}
               maxW={['270px', '320px', '500px', '500px', '500px']}
-              mt={['3rem', '3rem', '3rem', '5rem', '5rem']}
+              mt={['1rem', '1rem', '1rem', '4rem', '4rem', '4rem']}
               w="100%"
-              mx={['auto', 'auto', '0']}
+              mx={['auto', 'auto', 'auto', 'auto']}
             >
               Tenha um jurídico estratégico com o{' '}
               <Text as="span" color="pink.900">
@@ -69,7 +75,7 @@ export default function HomeScreenConsultancy() {
               textAlign={['center', 'center', 'center', 'left']}
               fontFamily="Roboto"
               fontSize="1rem"
-              maxW="300px"
+              maxW={['300px', '300px', '900px', '440px', '400px']}
               mt="2rem"
             >
               Transforme seus documentos e traga mais resultados para a empresa.
@@ -129,6 +135,7 @@ export default function HomeScreenConsultancy() {
                 fontSize="14px"
                 fontFamily="Roboto"
                 fontWeight="700"
+                mb={['0', '0', '6rem', '0', '0', '0']}
                 px="1rem"
                 callToAction="Quero que a Bits faça meu Legal Design"
               />

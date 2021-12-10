@@ -89,7 +89,9 @@ export default function CheckSession() {
             fontWeight="600"
             textAlign={['center', 'center', 'center', 'left']}
           >
-            <Text color="pink.900">Essencial </Text>
+            <Text mt={['-1.5rem', '-1.5rem', '0']} color="pink.900">
+              Essencial{' '}
+            </Text>
             para quem quer:
           </Heading>
         </Fade>

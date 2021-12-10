@@ -67,11 +67,11 @@ export default function CommomQuestion() {
       justify="center"
       align="center"
       h={['100%']}
-      py="6rem"
+      py="8rem"
       bgColor="#F8F9FA"
-      mt={['0', '0', '0']}
+      mt={['3rem', '3rem', '0', '0']}
       px={['0', '0', '0', '6rem']}
-      mb={['0', '0', '0', '4rem']}
+      mb={['0', '0', '0', '3rem']}
     >
       <Flex
         flexDir="column"
@@ -79,6 +79,7 @@ export default function CommomQuestion() {
         h="auto"
         justify="center"
         mx="auto"
+        mt={['-2rem', '-2rem', 0]}
       >
         <Fade bottom>
           <Heading

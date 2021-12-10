@@ -20,7 +20,7 @@ export const dataContracts = [
 
 export default function ContractSlider() {
   return (
-    <Flex mx="auto" flexDir="column" w="100%" h="100%">
+    <Flex mx="auto" flexDir="column" w="100%" h="100%" mb="2rem">
       <Flex
         maxW="100%"
         h={['110vh', '110vh', '100%']}
@@ -28,6 +28,7 @@ export default function ContractSlider() {
         flexDir="column"
         pt="2rem"
         mt="2.5rem"
+        mb="2rem"
       >
         <Heading
           fontSize={['30px', '30px', '36px', '48px']}
@@ -36,6 +37,7 @@ export default function ContractSlider() {
           mx="auto"
           maxW={['360px', '360px', '500px', '1000px']}
           textAlign="center"
+          mt="2rem"
         >
           Veja o que aconteceu com os documentos{' '}
           <Text as="span" color="pink.900">

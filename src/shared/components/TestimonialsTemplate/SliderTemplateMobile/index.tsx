@@ -9,10 +9,9 @@ import {
   VStack,
   Avatar,
 } from '@chakra-ui/react'
+import { dataTestimonials } from '../SliderTemplateDesk'
 
-import { dataTestimonialsCourses } from '../SliderTemplateDesk'
-
-export default function SliderTemplateMobile() {
+export default function SliderTestimonialsMobile() {
   return (
     <Swiper
       slidesPerView={1}
@@ -25,7 +24,7 @@ export default function SliderTemplateMobile() {
       centeredSlides={true}
       watchSlidesProgress
     >
-      {dataTestimonialsCourses.map(item => (
+      {dataTestimonials.map(item => (
         <SwiperSlide>
           <Flex
             justify="center"
@@ -37,12 +36,14 @@ export default function SliderTemplateMobile() {
             h={['478px', '478px', '488px']}
             mx="auto"
             mt="-2rem"
+            pb="1rem"
           >
             <Box
               display="flex"
               alignItems="center"
               justifyContent="center"
               borderRadius="10px"
+              mt={['1.5rem', '1.5rem', '0']}
               bgColor="pink.900"
               w="100%"
               h="255px"
@@ -61,10 +62,11 @@ export default function SliderTemplateMobile() {
             </Box>
             <VStack transform="translateY(-40px)">
               <Avatar
-                boxShadow="2xl"
                 size="xl"
                 name={item.name}
                 src={`/images/${item.image}.webp`}
+                boxShadow="md"
+                mb={['0.5rem', 'o.5rem', '0']}
               />
               <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
                 {item.name}

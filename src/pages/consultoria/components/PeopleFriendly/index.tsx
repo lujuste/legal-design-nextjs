@@ -6,7 +6,7 @@ export default function PeopleFriendly() {
     <Flex
       bgColor="white"
       w="100%"
-      h="100%"
+      h={['100%']}
       justify="center"
       align="center"
       mx="auto"
@@ -33,6 +33,7 @@ export default function PeopleFriendly() {
           pb={['1rem', '1rem', '4.5rem']}
           alignItems="center"
           my="auto"
+          mb={['2rem', '2rem', '0']}
         >
           <Image
             width={800}
@@ -55,28 +56,34 @@ export default function PeopleFriendly() {
               justifyContent="center"
               color="black"
               mb="1rem"
-              fontSize={['1.875rem', '1.875rem', '1.875rem', '3rem', '3rem']}
+              fontSize={[
+                '1.563rem',
+                '1.563rem',
+                '1.875rem',
+                '1.875rem',
+                '2.5rem',
+              ]}
               textAlign="center"
-              fontWeight="600"
+              fontWeight="400"
               fontFamily="Raleway"
-              lineHeight={['1.875rem', '1.875rem', '1.875rem', '3.438rem']}
-              mt={['2rem']}
+              lineHeight={[
+                '1.875rem',
+                '1.875rem',
+                '1.875rem',
+                '2.475rem',
+                '3rem',
+              ]}
+              mt={['-2rem']}
+              ml={['0', '0', '1rem']}
               maxW="490px"
             >
-              Além de documentos <Text color="pink.900">people friendly,</Text>{' '}
-              você terá
+              Além de documentos people friendly, você terá um{' '}
+              <Text as="span" fontWeight="700" color="pink.900">
+                Dashboard{' '}
+              </Text>{' '}
+              para acompanhar os resultados e métricas após a aplicação do{' '}
+              <strong>Legal Design</strong>
             </Heading>
-            <Text
-              mt="1rem"
-              color="black"
-              maxW="402px"
-              fontSize="1rem"
-              textAlign="center"
-              mb="7rem"
-            >
-              Dashboard para você acompanhar os resultados após a aplicação do
-              Legal Design.{' '}
-            </Text>
           </Flex>
         </GridItem>
       </Grid>

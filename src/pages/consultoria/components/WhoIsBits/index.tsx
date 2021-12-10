@@ -6,12 +6,13 @@ import CountryIcon from './icons/CountryIcon'
 import PeoplesIcon from './icons/PeoplesIcon'
 
 import Fade from 'react-reveal/Fade'
+import ButtonCards from '../../../../components/Cards/ButtonCards'
 
 export default function WhoIsBits() {
   return (
     <Flex
-      mt={['-5rem', '-5rem', '-5rem', '-5rem']}
-      py="3.5rem"
+      mt={['1rem', '1rem', '-5rem', '-5rem']}
+      py="3rem"
       w="100%"
       bgColor="#F8F9FA"
       h="100%"
@@ -26,7 +27,8 @@ export default function WhoIsBits() {
               textAlign="center"
               fontFamily="Raleway"
               fontSize={['1.875rem', '1.875rem', '1.875rem', '3rem']}
-              mb="3.5rem"
+              mb="3rem"
+              mt={['1rem', '1rem', '2rem']}
               fontWeight="600"
               maxW={['270px', '300px', '600px', '1090px']}
             >
@@ -43,12 +45,13 @@ export default function WhoIsBits() {
               'repeat(1, 1fr)',
               'repeat(3, 1fr)',
               'repeat(4, 1fr)',
-              'repeat(5, 1fr)',
+              'repeat(4, 1fr)',
             ]}
             mx="auto"
             px="1rem"
             gap={['2', '2', '2', '5', '5']}
             mb="3rem"
+            mt="2rem"
           >
             <Flex align="center" maxW="322px" flexDir="column">
               <Fade bottom>
@@ -105,20 +108,13 @@ export default function WhoIsBits() {
                 </Text>
               </Fade>
             </Flex>
-            <Flex
-              mt={['2rem', '2rem', '2rem', 0]}
-              align="center"
-              maxW="322px"
-              flexDir="column"
-            >
-              <Fade bottom>
-                <BookIcon />
-              </Fade>
-              <Fade bottom>
-                <Text maxW="180px">Temos um time composto.</Text>
-              </Fade>
-            </Flex>
           </Grid>
+          <ButtonCards
+            mt={['-1rem', '-1rem', '0']}
+            fontSize="13px"
+            mb="1.5rem"
+            callToAction="Quero que a Bits faça meu Legal Design"
+          />
         </Flex>
       </Flex>
     </Flex>
