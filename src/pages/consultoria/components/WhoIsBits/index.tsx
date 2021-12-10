@@ -11,7 +11,7 @@ import ButtonCards from '../../../../components/Cards/ButtonCards'
 export default function WhoIsBits() {
   return (
     <Flex
-      mt={['1rem', '1rem', '-5rem', '-5rem']}
+      mt={['1rem', '1rem', '1rem', '-5rem', '-5rem']}
       py="3rem"
       w="100%"
       bgColor="#F8F9FA"
@@ -49,7 +49,7 @@ export default function WhoIsBits() {
             ]}
             mx="auto"
             px="1rem"
-            gap={['2', '2', '2', '5', '5']}
+            gap={['2', '2', '5', '10', '10']}
             mb="3rem"
             mt={['1rem', '1rem', '2rem']}
           >
@@ -58,9 +58,10 @@ export default function WhoIsBits() {
                 <CountryIcon />
               </Fade>
               <Fade bottom>
-                <Text maxW="120px">Referência em Legal Design no Brasil.</Text>
+                <Text maxW="180px">Referência em Legal Design no Brasil.</Text>
               </Fade>
             </Flex>
+
             <Flex
               mt={['2rem', '2rem', '2rem', 0]}
               align="center"

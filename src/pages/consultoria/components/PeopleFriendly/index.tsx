@@ -11,7 +11,7 @@ export default function PeopleFriendly() {
       align="center"
       mx="auto"
       p={['0.5rem', '0.5rem', '1rem']}
-      mt="-5rem"
+      mt={['-5rem', '-5rem', '0rem', '-5rem', '-5rem']}
     >
       <Grid
         templateColumns={[
@@ -69,9 +69,9 @@ export default function PeopleFriendly() {
               lineHeight={[
                 '1.875rem',
                 '1.875rem',
-                '1.875rem',
                 '2.475rem',
-                '3rem',
+                '2.475rem',
+                '3.3rem',
               ]}
               mt={['-1rem', '-1rem', '-1.5rem', '-3.5rem']}
               ml={['0', '0', '1rem']}

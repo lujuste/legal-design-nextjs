@@ -64,19 +64,18 @@ export default function WhyTrainningMyTeam() {
       flexDir={['column', 'column', 'column', 'row']}
       maxW="1400"
       mx="auto"
-      justify="center"
+      justify="space-between"
       align="center"
       h={['100%']}
-      pb="6rem"
-      mt={['0', '0', '0', '10rem', '0', '0']}
-      px={['0', '0', '0', '6rem']}
-      mb={['0', '0', '0', '4rem']}
+      py={['0', '0', '0', '0', '1rem']}
+      px={['0', '0', '0', '0rem']}
+      mb={['6rem', '6rem', '8rem', '8rem', '10rem']}
     >
       <Flex
         flexDir="column"
-        maxW={['264px', '264px', '264px', '400px', '518px']}
+        maxW={['264px', '264px', '264px', '400px', '618px']}
         h="auto"
-        justify="center"
+        justify="space-between"
         mx="auto"
       >
         <Fade bottom>
@@ -87,7 +86,7 @@ export default function WhyTrainningMyTeam() {
             mx="auto"
             fontWeight="600"
             textAlign={['center', 'center', 'center', 'left']}
-            mt={['0', '0', '0', '-5.5rem']}
+            mt={['3rem', '3rem', '3rem', '5.5rem']}
           >
             <Text as="span" color="pink.900">
               Porque treinar{' '}
@@ -132,10 +131,11 @@ export default function WhyTrainningMyTeam() {
         flex="1"
         flexDir={['column', 'column', 'column', 'row']}
         align="center"
-        mt={['1.5rem', '1.5rem', '1.5rem', '-4rem']}
+        mt={['1.5rem', '1.5rem', '1.5rem', '4rem']}
         maxW={['300px', '300px', '300px', '567px']}
         h="auto"
         mx="auto"
+        justify="center"
       >
         <List ref={ref} ml={['0', '0', '0', '1rem']} pb="1rem" spacing={5}>
           <MotionListItem

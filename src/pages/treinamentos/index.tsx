@@ -3,8 +3,13 @@ import ForWhoLegalDesign from './components/ForWhoLegalDesign'
 import HomeScreenTrainning from './components/HomeScreenTrainning'
 import ItWorkTrainning from './components/ItWorkTrainning'
 import WhyTrainningMyTeam from './components/WhyTrainningMyTeam'
+import { Flex } from '@chakra-ui/react'
 
 import Head from 'next/head'
+import HomeForm from '../../shared/components/HomeForm'
+import KnowCompaniesCommomTemplate from '../../shared/components/KnowCompaniesCommomTemplate'
+import TestimonialsTrainning from './components/TestimonialsTrainning'
+import WhoIsBits from '../consultoria/components/WhoIsBits'
 
 const Trainnings: NextPage = () => {
   return (
@@ -48,10 +53,14 @@ const Trainnings: NextPage = () => {
         <meta name="twitter:creator" content="Bits Academy" key="twhandle" />
       </Head>
       <>
-        <HomeScreenTrainning />
+        <HomeForm />
         <WhyTrainningMyTeam />
+        <KnowCompaniesCommomTemplate />
         <ItWorkTrainning />
-        <ForWhoLegalDesign />
+        <TestimonialsTrainning />
+        <Flex mt={['-7rem', '-7rem', 0]}>
+          <WhoIsBits />
+        </Flex>
       </>
     </>
   )

@@ -36,8 +36,7 @@ export default function ItWorkTrainning() {
       h="100%"
       w="100%"
       flexDir="column"
-      mb="10rem"
-      mt={['-1rem', '-1rem', '-1rem', '-2rem', '-3.5rem']}
+      mt={['4.5rem', '4.5rem', '6rem']}
     >
       <Fade bottom>
         <Heading
@@ -61,6 +60,7 @@ export default function ItWorkTrainning() {
           mt="1rem"
           fontSize="1rem"
           color="#343A40"
+          maxW="900px"
           lineHeight="1.5rem"
         >
           O treinamento de Legal Design é customizado para a realidade da sua

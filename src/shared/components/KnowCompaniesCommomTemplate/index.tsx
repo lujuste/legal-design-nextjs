@@ -105,7 +105,7 @@ const dataCustomers = [
   },
 ]
 
-export default function KnowCompaniesCommom() {
+export default function KnowCompaniesCommomTemplate() {
   return (
     <Flex px="1.5rem" w="100%" h="100%" bgColor="#F8F9FA">
       <Flex
