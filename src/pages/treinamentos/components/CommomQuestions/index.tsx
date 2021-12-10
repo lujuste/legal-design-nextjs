@@ -18,7 +18,7 @@ import {
 
 import Fade from 'react-reveal/Fade'
 
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 import { BsTriangleFill } from 'react-icons/bs'
 import { useViewportContext } from '../../../../contexts/ViewContext'
@@ -29,7 +29,7 @@ type MotionProps = Merge<HTMLChakraProps<'div'>, HTMLMotionProps<'div'>>
 
 const MotionListItem: NextPage<MotionProps> = motion(ListItem)
 
-export default function WhyTrainningMyTeam() {
+export default function CommomQuestions() {
   const { ref, inView }: any = useViewportContext()
   const animation = useAnimation()
 
@@ -62,36 +62,37 @@ export default function WhyTrainningMyTeam() {
   return (
     <Flex
       flexDir={['column', 'column', 'column', 'row']}
-      maxW="1400"
+      maxW="100%"
       mx="auto"
-      justify="space-between"
+      justify="center"
       align="center"
       h={['100%']}
-      py={['0', '0', '0', '0', '1rem']}
-      px={['0', '0', '0', '0rem']}
-      mb={['6rem', '6rem', '8rem', '8rem', '10rem']}
+      py="8rem"
+      bgColor="#F8F9FA"
+      mt={['3rem', '3rem', '0', '0']}
+      px={['0', '0', '0', '6rem']}
+      mb={['0', '0', '0', '3rem']}
     >
       <Flex
         flexDir="column"
-        maxW={['264px', '264px', '264px', '400px', '618px']}
+        maxW={['264px', '264px', '264px', '400px', '518px', '1400px']}
         h="auto"
-        justify="space-between"
+        justify="center"
         mx="auto"
+        mt={['-2rem', '-2rem', 0]}
       >
         <Fade bottom>
           <Heading
+            mt={['-2rem', '-2rem', '0']}
             fontFamily="Raleway"
             lineHeight={['2.5rem', '2.5rem', '2.5rem', '3.438rem']}
             fontSize={['1.875rem', '1.875rem', '1.875rem', '3rem']}
             mx="auto"
             fontWeight="600"
             textAlign={['center', 'center', 'center', 'left']}
-            mt={['3rem', '3rem', '3rem', '5.5rem']}
           >
-            <Text as="span" color="pink.900">
-              Porque treinar{' '}
-            </Text>
-            meu time em Legal Design?
+            <Text color="pink.900">Perguntas </Text>
+            frequentes:
           </Heading>
         </Fade>
         <Fade bottom>
@@ -107,15 +108,16 @@ export default function WhyTrainningMyTeam() {
         {isWideVersion && (
           <Fade bottom>
             <Button
-              w="100%"
-              mt="1.5rem"
-              maxW="229px"
-              h="50px"
-              mr="auto"
-              bgColor="pink.900"
-              color="white"
+              mt="2rem"
               px="1rem"
+              w="292px"
               fontSize="0.875rem"
+              fontWeight="700"
+              color="white"
+              bgColor="pink.900"
+              h="48px"
+              textShadow="2xl"
+              boxShadow="2xl"
               _hover={{
                 bgColor: '#fff',
                 color: 'pink.900',
@@ -131,18 +133,13 @@ export default function WhyTrainningMyTeam() {
         flex="1"
         flexDir={['column', 'column', 'column', 'row']}
         align="center"
-        mt={['1.5rem', '1.5rem', '1.5rem', '6rem']}
+        mt={['0rem', '0rem', '1.5rem', '-4rem']}
         maxW={['300px', '300px', '300px', '567px']}
         h="auto"
         mx="auto"
         justify="center"
       >
-        <List
-          ref={ref}
-          ml={['0', '0', '0', '1rem']}
-          pb="1rem"
-          spacing={[5, 5, 6, 7]}
-        >
+        <List ml={['0', '0', '0', '1rem']} mt="3rem" spacing={2}>
           <MotionListItem
             as="h2"
             display="flex"
@@ -150,7 +147,6 @@ export default function WhyTrainningMyTeam() {
             color="#666666"
             fontWeight="normal"
             lineHeight="1.5rem"
-            animate={animation}
           >
             <ListIcon
               mt="0.2rem"
@@ -165,9 +161,11 @@ export default function WhyTrainningMyTeam() {
             />
             <Text>
               <Text as="span" color="pink.900">
-                Menos vai e volta{' '}
+                O Legal Design é só deixar o documento bonito?
               </Text>{' '}
-              na negociação de contratos
+              Não. O Legal design é focado em funcionalidade. O objetivo retirar
+              a complexidade do documento jurídico para que o usuário final
+              consiga entender facilmente.
             </Text>
           </MotionListItem>
           <MotionListItem
@@ -176,7 +174,6 @@ export default function WhyTrainningMyTeam() {
             fontSize="1rem"
             fontWeight="normal"
             lineHeight="1.5rem"
-            animate={animation}
           >
             <ListIcon
               mt="0.4rem"
@@ -203,7 +200,6 @@ export default function WhyTrainningMyTeam() {
             fontSize="1rem"
             fontWeight="normal"
             lineHeight="1.5rem"
-            animate={animation}
           >
             <ListIcon
               mt="0.4rem"
@@ -245,7 +241,6 @@ export default function WhyTrainningMyTeam() {
             fontWeight="normal"
             lineHeight="1.5rem"
             color="#666666"
-            animate={animation}
           >
             <ListIcon
               mt="0.4rem"
@@ -270,49 +265,22 @@ export default function WhyTrainningMyTeam() {
               </Text>
             </Text>
           </MotionListItem>
-          <MotionListItem
-            display="flex"
-            fontSize="1rem"
-            fontWeight="normal"
-            lineHeight="1.5rem"
-            color="#666666"
-            animate={animation}
-          >
-            <ListIcon
-              mt="0.4rem"
-              textAlign="justify"
-              justifyItems="initial"
-              transform="rotate(90deg)"
-              mr="1rem"
-              w={4}
-              h={4}
-              as={BsTriangleFill}
-              color="pink.900"
-            />
-            <Text>
-              Uma maior{' '}
-              <Text as="span" sx={{ color: 'pink.900' }}>
-                {' '}
-                taxa de sucesso{' '}
-              </Text>{' '}
-              em ações no judiciário
-            </Text>
-          </MotionListItem>
         </List>
       </Flex>
 
       {!isWideVersion && (
         <Fade bottom>
           <Button
-            w="100%"
-            mt="1.5rem"
-            maxW="229px"
-            h="50px"
-            mx="auto"
-            bgColor="pink.900"
-            color="white"
+            mt="3rem"
             px="1rem"
+            w="292px"
             fontSize="0.875rem"
+            fontWeight="700"
+            color="white"
+            bgColor="pink.900"
+            h="48px"
+            textShadow="2xl"
+            boxShadow="2xl"
             _hover={{
               bgColor: '#fff',
               color: 'pink.900',

@@ -57,7 +57,7 @@ export default function ItWorkTrainning() {
       <Fade>
         <Text
           textAlign="center"
-          mt="1rem"
+          mt="1.5rem"
           fontSize="1rem"
           color="#343A40"
           maxW="900px"
@@ -74,7 +74,7 @@ export default function ItWorkTrainning() {
         mx="auto"
         align="center"
         justify="center"
-        mt={['2.85rem', '2.85rem', '3rem', '4rem']}
+        mt={['3.85rem', '3.85rem', '5rem', '6rem']}
         bgImage={
           isMobile
             ? `url('/images/it-work-trainning-mobile.svg')`

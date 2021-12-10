@@ -79,7 +79,8 @@ export default function HomeScreenConsultancy() {
               maxW={['300px', '300px', '900px', '440px', '400px']}
               mt="2rem"
             >
-              Transforme seus documentos e traga mais resultados para a empresa.
+              Transformamos seus documentos. Fazemos com que ele seja simples,
+              claro e fácil entender.
             </Text>
           </GridItem>
 

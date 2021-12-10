@@ -13,37 +13,16 @@ import Image from 'next/image'
 const dataCustomers = [
   {
     description: 'Consultoria em Legal Design.',
-    image: 'brasil-prev',
+    image: 'bndes',
     size: '24.39px',
     width: '80px',
   },
   {
     description: 'Consultoria em Legal Design.',
-    image: 'carrefour-banco',
-    size: '18.31px',
+    image: 'arcelor-mittal',
+    size: '28.31px',
     width: '80px',
   },
-  {
-    description: 'Consultoria em Legal Design.',
-    image: 'carrefour',
-    size: '64.58px',
-    width: '80px',
-  },
-
-  {
-    description: 'Consultoria em Legal Design.',
-    image: 'cogna',
-    size: '29.27px',
-    width: '96px',
-  },
-
-  {
-    description: 'Consultoria em Legal Design.',
-    image: 'cyrela',
-    size: '21.46px',
-    width: '80px',
-  },
-
   {
     description:
       'Curso customizado de Legal Design para o time da América Latina.',
@@ -52,8 +31,29 @@ const dataCustomers = [
     width: '80px',
   },
   {
+    description: 'Consultoria em Legal Design.',
+    image: 'equatorial',
+    size: '64.58px',
+    width: '80px',
+  },
+
+  {
+    description: 'Consultoria em Legal Design.',
+    image: 'max-milhas',
+    size: '29.27px',
+    width: '96px',
+  },
+
+  {
+    description: 'Consultoria em Legal Design.',
+    image: 'veirano',
+    size: '21.46px',
+    width: '80px',
+  },
+
+  {
     description: 'Consultoria de documento em Legal Design.',
-    image: 'lobby',
+    image: 'marcosinacio',
     size: '23.41px',
     width: '80px',
   },
@@ -61,47 +61,9 @@ const dataCustomers = [
   {
     description:
       'Treinamento de Legal Design para treinar o departamento jurídico.',
-    image: 'saint-gobain',
+    image: 'ml',
     size: '80px',
     width: '72.77px',
-  },
-
-  {
-    description: 'Consultoria de uma série de documentos.',
-    image: 'seusdados',
-    size: '14.46px',
-    width: '80px',
-  },
-  {
-    description: 'Consultoria em Legal Design.',
-    image: 'sicredi',
-    size: '18.31px',
-    width: '80px',
-  },
-  {
-    description: 'Consultoria e treinamento de Legal Design.',
-    image: 'smu',
-    size: '69.4px',
-    width: '80px',
-  },
-
-  {
-    description: 'Consultoria de uma série de documentos.',
-    image: 'spic',
-    size: '28.03px',
-    width: '80px',
-  },
-  {
-    description: 'Consultoria em Legal Design',
-    image: 'tecban',
-    size: '26.99px',
-    width: '80px',
-  },
-  {
-    description: 'Consultoria em Legal Design',
-    image: 'transformacao-digital',
-    size: '11.57px',
-    width: '80px',
   },
 ]
 
@@ -111,7 +73,7 @@ export default function KnowCompaniesCommomTemplate() {
       <Flex
         h="100%"
         pt="1rem"
-        pb={['6rem', '6rem', '3.5rem', '3.5rem']}
+        pb={['3.5rem', '3.5rem', '3.5rem', '3.5rem']}
         w="100%"
         maxW="1400px"
         align="center"
@@ -130,7 +92,7 @@ export default function KnowCompaniesCommomTemplate() {
           <Heading
             fontFamily="Raleway"
             maxW={['300px', '300px', '700px', '600px', '500px']}
-            mt={['4rem', '4rem', '4rem', '-2rem']}
+            mt={['1.5rem', '1.5rem', '4rem', '-2rem']}
             textAlign={['center', 'center', 'center', 'left', 'left']}
             mr={[0, 0, 0, 0, '3rem', '3rem']}
             mx={['auto', 'auto']}
@@ -160,7 +122,7 @@ export default function KnowCompaniesCommomTemplate() {
 
         <Grid
           maxW="1013px"
-          mt="3.5rem"
+          mt="2.5rem"
           gap={[4]}
           mx="2rem"
           templateColumns={[

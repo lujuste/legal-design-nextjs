@@ -1,23 +1,24 @@
 import { Flex, Heading, Grid, Icon, Text } from '@chakra-ui/react'
-import BookIcon from './icons/BookIcon'
-import SearchIcon from './icons/SearchIcon'
-import CompaniesIcon from './icons/CompaniesIcon'
-import CountryIcon from './icons/CountryIcon'
-import PeoplesIcon from './icons/PeoplesIcon'
+
+import SearchIcon from '../../../consultoria/components/WhoIsBits/icons/SearchIcon'
+import CompaniesIcon from '../../../consultoria/components/WhoIsBits/icons/CompaniesIcon'
+import CountryIcon from '../../../consultoria/components/WhoIsBits/icons/CountryIcon'
+import PeoplesIcon from '../../../consultoria/components/WhoIsBits/icons/PeoplesIcon'
 
 import Fade from 'react-reveal/Fade'
 import ButtonCards from '../../../../components/Cards/ButtonCards'
 
-export default function WhoIsBits() {
+export default function WhoIsBitsTemplate() {
   return (
     <Flex
-      mt={['1rem', '1rem', '1rem', '-5rem', '-5rem']}
-      py="3rem"
+      mt={['1rem', '1rem', '1rem', '-9rem', '-10rem']}
+      py={'3rem'}
       w="100%"
       bgColor="#FFF"
       h="100%"
       mx="auto"
       justify="center"
+      mb={['-2rem', '-2rem', '1.5rem']}
     >
       <Flex justify="center" maxW="1440px" mx="auto" h="100%">
         <Flex justify="center" w="100%" mx="auto" flexDir="column">
@@ -27,7 +28,7 @@ export default function WhoIsBits() {
               textAlign="center"
               fontFamily="Raleway"
               fontSize={['1.875rem', '1.875rem', '1.875rem', '3rem']}
-              mb={['1rem', '1rem', '3rem', '3rem']}
+              mb={['3rem']}
               mt={['1rem', '1rem', '2rem']}
               fontWeight="600"
               maxW={['270px', '300px', '600px', '1090px']}
@@ -50,7 +51,7 @@ export default function WhoIsBits() {
             mx="auto"
             px="1rem"
             gap={['2', '2', '5', '10', '10']}
-            mb={['1rem', '1rem', '3rem', '3rem']}
+            mb="3rem"
             mt={['1rem', '1rem', '2rem']}
           >
             <Flex align="center" maxW="322px" flexDir="column">

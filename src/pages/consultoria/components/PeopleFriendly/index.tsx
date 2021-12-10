@@ -1,7 +1,22 @@
-import { Flex, Heading, Text, Box, Grid, GridItem } from '@chakra-ui/react'
+import {
+  Flex,
+  Heading,
+  Text,
+  Box,
+  Grid,
+  GridItem,
+  useBreakpointValue,
+} from '@chakra-ui/react'
 import Image from 'next/image'
 
 export default function PeopleFriendly() {
+  const isMobile = useBreakpointValue({
+    base: true,
+    sm: true,
+    md: false,
+    lg: false,
+    xl: false,
+  })
   return (
     <Flex
       bgColor="white"
@@ -42,9 +57,14 @@ export default function PeopleFriendly() {
             quality={100}
           />
         </GridItem>
-        <GridItem>
+        <GridItem
+          alignItems="center"
+          justify="center"
+          gridRow={isMobile ? 1 : 0}
+          mt={isMobile ? 16 : 0}
+        >
           <Flex
-            flexDir="column"
+            flexDir="column-reverse"
             maxW={['420px', '420px', '480px', '514px']}
             mx="auto"
             h="100%"

@@ -10,6 +10,8 @@ import HomeForm from '../../shared/components/HomeForm'
 import KnowCompaniesCommomTemplate from '../../shared/components/KnowCompaniesCommomTemplate'
 import TestimonialsTrainning from './components/TestimonialsTrainning'
 import WhoIsBits from '../consultoria/components/WhoIsBits'
+import CommomQuestions from './components/CommomQuestions'
+import WhoIsBitsTemplate from './components/WhoIsBitsTemplate'
 
 const Trainnings: NextPage = () => {
   return (
@@ -59,8 +61,10 @@ const Trainnings: NextPage = () => {
         <ItWorkTrainning />
         <TestimonialsTrainning />
         <Flex mt={['-7rem', '-7rem', 0]}>
-          <WhoIsBits />
+          <WhoIsBitsTemplate />
         </Flex>
+
+        <CommomQuestions />
       </>
     </>
   )

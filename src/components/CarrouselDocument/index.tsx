@@ -26,6 +26,7 @@ export default function CarrouselDocument() {
             mx="auto"
             align="center"
             mb="4rem"
+            mt={['1rem', '1rem', '1.5rem', '1.5rem']}
             overflowX="hidden"
           >
             <Fade bottom>
