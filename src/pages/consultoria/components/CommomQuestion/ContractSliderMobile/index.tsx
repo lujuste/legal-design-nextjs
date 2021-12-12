@@ -3,6 +3,9 @@ import Image from 'next/image'
 import { Navigation, Pagination, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { dataContracts } from '../../ContractsSlider'
+
+import Fade from 'react-reveal'
+
 export default function ContractSliderMobile() {
   return (
     <Flex
@@ -15,21 +18,23 @@ export default function ContractSliderMobile() {
       mx="auto"
       pb="1.8rem"
     >
-      <Heading
-        mt="2rem"
-        mx="auto"
-        textAlign="center"
-        fontSize="30px"
-        fontFamily="Raleway"
-        fontWeight="600"
-        maxW="320px"
-        mb="-2rem"
-      >
-        Documentos{' '}
-        <Text as="span" color="pink.900">
-          após o Legal Design
-        </Text>
-      </Heading>
+      <Fade bottom>
+        <Heading
+          mt="2rem"
+          mx="auto"
+          textAlign="center"
+          fontSize="30px"
+          fontFamily="Raleway"
+          fontWeight="600"
+          maxW="320px"
+          mb="-2rem"
+        >
+          Documentos{' '}
+          <Text as="span" color="pink.900">
+            após o Legal Design
+          </Text>
+        </Heading>
+      </Fade>
       <Swiper
         slidesPerView={1}
         navigation

@@ -13,7 +13,7 @@ export const MotionButton: NextPage<MotionButtonProps> = motion(Button)
 interface callToActionProps extends MotionButtonProps {
   callToAction: string
   rest?: any
-  loading: boolean
+  loading?: boolean
 }
 
 export default function ButtonCards({

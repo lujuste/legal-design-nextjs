@@ -12,16 +12,6 @@ import {
   TextProps,
 } from '@chakra-ui/react'
 
-import Head from 'next/head'
-
-import { HTMLMotionProps, motion, AnimatePresence } from 'framer-motion'
-type Merge<P, T> = Omit<P, keyof T> & T
-
-type MotionProps = Merge<HTMLChakraProps<'div'>, HTMLMotionProps<'div'>>
-
-export const MotionHeading: NextPage<MotionProps> = motion(Heading)
-const MotionText: NextPage<MotionProps> = motion(Text)
-
 import ContractBeforeIcon from './ContractBeforeIcon'
 import ContractAfterIcon from './ContractAfterIcon'
 import ContractAfterIconDesktop from './components/ContractAfterMobileIcon'
@@ -33,6 +23,17 @@ import ContractImage from './components/ContractImage'
 import dynamic from 'next/dynamic'
 import LegalDesignComparation from './components/LegalDesignComparation'
 import { useViewportContext } from '../../contexts/ViewContext'
+
+import Head from 'next/head'
+
+import { HTMLMotionProps, motion, AnimatePresence } from 'framer-motion'
+
+type Merge<P, T> = Omit<P, keyof T> & T
+
+type MotionProps = Merge<HTMLChakraProps<'div'>, HTMLMotionProps<'div'>>
+
+export const MotionHeading: NextPage<MotionProps> = motion(Heading)
+const MotionText: NextPage<MotionProps> = motion(Text)
 
 const LegalDesign: NextPage = () => {
   const { ref }: any = useViewportContext()

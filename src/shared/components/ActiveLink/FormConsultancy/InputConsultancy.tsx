@@ -74,9 +74,9 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
       />
 
       {!!error && (
-        <Flex mt="0.3rem" mb="0.5rem">
-          <WarningIcon h={4} w={4} color="white" mr="0.5rem" />
-          <Text fontWeight="300" color="white" fontSize="14px">
+        <Flex mt="0.3rem" mb="0.1rem">
+          <WarningIcon mt="0.2rem" h={3} w={3} color="black" mr="0.5rem" />
+          <Text fontWeight="300" color="black" fontSize="13px">
             {' '}
             {error.message}{' '}
           </Text>

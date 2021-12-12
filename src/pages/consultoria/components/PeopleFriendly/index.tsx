@@ -9,6 +9,8 @@ import {
 } from '@chakra-ui/react'
 import Image from 'next/image'
 
+import Fade from 'react-reveal'
+
 export default function PeopleFriendly() {
   const isMobile = useBreakpointValue({
     base: true,
@@ -43,20 +45,22 @@ export default function PeopleFriendly() {
         gridAutoFlow="dense"
         p={['1rem', '1rem', '3rem']}
       >
-        <GridItem
-          pt={['1rem', '1rem', '2rem', '1rem', '0']}
-          pb={['1rem', '1rem', '4.5rem']}
-          alignItems="center"
-          my="auto"
-          mb={['2rem', '2rem', '0']}
-        >
-          <Image
-            width={800}
-            height={622}
-            src="/images/dashboard2.webp"
-            quality={100}
-          />
-        </GridItem>
+        <Fade bottom>
+          <GridItem
+            pt={['1rem', '1rem', '2rem', '1rem', '0']}
+            pb={['1rem', '1rem', '4.5rem']}
+            alignItems="center"
+            my="auto"
+            mb={['2rem', '2rem', '0']}
+          >
+            <Image
+              width={800}
+              height={622}
+              src="/images/dashboard2.webp"
+              quality={100}
+            />
+          </GridItem>
+        </Fade>
         <GridItem
           alignItems="center"
           justify="center"
@@ -71,39 +75,41 @@ export default function PeopleFriendly() {
             align="center"
             justify="center"
           >
-            <Heading
-              alignItems="center"
-              justifyContent="center"
-              color="black"
-              mb="1rem"
-              fontSize={[
-                '1.563rem',
-                '1.563rem',
-                '1.875rem',
-                '1.875rem',
-                '2.5rem',
-              ]}
-              textAlign="center"
-              fontWeight="400"
-              fontFamily="Raleway"
-              lineHeight={[
-                '1.875rem',
-                '1.875rem',
-                '2.475rem',
-                '2.475rem',
-                '3.3rem',
-              ]}
-              mt={['0rem', '0rem', '-1.5rem', '-3.5rem']}
-              ml={['0', '0', '1rem']}
-              maxW={['300px', '300px', '490px']}
-            >
-              Além de documentos people friendly, você terá um{' '}
-              <Text as="span" fontWeight="700" color="pink.900">
-                Dashboard{' '}
-              </Text>{' '}
-              para acompanhar os resultados e métricas após a aplicação do{' '}
-              <strong>Legal Design</strong>
-            </Heading>
+            <Fade bottom>
+              <Heading
+                alignItems="center"
+                justifyContent="center"
+                color="black"
+                mb="1rem"
+                fontSize={[
+                  '1.563rem',
+                  '1.563rem',
+                  '1.875rem',
+                  '1.875rem',
+                  '2.5rem',
+                ]}
+                textAlign="center"
+                fontWeight="400"
+                fontFamily="Raleway"
+                lineHeight={[
+                  '1.875rem',
+                  '1.875rem',
+                  '2.475rem',
+                  '2.475rem',
+                  '3.3rem',
+                ]}
+                mt={['0rem', '0rem', '-1.5rem', '-3.5rem']}
+                ml={['0', '0', '1rem']}
+                maxW={['300px', '300px', '490px']}
+              >
+                Além de documentos people friendly, você terá um{' '}
+                <Text as="span" fontWeight="700" color="pink.900">
+                  Dashboard{' '}
+                </Text>{' '}
+                para acompanhar os resultados e métricas após a aplicação do{' '}
+                <strong>Legal Design</strong>
+              </Heading>
+            </Fade>
           </Flex>
         </GridItem>
       </Grid>

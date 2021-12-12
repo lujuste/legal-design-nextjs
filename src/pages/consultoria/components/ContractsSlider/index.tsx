@@ -8,6 +8,8 @@ import {
   Button,
 } from '@chakra-ui/react'
 
+import Fade from 'react-reveal'
+
 export const dataContracts = [
   { image: '01', alternative: 'Contrato transformado com o legal design' },
   { image: '02', alternative: 'Contrato transformado com o legal design' },
@@ -30,20 +32,22 @@ export default function ContractSlider() {
         mt="2.5rem"
         mb="2rem"
       >
-        <Heading
-          fontSize={['30px', '30px', '36px', '48px']}
-          fontFamily="Raleway"
-          fontWeight="600"
-          mx="auto"
-          maxW={['360px', '360px', '500px', '1200px']}
-          textAlign="center"
-          mt={['1rem', '1rem', '2rem', '2rem']}
-        >
-          Documentos{' '}
-          <Text as="span" color="pink.900">
-            após o Legal Design
-          </Text>
-        </Heading>
+        <Fade bottom>
+          <Heading
+            fontSize={['30px', '30px', '36px', '48px']}
+            fontFamily="Raleway"
+            fontWeight="600"
+            mx="auto"
+            maxW={['360px', '360px', '500px', '1200px']}
+            textAlign="center"
+            mt={['1rem', '1rem', '2rem', '2rem']}
+          >
+            Documentos{' '}
+            <Text as="span" color="pink.900">
+              após o Legal Design
+            </Text>
+          </Heading>
+        </Fade>
 
         <Flex
           align="center"

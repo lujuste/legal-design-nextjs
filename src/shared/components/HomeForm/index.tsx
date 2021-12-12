@@ -27,16 +27,19 @@ import {
   CheckboxGroup,
   Stack,
 } from '@chakra-ui/react'
-import api from '../../../services/api'
 
 export default function HomeForm() {
   const [isChecked, setIsChecked] = useState(false)
 
   const formSchema = yup.object().shape({
-    name: yup.string().required('campo obrigatorio'),
-    phone: yup.number(),
-    email: yup.string(),
-    company: yup.string(),
+    name: yup.string().required('Preencha seu nome'),
+    phone: yup
+      .number()
+      .typeError('Telefone inválido')
+      .required('Preencha seu telefone'),
+
+    email: yup.string().required('Preencha seu e-mail'),
+    company: yup.string().required('Preencha sua empresa'),
     lgpd: yup.boolean(),
   })
 
@@ -196,7 +199,7 @@ export default function HomeForm() {
             >
               <InputConsultancy
                 name="name"
-                label="NOME"
+                label="NOME*"
                 type="text"
                 {...register('name')}
                 error={errors.name}
@@ -204,21 +207,21 @@ export default function HomeForm() {
               <InputConsultancy
                 mt={['0.5rem', '0.5rem', '2rem']}
                 name="phone"
-                label="TELEFONE"
+                label="TELEFONE*"
                 {...register('phone')}
                 error={errors.phone}
               />
               <InputConsultancy
                 mt={['0.5rem', '0.5rem', '2rem']}
                 name="email"
-                label="E-MAIL"
+                label="E-MAIL*"
                 {...register('email')}
                 error={errors.email}
               />
               <InputConsultancy
                 mt={['0.5rem', '0.5rem', '2rem']}
                 name="company"
-                label="EMPRESA"
+                label="EMPRESA*"
                 {...register('company')}
                 error={errors.company}
               />
