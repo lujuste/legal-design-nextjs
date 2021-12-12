@@ -139,28 +139,32 @@ export default function HomeScreen(): JSX.Element {
             </Fade>
 
             <Fade bottom>
-              <MotionButton
-                mt={['2rem', '2rem']}
-                mr={['0', '0', '0', '0', '17rem']}
-                w="231px"
-                h="50px"
-                bgColor="pink.900"
-                color="#FFF"
-                fontSize={['14px', '14px', '15px']}
-                _hover={{
-                  bgColor: '#fff',
-                  color: 'pink.900',
-                  border: '1px solid #CC3366',
-                }}
-                _active={{
-                  bgColor: '#fff',
-                  color: 'pink.900',
-                  border: '1px solid #CC3366',
-                }}
-                whileHover={{ scale: 1.02, boxShadow: 'inherit' }}
-              >
-                Quero aplicar o Legal Design
-              </MotionButton>
+              <Link href="/treinamentos" passHref>
+                <MotionButton
+                  mt={['1rem', '2rem']}
+                  mr={['0', '0', '0', '0', '17rem']}
+                  w="231px"
+                  mb={['1rem', '0']}
+                  h="50px"
+                  zIndex="99999999999999999"
+                  bgColor="pink.900"
+                  color="#FFF"
+                  fontSize={['14px', '14px', '15px']}
+                  _hover={{
+                    bgColor: '#fff',
+                    color: 'pink.900',
+                    border: '1px solid #CC3366',
+                  }}
+                  _active={{
+                    bgColor: '#fff',
+                    color: 'pink.900',
+                    border: '1px solid #CC3366',
+                  }}
+                  whileHover={{ scale: 1.02, boxShadow: 'inherit' }}
+                >
+                  Quero aplicar o Legal Design
+                </MotionButton>
+              </Link>
             </Fade>
           </Flex>
           <Flex
@@ -176,6 +180,7 @@ export default function HomeScreen(): JSX.Element {
             <Flex
               ml={['-3rem', '0', '0', '0', '12rem']}
               maxW={['500px', '500px', '500px', '500px', '600px']}
+              mt={['1.5rem', '0']}
             >
               <Reveal>
                 <Flex
@@ -203,22 +208,24 @@ export default function HomeScreen(): JSX.Element {
           </Flex>
         </Flex>
         {isWideVersion && (
-          <Link
-            href="https://api.whatsapp.com/send?phone=5511910534971&text=Quero%20falar%20com%20um%20especialista%20sobre%20Legal%20Design"
-            passHref
-          >
-            <MotionFlex
-              initial={{ scale: 1, opacity: 1 }}
-              animate={{ scale: 0.9, opacity: 1 }}
-              transition={{ repeat: Infinity, duration: 1, ease: 'easeIn' }}
-              position="fixed"
-              cursor="pointer"
-              right="0"
-              top={['90vh']}
-              zIndex="100000"
+          <Link href="https://api.whatsapp.com/send?phone=5511910534971&text=Quero%20falar%20com%20um%20especialista%20sobre%20Legal%20Design">
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=5511910534971&text=Quero%20falar%20com%20um%20especialista%20sobre%20Legal%20Design"
             >
-              <FloatWhatsapp />
-            </MotionFlex>
+              <MotionFlex
+                initial={{ scale: 1, opacity: 1 }}
+                animate={{ scale: 0.9, opacity: 1 }}
+                transition={{ repeat: Infinity, duration: 1, ease: 'easeIn' }}
+                position="fixed"
+                cursor="pointer"
+                right="0"
+                top={['90vh']}
+                zIndex="100000"
+              >
+                <FloatWhatsapp />
+              </MotionFlex>
+            </a>
           </Link>
         )}
       </Flex>

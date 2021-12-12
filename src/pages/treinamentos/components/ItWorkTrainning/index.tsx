@@ -10,6 +10,10 @@ import {
 import Fade from 'react-reveal/Fade'
 
 export default function ItWorkTrainning() {
+  function ScrollToForm() {
+    window.scrollTo(0, 10)
+  }
+
   const isWideVersion = useBreakpointValue({
     base: false,
     sm: false,
@@ -94,6 +98,7 @@ export default function ItWorkTrainning() {
           h="50px"
           color="white"
           mt={['4rem', '4rem', '3rem', '1rem']}
+          onClick={ScrollToForm}
           _hover={{
             bgColor: '#fff',
             color: 'pink.900',

@@ -34,6 +34,9 @@ const GlobalStyle = ({ children }: any) => {
             outline: none;
             box-shadow: none;
           }
+          html {
+            scroll-behavior: smooth;
+          }
         `}
       />
       {children}

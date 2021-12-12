@@ -33,6 +33,10 @@ export default function WhyTrainningMyTeam() {
   const { ref, inView }: any = useViewportContext()
   const animation = useAnimation()
 
+  function ScrollToForm() {
+    window.scrollTo(0, 10)
+  }
+
   useEffect(() => {
     if (inView) {
       animation.start({
@@ -121,6 +125,8 @@ export default function WhyTrainningMyTeam() {
                 color: 'pink.900',
                 border: '1px solid #CC3366',
               }}
+              overscrollBehavior="smooth"
+              onClick={ScrollToForm}
             >
               Quero contratar o treinamento
             </Button>

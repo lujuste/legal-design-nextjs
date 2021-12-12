@@ -1,5 +1,3 @@
-import { UseDisclosureReturn, useDisclosure } from '@chakra-ui/react'
-import { useRouter } from 'next/router'
 import { createContext, ReactNode, useContext, useEffect } from 'react'
 
 import { useInView } from 'react-intersection-observer'

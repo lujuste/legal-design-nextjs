@@ -33,6 +33,10 @@ export default function CheckSession() {
   const { ref, inView }: any = useViewportContext()
   const animation = useAnimation()
 
+  function scrollToForm() {
+    window.scrollTo(0, 10)
+  }
+
   useEffect(() => {
     if (inView) {
       animation.start({
@@ -95,15 +99,7 @@ export default function CheckSession() {
             para quem quer:
           </Heading>
         </Fade>
-        <Fade bottom>
-          <Text
-            textAlign={['center', 'center', 'center', 'left']}
-            mt="1rem"
-            color="#666666"
-          >
-            Times que aplicam o Legal Design em seus documentos têm:
-          </Text>
-        </Fade>
+        <Fade bottom></Fade>
 
         {isWideVersion && (
           <Fade bottom>
@@ -117,6 +113,7 @@ export default function CheckSession() {
               color="white"
               px="1rem"
               fontSize="0.875rem"
+              onClick={scrollToForm}
               _hover={{
                 bgColor: '#fff',
                 color: 'pink.900',
@@ -390,6 +387,7 @@ export default function CheckSession() {
             bgColor="pink.900"
             color="white"
             px="1rem"
+            onClick={scrollToForm}
             fontSize="0.875rem"
             _hover={{
               bgColor: '#fff',

@@ -16,6 +16,8 @@ import {
   useAnimation,
 } from 'framer-motion'
 
+import Link from 'next/link'
+
 import Fade from 'react-reveal/Fade'
 
 import { useEffect } from 'react'
@@ -95,37 +97,35 @@ export default function CommomQuestion() {
             frequentes:
           </Heading>
         </Fade>
-        <Fade bottom>
-          <Text
-            textAlign={['center', 'center', 'center', 'left']}
-            mt="1rem"
-            color="#666666"
-          >
-            Times que aplicam o Legal Design em seus documentos têm:
-          </Text>
-        </Fade>
 
         {isWideVersion && (
           <Fade bottom>
-            <Button
-              mt="2rem"
-              px="1rem"
-              w="292px"
-              fontSize="0.875rem"
-              fontWeight="700"
-              color="white"
-              bgColor="pink.900"
-              h="48px"
-              textShadow="2xl"
-              boxShadow="2xl"
-              _hover={{
-                bgColor: '#fff',
-                color: 'pink.900',
-                border: '1px solid #CC3366',
-              }}
+            <Link
+              href="https://api.whatsapp.com/send?phone=5511910534971&text=Quero%20falar%20com%20um%20especialista%20sobre%20Legal%20Design"
+              passHref
             >
-              Quero contratar o treinamento
-            </Button>
+              <a target="_blank">
+                <Button
+                  mt="2rem"
+                  px="1rem"
+                  w="292px"
+                  fontSize="0.875rem"
+                  fontWeight="700"
+                  color="white"
+                  bgColor="pink.900"
+                  h="48px"
+                  textShadow="2xl"
+                  boxShadow="2xl"
+                  _hover={{
+                    bgColor: '#fff',
+                    color: 'pink.900',
+                    border: '1px solid #CC3366',
+                  }}
+                >
+                  Quero contratar o treinamento
+                </Button>
+              </a>
+            </Link>
           </Fade>
         )}
       </Flex>
@@ -245,25 +245,32 @@ export default function CommomQuestion() {
 
       {!isWideVersion && (
         <Fade bottom>
-          <Button
-            mt="3rem"
-            px="1rem"
-            w="292px"
-            fontSize="0.875rem"
-            fontWeight="700"
-            color="white"
-            bgColor="pink.900"
-            h="48px"
-            textShadow="2xl"
-            boxShadow="2xl"
-            _hover={{
-              bgColor: '#fff',
-              color: 'pink.900',
-              border: '1px solid #CC3366',
-            }}
+          <Link
+            href="https://api.whatsapp.com/send?phone=5511910534971&text=Quero%20falar%20com%20um%20especialista%20sobre%20Legal%20Design"
+            passHref
           >
-            Quero contratar o treinamento
-          </Button>
+            <a target="_blank">
+              <Button
+                mt="3rem"
+                px="1rem"
+                w="292px"
+                fontSize="0.875rem"
+                fontWeight="700"
+                color="white"
+                bgColor="pink.900"
+                h="48px"
+                textShadow="2xl"
+                boxShadow="2xl"
+                _hover={{
+                  bgColor: '#fff',
+                  color: 'pink.900',
+                  border: '1px solid #CC3366',
+                }}
+              >
+                Quero contratar o treinamento
+              </Button>
+            </a>
+          </Link>
         </Fade>
       )}
     </Flex>

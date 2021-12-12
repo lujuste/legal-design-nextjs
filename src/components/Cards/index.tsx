@@ -204,7 +204,10 @@ export default function Cards() {
                       description="Transformamos seus documentos. Fazemos com que ele seja simples, claro e fácil entender."
                     />
                     <Flex>
-                      <ButtonCards callToAction="Quero que a Bits faça meu documento" />
+                      <ButtonCards
+                        href="/consultoria"
+                        callToAction="Quero que a Bits faça meu documento"
+                      />
                     </Flex>
                   </GridItem>
                 </Reveal>
@@ -216,7 +219,10 @@ export default function Cards() {
                       description="Treinamos o seu time para que ele crie documentos amigáveis."
                     />
                     <Flex>
-                      <ButtonCards callToAction="Quero que a Bits treine meu time" />
+                      <ButtonCards
+                        href="/treinamentos"
+                        callToAction="Quero que a Bits treine meu time"
+                      />
                     </Flex>
                   </GridItem>
                 </Reveal>
@@ -228,7 +234,10 @@ export default function Cards() {
                       description="Ensinamos você a criar seu documento em Legal Design do zero."
                     />
                     <Flex>
-                      <ButtonCards callToAction="Quero me inscrever" />
+                      <ButtonCards
+                        href="https://legaldesign.bitstechs.com/iniciante/"
+                        callToAction="Quero me inscrever"
+                      />
                     </Flex>
                   </GridItem>
                 </Reveal>

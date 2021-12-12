@@ -111,24 +111,30 @@ export default function Header() {
                   </Flex>
 
                   <Flex align="center" ml="auto" maxW="400px">
-                    <MotionButton
-                      ml="2rem"
-                      mr="1rem"
-                      color="white"
-                      w="100%"
-                      h="50"
-                      bgColor="pink.900"
-                      whileTap={{ scale: 1.04 }}
-                      whileHover={{ scale: 1.04 }}
-                      _focus={{ border: 'none' }}
-                      _hover={{
-                        bgColor: '#fff',
-                        color: 'pink.900',
-                        border: '1px solid #CC3366',
-                      }}
+                    <Link
+                      href="https://api.whatsapp.com/send?phone=5511910534971&text=Quero%20falar%20com%20um%20especialista%20sobre%20Legal%20Design"
+                      passHref
                     >
-                      Fale com um especialista!
-                    </MotionButton>
+                      <a target="_blank">
+                        <MotionButton
+                          mr="1rem"
+                          color="white"
+                          w="100%"
+                          h="50"
+                          bgColor="pink.900"
+                          whileTap={{ scale: 1.04 }}
+                          whileHover={{ scale: 1.04 }}
+                          _focus={{ border: 'none' }}
+                          _hover={{
+                            bgColor: '#fff',
+                            color: 'pink.900',
+                            border: '1px solid #CC3366',
+                          }}
+                        >
+                          Fale com especialista
+                        </MotionButton>
+                      </a>
+                    </Link>
                   </Flex>
                 </>
               ) : (
@@ -226,25 +232,28 @@ export default function Header() {
                 </Flex>
 
                 <Flex align="center" ml="auto" maxW="400px">
-                  <MotionButton
-                    ml="2rem"
-                    mr="1rem"
-                    color="white"
-                    w="100%"
-                    boxShadow="2xl"
-                    h="50"
-                    bgColor="pink.900"
-                    whileTap={{ scale: 1.04 }}
-                    whileHover={{ scale: 1.04 }}
-                    _focus={{ border: 'none' }}
-                    _hover={{
-                      bgColor: '#fff',
-                      color: 'pink.900',
-                      border: '1px solid #CC3366',
-                    }}
-                  >
-                    Fale com um especialista!
-                  </MotionButton>
+                  <Link href="https://api.whatsapp.com/send?phone=5511910534971&text=Quero%20falar%20com%20um%20especialista%20sobre%20Legal%20Design">
+                    <a target="_blank">
+                      <MotionButton
+                        mr="1rem"
+                        color="white"
+                        w="100%"
+                        boxShadow="2xl"
+                        h="50"
+                        bgColor="pink.900"
+                        whileTap={{ scale: 1.04 }}
+                        whileHover={{ scale: 1.04 }}
+                        _focus={{ border: 'none' }}
+                        _hover={{
+                          bgColor: '#fff',
+                          color: 'pink.900',
+                          border: '1px solid #CC3366',
+                        }}
+                      >
+                        Fale com especialista
+                      </MotionButton>
+                    </a>
+                  </Link>
                 </Flex>
               </>
             ) : (

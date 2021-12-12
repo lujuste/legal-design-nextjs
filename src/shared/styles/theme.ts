@@ -30,6 +30,7 @@ export const theme = extendTheme({
       body: {
         bg: 'gray.100',
         color: 'black',
+        behavior: 'smooth',
       },
     },
   },

@@ -9,6 +9,10 @@ import Fade from 'react-reveal/Fade'
 import ButtonCards from '../../../../components/Cards/ButtonCards'
 
 export default function WhoIsBits() {
+  function scrollToForm() {
+    window.scrollTo(0, 10)
+  }
+
   return (
     <Flex
       mt={['1rem', '1rem', '1rem', '-5rem', '-5rem']}
@@ -115,6 +119,7 @@ export default function WhoIsBits() {
             fontSize="13px"
             mb="1.5rem"
             callToAction="Quero que a Bits faça meu Legal Design"
+            onClick={scrollToForm}
           />
         </Flex>
       </Flex>

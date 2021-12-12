@@ -21,6 +21,10 @@ export const dataContracts = [
 ]
 
 export default function ContractSlider() {
+  function scrollToForm() {
+    window.scrollTo(0, 10)
+  }
+
   return (
     <Flex mx="auto" flexDir="column" w="100%" h="100%" mb="2rem">
       <Flex
@@ -125,6 +129,7 @@ export default function ContractSlider() {
         mx="auto"
         mt={['-2rem', '-2rem', '-2rem', '-2rem', '-2rem', '4rem']}
         h="50px"
+        onClick={scrollToForm}
         mb="4rem"
         _hover={{
           bgColor: '#fff',

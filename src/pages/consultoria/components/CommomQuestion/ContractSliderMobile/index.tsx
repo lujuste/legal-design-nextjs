@@ -7,6 +7,9 @@ import { dataContracts } from '../../ContractsSlider'
 import Fade from 'react-reveal'
 
 export default function ContractSliderMobile() {
+  function scrollToForm() {
+    window.scrollTo(0, 10)
+  }
   return (
     <Flex
       overflowX="hidden"
@@ -77,6 +80,7 @@ export default function ContractSliderMobile() {
         color="white"
         px="1rem"
         maxW="300px"
+        onClick={scrollToForm}
         h="45px"
       >
         Quero que a Bits faça meu Legal Design
