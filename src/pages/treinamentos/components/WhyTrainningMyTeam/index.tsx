@@ -98,15 +98,6 @@ export default function WhyTrainningMyTeam() {
             meu time em Legal Design?
           </Heading>
         </Fade>
-        <Fade bottom>
-          <Text
-            textAlign={['center', 'center', 'center', 'left']}
-            mt="1rem"
-            color="#666666"
-          >
-            Times que aplicam o Legal Design em seus documentos têm:
-          </Text>
-        </Fade>
 
         {isWideVersion && (
           <Fade bottom>
@@ -137,7 +128,7 @@ export default function WhyTrainningMyTeam() {
         flex="1"
         flexDir={['column', 'column', 'column', 'row']}
         align="center"
-        mt={['1.5rem', '1.5rem', '1.5rem', '6rem']}
+        mt={['2.5rem', '2.5rem', '1.5rem', '6rem']}
         maxW={['300px', '300px', '300px', '567px']}
         h="auto"
         mx="auto"
@@ -317,6 +308,7 @@ export default function WhyTrainningMyTeam() {
             mx="auto"
             bgColor="pink.900"
             color="white"
+            onClick={ScrollToForm}
             px="1rem"
             fontSize="0.875rem"
             _hover={{

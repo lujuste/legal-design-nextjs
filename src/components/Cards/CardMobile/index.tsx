@@ -5,11 +5,14 @@ import { useState } from 'react'
 import ReactCardFlip from 'react-card-flip'
 import SpinButtonWhite from '../CardTrainning/SpinButtonWhite'
 
+import Link from 'next/link'
+
 interface CardMobileProps {
   title: string
   description: string
   image: string
   children: ReactElement
+  href?: string
 }
 
 export default function CardMobile({
@@ -17,6 +20,7 @@ export default function CardMobile({
   description,
   image,
   children,
+  href,
   ...rest
 }: CardMobileProps) {
   const [isFlipped, setIsFlipped] = useState(false)
@@ -63,6 +67,7 @@ export default function CardMobile({
           >
             <SpinButton />
           </Button>
+
           <Text
             mt="1rem"
             mb="4rem"
@@ -88,24 +93,26 @@ export default function CardMobile({
           px="2rem"
           boxShadow="2xl"
         >
-          <Button
-            _hover={{ bgColor: 'transparent' }}
-            position="absolute"
-            bottom="7"
-            onClick={handleClick}
-            _active={{
-              background: 'transparent',
-              borderColor: 'none',
-              border: 'none',
-            }}
-            _focus={{
-              background: 'transparent',
-              borderColor: 'none',
-              border: 'none',
-            }}
-          >
-            <SpinButtonWhite />
-          </Button>
+          <Link href={href ? href : '#'} passHref>
+            <Button
+              _hover={{ bgColor: 'transparent' }}
+              position="absolute"
+              bottom="7"
+              onClick={handleClick}
+              _active={{
+                background: 'transparent',
+                borderColor: 'none',
+                border: 'none',
+              }}
+              _focus={{
+                background: 'transparent',
+                borderColor: 'none',
+                border: 'none',
+              }}
+            >
+              <SpinButtonWhite />
+            </Button>
+          </Link>
           <Text
             color="white"
             fontSize="16px"

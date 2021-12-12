@@ -7,6 +7,8 @@ import {
   HTMLChakraProps,
 } from '@chakra-ui/react'
 
+import Link from 'next/link'
+
 import Fade from 'react-reveal'
 
 import { HTMLMotionProps, motion } from 'framer-motion'
@@ -104,22 +106,29 @@ export default function WhyLegalDesign() {
       </Fade>
 
       <Fade bottom>
-        <Button
-          px="10px"
-          w="197px"
-          h="50px"
-          color="white"
-          bgColor="pink.900"
-          type="button"
-          fontSize="14px"
-          _hover={{
-            bgColor: '#fff',
-            color: 'pink.900',
-            border: '1px solid #CC3366',
-          }}
+        <Link
+          href="https://api.whatsapp.com/send?phone=5511910534971&text=Quero%20falar%20com%20um%20especialista%20sobre%20Legal%20Design"
+          passHref
         >
-          Quero ver mais exemplos
-        </Button>
+          <a target="_blank">
+            <Button
+              px="10px"
+              w="197px"
+              h="50px"
+              color="white"
+              bgColor="pink.900"
+              type="button"
+              fontSize="14px"
+              _hover={{
+                bgColor: '#fff',
+                color: 'pink.900',
+                border: '1px solid #CC3366',
+              }}
+            >
+              Quero ver mais exemplos
+            </Button>
+          </a>
+        </Link>
       </Fade>
     </Flex>
   )

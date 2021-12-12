@@ -102,7 +102,10 @@ export default function Cards() {
                 </CardMobile>
               </Reveal>
               <Reveal>
-                <ButtonCards callToAction="Quero meu contrato" />
+                <ButtonCards
+                  href="/consultoria"
+                  callToAction="Quero que a Bits faça meu documento"
+                />
               </Reveal>
             </Flex>{' '}
             <Flex mt="3rem" flexDir="column">
@@ -116,7 +119,10 @@ export default function Cards() {
                 </CardMobile>
               </Reveal>
               <Reveal>
-                <ButtonCards callToAction="Quero meu contrato" />
+                <ButtonCards
+                  href="/treinamentos"
+                  callToAction="Quero que a Bits treine meu time"
+                />
               </Reveal>
             </Flex>
             <Flex mt="3rem" flexDir="column">
@@ -130,7 +136,10 @@ export default function Cards() {
                 </CardMobile>
               </Reveal>
               <Reveal>
-                <ButtonCards callToAction="Quero meu contrato" />
+                <ButtonCards
+                  href="https://legaldesign.bitstechs.com/iniciante/"
+                  callToAction="Quero me inscrever"
+                />
               </Reveal>
             </Flex>
             <Flex mb="3rem" mt="3rem" flexDir="column">
@@ -144,7 +153,7 @@ export default function Cards() {
                 </CardMobile>
               </Reveal>
               <Reveal>
-                <ButtonCards callToAction="Quero meu contrato" />
+                <ButtonCards callToAction="Quero começar" />
               </Reveal>
             </Flex>
           </Flex>
