@@ -8,24 +8,24 @@ export const dataTestimonials = [
     image: 'cogna',
     description: 'foto do Alisson aluno de legal design',
     testimonial:
-      'O curso de Legal Design da Bits Academy foi uma excelente oportunidade de conhecer excelentes profissionais e compreender técnicas de inovação aplicadas ao Direito, assim como proporcionou diversos insights para o dia a dia do escritório que estão gerando excelentes resultados e aumento da satisfação dos clientes.',
-    employment: 'Aluno de Legal Design Básico',
+      'Ana, gostei muito! A peça ficou muito clara, a estrutura do texto, feita em conjunto com vocês, está muito agradável ao leitor e além de tudo isso, a peça ficou muito bonita e apresentável. Espero que os Juízes gostem.',
+    employment: 'Fragata e Antunes Advogados/Cogna',
   },
   {
     name: 'Andressa Barros',
     image: 'cogna',
     description: 'foto do Alisson aluno de legal design',
     testimonial:
-      'O curso de Legal Design da Bits Academy foi uma excelente oportunidade de conhecer excelentes profissionais e compreender técnicas de inovação aplicadas ao Direito, assim como proporcionou diversos insights para o dia a dia do escritório que estão gerando excelentes resultados e aumento da satisfação dos clientes.',
-    employment: 'Aluno de Legal Design Básico',
+      'Ana, gostei muito! A peça ficou muito clara, a estrutura do texto, feita em conjunto com vocês, está muito agradável ao leitor e além de tudo isso, a peça ficou muito bonita e apresentável. Espero que os Juízes gostem.',
+    employment: 'Fragata e Antunes Advogados/Cogna',
   },
   {
     name: 'Andressa Barros',
     image: 'cogna',
     description: 'foto do Alisson aluno de legal design',
     testimonial:
-      'O curso de Legal Design da Bits Academy foi uma excelente oportunidade de conhecer excelentes profissionais e compreender técnicas de inovação aplicadas ao Direito, assim como proporcionou diversos insights para o dia a dia do escritório que estão gerando excelentes resultados e aumento da satisfação dos clientes.',
-    employment: 'Aluno de Legal Design Básico',
+      'Ana, gostei muito! A peça ficou muito clara, a estrutura do texto, feita em conjunto com vocês, está muito agradável ao leitor e além de tudo isso, a peça ficou muito bonita e apresentável. Espero que os Juízes gostem.',
+    employment: 'Fragata e Antunes Advogados/Cogna',
   },
 ]
 

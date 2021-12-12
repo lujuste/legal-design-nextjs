@@ -4,44 +4,28 @@ import { Flex, Heading, Text, Box, Avatar, VStack } from '@chakra-ui/react'
 
 export const dataTestimonialsTrainning = [
   {
-    name: 'Bits Academy',
+    name: 'Emily Coelho',
     image: '',
     description: 'Empresa',
     testimonial:
-      'O curso de Legal Design da Bits Academy foi uma excelente oportunidade de conhecer excelentes profissionais e compreender técnicas de inovação aplicadas ao Direito, assim como proporcionou diversos insights para o dia a dia do escritório que estão gerando excelentes resultados e aumento da satisfação dos clientes.',
-    employment: 'Empresa',
+      'O curso foi bem legal para introduzir o tema e nos dar base para abrir a cabeça em relação ao Legal Design, adorei! Também gostei bastante que o material utilizado e os certificados de participação foram enviados para a gente logo que o curso acabou :) parabéns pelo cuidado e preocupação com os usuários.',
+    employment: 'SMU',
   },
   {
-    name: 'Bits Academy',
+    name: 'Emily Coelho',
     image: '',
     description: 'Empresa',
     testimonial:
-      'O curso de Legal Design da Bits Academy foi uma excelente oportunidade de conhecer excelentes profissionais e compreender técnicas de inovação aplicadas ao Direito, assim como proporcionou diversos insights para o dia a dia do escritório que estão gerando excelentes resultados e aumento da satisfação dos clientes.',
-    employment: 'Empresa',
+      'O curso foi bem legal para introduzir o tema e nos dar base para abrir a cabeça em relação ao Legal Design, adorei! Também gostei bastante que o material utilizado e os certificados de participação foram enviados para a gente logo que o curso acabou :) parabéns pelo cuidado e preocupação com os usuários.',
+    employment: 'SMU',
   },
   {
-    name: 'Bits Academy',
+    name: 'Emily Coelho',
     image: '',
     description: 'Empresa',
     testimonial:
-      'Tivemos oportunidades de desvendar na prática o design, ainda muito desconhecido no direito. Assim, passamos a proporcionar uma prestação de serviços inovadora, voltada para as reais necessidades dos nossos clientes, desmistificando o estereótipo de que o jurídico tem que ser algo inacessível e incompreensível.',
-    employment: 'Empresa',
-  },
-  {
-    name: 'Bits Academy',
-    image: '',
-    description: 'Empresa',
-    testimonial:
-      'Com o curso da Bits aprendi a criar os meus próprios documentos com Legal Design! Durante o curso, a gente vai colocando em prática o que aprende e já saímos de lá com um documento pronto. Com certeza foi um divisor de águas nos meus contratos e petições. Valeu cada centavo que eu paguei!',
-    employment: 'Empresa',
-  },
-  {
-    name: 'Bits Academy',
-    image: '',
-    description: 'Empresa',
-    testimonial:
-      'Curso muito rico e completo para um primeiro passo no mundo do Legal Design, com exemplos práticos, professores atenciosos. Aulas dinâmicas com intuito de despertar o senso crítico do aluno. Com certeza recomendo.',
-    employment: 'Empresa',
+      'O curso foi bem legal para introduzir o tema e nos dar base para abrir a cabeça em relação ao Legal Design, adorei! Também gostei bastante que o material utilizado e os certificados de participação foram enviados para a gente logo que o curso acabou :) parabéns pelo cuidado e preocupação com os usuários.',
+    employment: 'SMU',
   },
 ]
 
@@ -110,6 +94,7 @@ export default function SliderDesk() {
                   <Avatar
                     className="bits-avatar"
                     size="xl"
+                    bgColor="pink.300"
                     boxShadow="md"
                     name={item.name}
                     src={`/images/${item.image}.webp`}
@@ -160,6 +145,7 @@ export default function SliderDesk() {
                 </Box>
                 <VStack transform="translateY(-40px)">
                   <Avatar
+                    bgColor="pink.300"
                     boxShadow="md"
                     sx={{
                       color: 'white !important',
