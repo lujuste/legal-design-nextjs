@@ -37,7 +37,7 @@ export default function SliderDesk() {
       navigation
       pagination={{ clickable: true }}
       style={{ width: '100%', flex: '1' }}
-      initialSlide={2}
+      initialSlide={1}
       modules={[Navigation, Pagination, A11y]}
       containerModifierClass="swiper-testimonials-"
       spaceBetween={-90}

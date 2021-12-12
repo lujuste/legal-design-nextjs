@@ -64,6 +64,7 @@ export default function SliderMobile() {
               <Avatar
                 size="xl"
                 name={item.name}
+                bgColor="pink.300"
                 src={`/images/${item.image}.webp`}
                 boxShadow="xl"
                 mb={['0.5rem', 'o.5rem', '0']}
