@@ -1,3 +1,4 @@
+import type { NextPage } from 'next'
 import ButtonCards from '../../../components/Cards/ButtonCards'
 import { InputConsultancy } from '../ActiveLink/FormConsultancy/InputConsultancy'
 import { FieldError } from 'react-hook-form'
@@ -6,16 +7,6 @@ import { useState } from 'react'
 import { toast } from 'react-toastify'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import * as yup from 'yup'
-
-interface InputConsultancyProps {
-  name: string
-  email?: string
-  lgpd: boolean
-  company: string
-  phone: string
-  errors?: FieldError
-}
-
 import {
   Flex,
   Heading,
@@ -26,7 +17,26 @@ import {
   Checkbox,
   CheckboxGroup,
   Stack,
+  HTMLChakraProps,
 } from '@chakra-ui/react'
+
+import { HTMLMotionProps, motion, AnimatePresence } from 'framer-motion'
+
+type Merge<P, T> = Omit<P, keyof T> & T
+
+type MotionProps = Merge<HTMLChakraProps<'div'>, HTMLMotionProps<'div'>>
+
+export const MotionHeading: NextPage<MotionProps> = motion(Heading)
+const MotionText: NextPage<MotionProps> = motion(Text)
+
+interface InputConsultancyProps {
+  name: string
+  email?: string
+  lgpd: boolean
+  company: string
+  phone: string
+  errors?: FieldError
+}
 
 export default function HomeForm() {
   const [isChecked, setIsChecked] = useState(false)
@@ -159,7 +169,7 @@ export default function HomeForm() {
             mb={['5rem']}
             mr={['0rem', '-0.5rem', '0', '4rem', '10rem']}
           >
-            <Heading
+            <MotionHeading
               as="h1"
               fontFamily="Raleway"
               fontWeight="600"
@@ -169,21 +179,36 @@ export default function HomeForm() {
               mt={['1rem', '1rem', '1rem', '4rem', '4rem', '4rem']}
               w="100%"
               mx={['auto', 'auto', 'auto', 'auto']}
+              initial={{ y: '3vh', opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: '-3000vh', opacity: 0 }}
+              transition={{ type: 'spring', duration: 1.5, bounce: 0.3 }}
             >
               Tenha um jurídico estratégico com o{' '}
-              <Text as="span" color="pink.900">
+              <MotionText
+                initial={{ y: '25vh', opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: '-25vh', opacity: 0 }}
+                transition={{ type: 'spring', duration: 1.5, bounce: 0.3 }}
+                as="span"
+                color="pink.900"
+              >
                 Legal Design
-              </Text>
-            </Heading>
-            <Text
+              </MotionText>
+            </MotionHeading>
+            <MotionText
               textAlign={['center', 'center', 'center', 'left']}
               fontFamily="Roboto"
               fontSize="1rem"
               maxW={['300px', '300px', '900px', '440px', '400px']}
               mt="2rem"
+              initial={{ y: '25vh', opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: '-25vh', opacity: 0 }}
+              transition={{ type: 'spring', duration: 1.5, bounce: 0.3 }}
             >
               Transforme seus documentos e traga mais resultados para a empresa.
-            </Text>
+            </MotionText>
           </GridItem>
 
           <GridItem

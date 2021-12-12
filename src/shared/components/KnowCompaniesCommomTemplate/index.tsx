@@ -9,6 +9,7 @@ import {
   Button,
 } from '@chakra-ui/react'
 import Image from 'next/image'
+import Fade from 'react-reveal'
 
 const dataCustomers = [
   {
@@ -89,73 +90,77 @@ export default function KnowCompaniesCommomTemplate() {
           justify="space-between"
           flexDir="column"
         >
-          <Heading
-            fontFamily="Raleway"
-            maxW={['300px', '300px', '700px', '600px', '500px']}
-            mt={['1.5rem', '1.5rem', '4rem', '-2rem']}
-            textAlign={['center', 'center', 'center', 'left', 'left']}
-            mr={[0, 0, 0, 0, '3rem', '3rem']}
-            mx={['auto', 'auto']}
-            fontSize={['1.875rem', '1.875rem', '1.875rem', '3rem', '3rem']}
-            px={['0', '0', '2rem', '2rem']}
-          >
-            Sabe o que essas{' '}
-            <Text as="span" color="pink.900">
-              empresas
-            </Text>{' '}
-            têm em comum?
-          </Heading>
-
-          <Text
-            mt="1.5rem"
-            ml={['0', '0', '0', '0', '2rem']}
-            color="#343A40"
-            fontSize={['1rem']}
-            textAlign={['center', 'center', 'left']}
-            mx={['auto', 'auto', '0']}
-            maxW={['300px', '300px', '400px', '500px', '700px']}
-          >
-            Elas <strong> aplicaram o Legal Design com a Bits</strong> e
-            melhoraram seus resultados.
-          </Text>
+          <Fade bottom>
+            <Heading
+              fontFamily="Raleway"
+              maxW={['300px', '300px', '700px', '600px', '500px']}
+              mt={['1.5rem', '1.5rem', '4rem', '-2rem']}
+              textAlign={['center', 'center', 'center', 'left', 'left']}
+              mr={[0, 0, 0, 0, '3rem', '3rem']}
+              mx={['auto', 'auto']}
+              fontSize={['1.875rem', '1.875rem', '1.875rem', '3rem', '3rem']}
+              px={['0', '0', '2rem', '2rem']}
+            >
+              Sabe o que essas{' '}
+              <Text as="span" color="pink.900">
+                empresas
+              </Text>{' '}
+              têm em comum?
+            </Heading>
+          </Fade>
+          <Fade bottom>
+            <Text
+              mt="1.5rem"
+              ml={['0', '0', '0', '0', '2rem']}
+              color="#343A40"
+              fontSize={['1rem']}
+              textAlign={['center', 'center', 'left']}
+              mx={['auto', 'auto', '0']}
+              maxW={['300px', '300px', '400px', '500px', '700px']}
+            >
+              Elas <strong> aplicaram o Legal Design com a Bits</strong> e
+              melhoraram seus resultados.
+            </Text>
+          </Fade>
         </Flex>
-
-        <Grid
-          maxW="1013px"
-          mt="2.5rem"
-          gap={[4]}
-          mx="2rem"
-          templateColumns={[
-            'repeat(3, 1fr)',
-            'repeat(3, 1fr)',
-            'repeat(3, 1fr)',
-            'repeat(4, 1fr)',
-            'repeat(5, 1fr)',
-          ]}
-        >
-          {dataCustomers.map(docs => (
-            <GridItem>
-              <Box
-                key={docs.image}
-                cursor="pointer"
-                display="flex"
-                justifyContent="center"
-                w={['100%', '100%']}
-                h="76px"
-              >
-                <Image
-                  alt={docs.description}
-                  width={docs.width}
-                  height={docs.size}
-                  quality={100}
-                  src={`/images/${docs.image}.svg`}
-                  objectFit="contain"
-                  priority
-                />
-              </Box>
-            </GridItem>
-          ))}
-        </Grid>
+        <Fade bottom>
+          <Grid
+            maxW="1013px"
+            mt="2.5rem"
+            gap={[4]}
+            mx="2rem"
+            templateColumns={[
+              'repeat(3, 1fr)',
+              'repeat(3, 1fr)',
+              'repeat(3, 1fr)',
+              'repeat(4, 1fr)',
+              'repeat(5, 1fr)',
+            ]}
+          >
+            {dataCustomers.map(docs => (
+              <GridItem>
+                <Box
+                  key={docs.image}
+                  cursor="pointer"
+                  display="flex"
+                  justifyContent="center"
+                  w={['100%', '100%']}
+                  h="76px"
+                >
+                  <Image
+                    alt={docs.description}
+                    width={docs.width}
+                    height={docs.size}
+                    quality={100}
+                    src={`/images/${docs.image}.svg`}
+                    objectFit="contain"
+                    priority
+                  />
+                </Box>
+              </GridItem>
+            ))}
+          </Grid>
+        </Fade>
       </Flex>
     </Flex>
   )

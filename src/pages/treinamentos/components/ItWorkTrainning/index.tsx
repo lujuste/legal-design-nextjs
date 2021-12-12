@@ -54,7 +54,7 @@ export default function ItWorkTrainning() {
         </Heading>
       </Fade>
 
-      <Fade>
+      <Fade bottom>
         <Text
           textAlign="center"
           mt="1.5rem"
