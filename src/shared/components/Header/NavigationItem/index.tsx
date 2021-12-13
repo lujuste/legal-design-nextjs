@@ -9,7 +9,7 @@ interface NavigationItemProps {
 export default function NavigationItem({ label, href }: NavigationItemProps) {
   return (
     <List mt="0.3rem" as="ul">
-      <ActiveLink href={href}>
+      <ActiveLink prefetch href={href}>
         <ListItem
           cursor="pointer"
           fontSize={['15px', '15px', '15px', '15px', '16px']}
