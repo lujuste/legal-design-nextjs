@@ -5,7 +5,7 @@ import { Flex, Heading, Text, Box, Avatar, VStack } from '@chakra-ui/react'
 export const dataTestimonialsTrainning = [
   {
     name: 'Emily Coelho',
-    image: '',
+    image: 'smu',
     description: 'Empresa',
     testimonial:
       'O curso foi bem legal para introduzir o tema e nos dar base para abrir a cabeça em relação ao Legal Design, adorei! Também gostei bastante que o material utilizado e os certificados de participação foram enviados para a gente logo que o curso acabou :) parabéns pelo cuidado e preocupação com os usuários.',
@@ -13,7 +13,7 @@ export const dataTestimonialsTrainning = [
   },
   {
     name: 'Emily Coelho',
-    image: '',
+    image: 'smu',
     description: 'Empresa',
     testimonial:
       'O curso foi bem legal para introduzir o tema e nos dar base para abrir a cabeça em relação ao Legal Design, adorei! Também gostei bastante que o material utilizado e os certificados de participação foram enviados para a gente logo que o curso acabou :) parabéns pelo cuidado e preocupação com os usuários.',
@@ -21,7 +21,7 @@ export const dataTestimonialsTrainning = [
   },
   {
     name: 'Emily Coelho',
-    image: '',
+    image: 'smu',
     description: 'Empresa',
     testimonial:
       'O curso foi bem legal para introduzir o tema e nos dar base para abrir a cabeça em relação ao Legal Design, adorei! Também gostei bastante que o material utilizado e os certificados de participação foram enviados para a gente logo que o curso acabou :) parabéns pelo cuidado e preocupação com os usuários.',
@@ -94,12 +94,14 @@ export default function SliderDesk() {
                   <Avatar
                     className="bits-avatar"
                     size="xl"
-                    bgColor="pink.300"
+                    bgColor="white"
                     boxShadow="md"
                     name={item.name}
-                    src={`/images/${item.image}.webp`}
+                    src={`/images/${item.image}.svg`}
                     sx={{
                       color: 'white !important',
+                      bgSize: 'contain',
+                      height: 'auto',
                     }}
                   />
                   <Heading
@@ -145,10 +147,11 @@ export default function SliderDesk() {
                 </Box>
                 <VStack transform="translateY(-40px)">
                   <Avatar
-                    bgColor="pink.300"
+                    bgColor="white"
                     boxShadow="md"
                     sx={{
                       color: 'white !important',
+                      height: 'auto',
                     }}
                     size="xl"
                     name={item.name}

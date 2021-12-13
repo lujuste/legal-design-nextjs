@@ -184,7 +184,7 @@ export default function HomeForm() {
               exit={{ y: '-3000vh', opacity: 0 }}
               transition={{ type: 'spring', duration: 1.5, bounce: 0.3 }}
             >
-              Tenha um jurídico estratégico com o{' '}
+              Tenha um time para aplicar o{' '}
               <MotionText
                 initial={{ y: '25vh', opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

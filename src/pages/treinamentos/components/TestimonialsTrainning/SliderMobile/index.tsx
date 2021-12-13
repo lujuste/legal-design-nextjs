@@ -64,10 +64,14 @@ export default function SliderMobile() {
               <Avatar
                 size="xl"
                 name={item.name}
-                bgColor="pink.300"
-                src={`/images/${item.image}.webp`}
+                bgColor="white"
+                src={`/images/${item.image}.svg`}
                 boxShadow="xl"
                 mb={['0.5rem', 'o.5rem', '0']}
+                sx={{
+                  bgSize: 'contain',
+                  height: 'auto',
+                }}
               />
               <Heading fontSize="16px" fontWeight="700" fontFamily="Raleway">
                 {item.name}

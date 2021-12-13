@@ -7,6 +7,7 @@ import {
   Box,
   Text,
   Button,
+  useBreakpointValue,
 } from '@chakra-ui/react'
 import Image from 'next/image'
 import Fade from 'react-reveal'
@@ -69,6 +70,18 @@ const dataCustomers = [
 ]
 
 export default function KnowCompaniesCommomTemplate() {
+  function scrollToForm() {
+    window.scrollTo(0, 10)
+  }
+
+  const isMobile = useBreakpointValue({
+    base: true,
+    sm: true,
+    md: true,
+    lg: false,
+    xl: false,
+  })
+
   return (
     <Flex px="1.5rem" w="100%" h="100%" bgColor="#F8F9FA">
       <Flex
@@ -110,7 +123,7 @@ export default function KnowCompaniesCommomTemplate() {
           </Fade>
           <Fade bottom>
             <Text
-              mt="1.5rem"
+              mt="0.5rem"
               ml={['0', '0', '0', '0', '2rem']}
               color="#343A40"
               fontSize={['1rem']}
@@ -122,11 +135,32 @@ export default function KnowCompaniesCommomTemplate() {
               melhoraram seus resultados.
             </Text>
           </Fade>
+          {!isMobile && (
+            <Button
+              w="230px"
+              h="50px"
+              bgColor="pink.900"
+              boxShadow="2xl"
+              color="white"
+              px="1rem"
+              mr="260px"
+              mt={['2rem', '2rem', '2rem', '2rem']}
+              fontSize={['0.875rem', '0.875rem']}
+              onClick={scrollToForm}
+              _hover={{
+                bgColor: '#fff',
+                color: 'pink.900',
+                border: '1px solid #CC3366',
+              }}
+            >
+              Quero treinar meu time
+            </Button>
+          )}
         </Flex>
         <Fade bottom>
           <Grid
             maxW="1013px"
-            mt="2.5rem"
+            mt={['2rem', '2rem', '1.5rem']}
             gap={[4]}
             mx="2rem"
             templateColumns={[
@@ -161,6 +195,26 @@ export default function KnowCompaniesCommomTemplate() {
             ))}
           </Grid>
         </Fade>
+        {isMobile && (
+          <Button
+            w="230px"
+            h="50px"
+            bgColor="pink.900"
+            boxShadow="2xl"
+            color="white"
+            px="1rem"
+            mt={['3rem']}
+            fontSize={['0.875rem', '0.875rem']}
+            onClick={scrollToForm}
+            _hover={{
+              bgColor: '#fff',
+              color: 'pink.900',
+              border: '1px solid #CC3366',
+            }}
+          >
+            Quero treinar meu time
+          </Button>
+        )}
       </Flex>
     </Flex>
   )
